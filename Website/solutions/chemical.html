@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemical & Pharma OT Security | Secure Kern</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+    <meta name="description" content="OT Security f?r chemische und pharmazeutische Produktion. IEC 62443 SIL-Integration, Prozesssicherheit, Ex-Zonen-Schutz, FDA-Compliance.">
+    <meta name="keywords" content="Chemical OT Security, Pharma Cybersecurity, IEC 62443 SIL, Process Safety, DCS Security, Explosion-Proof Zones">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="/index.html">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Secure<strong>Kern</strong></span>
+                    </a>
+                </div>
+                
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="/index.html" data-translate="nav.home">Home</a></li>
+                        <li><a href="/services.html" data-translate="nav.services">Services</a></li>
+                        <li><a href="/about.html" data-translate="nav.about">About</a></li>
+                        <li><a href="/contact.html" data-translate="nav.contact">Contact</a></li>
+                        <li class="language-switcher">
+                            <button id="langToggle" aria-label="Switch Language">
+                                <i class="fas fa-globe"></i>
+                                <span id="currentLang">DE</span>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="background: linear-gradient(135deg, rgba(21, 101, 192, 0.92) 0%, rgba(0, 137, 123, 0.88) 100%), url('../assets/images/chemical-plant.jpg') center/cover no-repeat; padding: 100px 0 80px;">
+        <div class="container">
+            <div class="hero-content" style="text-align: center; color: white;">
+                <h1 style="font-size: 2.5rem; margin-bottom: 1.5rem;">
+                    Prozesssicherheit f?r Chemie & Pharma
+                </h1>
+                <p style="font-size: 1.25rem; max-width: 800px; margin: 0 auto 2rem; opacity: 0.95;">
+                    OT Security f?r chemische Produktion und pharmazeutische Fertigung. IEC 62443 mit SIL-Integration, Ex-Zonen-Schutz, DCS-Segmentierung.
+                </p>
+                <div style="background: rgba(255, 255, 255, 0.1); padding: 15px 30px; border-radius: 8px; display: inline-block; margin-bottom: 2rem;">
+                    <p style="margin: 0; font-weight: 600;">
+                        <i class="fas fa-flask" style="color: #81C784; margin-right: 10px;"></i>
+                        Safety + Security: SIL 2-3 Integration f?r Prozessleitsysteme
+                    </p>
+                </div>
+                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                    <a href="../contact.html#form" class="btn btn-primary" style="background: white; color: #1565C0;">
+                        Kostenlose Prozess-Analyse
+                    </a>
+                    <a href="#challenges" class="btn btn-secondary" style="background: transparent; border: 2px solid white; color: white;">
+                        Typische Herausforderungen
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why OT Security for Chemical -->
+    <section class="section" style="background: #F5F5F5;">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center; margin-bottom: 3rem;">
+                Warum OT Security f?r Chemie & Pharma?
+            </h2>
+            <div class="grid-2-col" style="gap: 30px;">
+                <div class="card" style="padding: 30px; text-align: center;">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #1565C0, #00897B); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: white; font-size: 2rem;">
+                        <i class="fas fa-shield-virus"></i>
+                    </div>
+                    <h3 style="margin-bottom: 1rem; color: #1565C0;">Safety-kritische Prozesse</h3>
+                    <p style="color: #4A5568; line-height: 1.8;">
+                        Chemische Anlagen arbeiten mit <strong>explosionsf?higen Gemischen (Ex-Zonen)</strong>, toxischen Stoffen, Hochdruck-Reaktoren. 
+                        Safety Instrumented Systems (SIS) mit <strong>SIL 2-3</strong> (Safety Integrity Level) verhindern St?rf?lle. 
+                        Cyber-Angriff auf DCS/SIS = <strong>Explosion, Freisetzung, Umweltkatastrophe</strong>.
+                    </p>
+                    <p style="margin-top: 15px; color: #00897B; font-weight: 600;">
+                        <i class="fas fa-exclamation-triangle"></i> Beispiel: Triton/Trisis-Malware 2017 (Saudi-Arabien Petro-Chemie-Anlage, SIS manipuliert)
+                    </p>
+                </div>
+                <div class="card" style="padding: 30px; text-align: center;">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #F57C00, #FFA726); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: white; font-size: 2rem;">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3 style="margin-bottom: 1rem; color: #1565C0;">Compliance FDA, EMA, NIS2</h3>
+                    <p style="color: #4A5568; line-height: 1.8;">
+                        Pharma-Hersteller m?ssen <strong>FDA 21 CFR Part 11</strong> (elektronische Aufzeichnungen), 
+                        <strong>EU GMP Annex 11</strong> (Computerized Systems), 
+                        <strong>NIS2</strong> (Pharma = essenzielle Einrichtung) erf?llen. 
+                        Cyber-Vorf?lle k?nnen <strong>Chargen-R?ckrufe</strong> ausl?sen (?1-10M Kosten).
+                    </p>
+                    <p style="margin-top: 15px; color: #F57C00; font-weight: 600;">
+                        <i class="fas fa-file-medical-alt"></i> Audit-Fokus: Data Integrity, Access Control, Audit Trails f?r Batch-Systeme (SAP MES, Siemens SIMATIC Batch)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Typical Challenges -->
+    <section id="challenges" class="section">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center; margin-bottom: 1rem;">
+                Typische Herausforderungen in Chemie & Pharma
+            </h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 3rem; color: #4A5568;">
+                Prozessleitsysteme (DCS) sind 15-25 Jahre im Einsatz, Ex-Zonen erfordern spezielle Netzwerk-L?sungen, SIL-Integration ist komplex.
+            </p>
+            
+            <div class="grid-2-col" style="gap: 30px;">
+                <!-- Challenge 1: Ex-Zonen Networking -->
+                <div class="card" style="padding: 30px; border-left: 4px solid #00897B;">
+                    <div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+                        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #1565C0, #00897B); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-right: 20px; flex-shrink: 0; color: white; font-size: 1.5rem;">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin-bottom: 0.5rem; color: #1565C0;">Explosionsgesch?tzte Zonen (Ex-Zonen)</h3>
+                            <p style="color: #00897B; font-size: 0.9rem; margin: 0;">Challenge #1: Ex-sichere Netzwerk-Infrastruktur</p>
+                        </div>
+                    </div>
+                    <p style="color: #4A5568; line-height: 1.8; margin-bottom: 1.5rem;">
+                        Chemische Anlagen arbeiten mit <strong>ATEX-Zonen (0, 1, 2)</strong> f?r explosionsf?hige Atmosph?ren. 
+                        Netzwerk-Equipment (Switches, Firewalls) muss <strong>Ex-zertifiziert</strong> sein oder au?erhalb der Zone platziert. 
+                        Standard IT-Security-Ger?te (z.B. <strong>Palo Alto, Fortinet</strong>) haben <strong>keine Ex-Zulassung</strong>.
+                    </p>
+                    <ul style="list-style: none; padding: 0; margin: 0 0 1.5rem 0;">
+                        <li style="margin-bottom: 10px; color: #4A5568;">
+                            <i class="fas fa-times-circle" style="color: #C62828; margin-right: 10px;"></i>
+                            <strong>ATEX Zone 1/2</strong>: Explosive Atmosph?re (L?sungsmittel, Wasserstoff, Staub)
+                        </li>
+                        <li style="margin-bottom: 10px; color: #4A5568;">
+                            <i class="fas fa-times-circle" style="color: #C62828; margin-right: 10px;"></i>
+                            <strong>Feldger?te</strong> (Sensoren, Aktoren) mit Profibus DP/PA oder HART
+                        </li>
+                        <li style="margin-bottom: 10px; color: #4A5568;">
+                            <i class="fas fa-times-circle" style="color: #C62828; margin-right: 10px;"></i>
+                            <strong>Kabelf?hrung</strong> durch Ex-Bereiche erfordert Zonentrennung
+                        </li>
+                        <li style="margin-bottom: 10px; color: #4A5568;">
+                            <i class="fas fa-times-circle" style="color: #C62828; margin-right: 10px;"></i>
+                            <strong>Wireless</strong> in Zone 1 nur mit Ex-d/Ex-i Zulassung (teuer: ?5-15k/AP)
+                        </li>
+                    </ul>
+                    <p style="margin: 0; padding-top: 15px; border-top: 1px solid #E0E0E0;">
+                        <strong style="color: #00897B;">L?sung:</strong> 
+                        <a href="../services/segmentation.html" style="color: #1565C0; text-decoration: underline;">Purdue Level 0-1 Segmentierung</a> au?erhalb Ex-Zone + 
+                        <a href="../services/iec-62443.html" style="color: #1565C0; text-decoration: underline;">IEC 62443 Zone/Conduit</a>
+                    </p>
+                </div>
+
+                <!-- Challenge 2: Legacy DCS -->
+                <div class="card" style="padding: 30px; border-left: 4px solid #FFA726;">
+                    <div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+                        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #F57C00, #FFA726); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-right: 20px; flex-shrink: 0; color: white; font-size: 1.5rem;">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin-bottom: 0.5rem; color: #1565C0;">Veraltete DCS-Systeme</h3>
+                            <p style="color: #F57C00; font-size: 0.9rem; margin: 0;">Challenge #2: 15-25 Jahre alte Prozessleitsysteme</p>
+                        </div>
+                    </div>
+                    <p style="color: #4A5568; line-height: 1.8; margin-bottom: 1.5rem;">
+                        Distributed Control Systems (DCS) wie <strong>Honeywell Experion, ABB 800xA, Yokogawa Centum VP, Siemens PCS 7</strong> 
+                        laufen oft <strong>15-25 Jahre</strong> ohne gr??ere Upgrades. 
+                        Windows NT/2000/XP-Basis, <strong>keine Patches</strong> (Vendor-Lock), propriet?re Protokolle.
+                    </p>
+                    <ul style="list-style: none; padding: 0; margin: 0 0 1.5rem 0;">
+                        <li style="margin-bottom: 10px; color: #4A5568;">
+                            <i class="fas fa-times-circle" style="color: #C62828; margin-right: 10px;"></i>
+                            <strong>20+ Jahre alte DCS</strong>: Honeywell TDC 3000 (1990er), ABB Advant (2000er)
+                        </li>
+                        <li style="margin-bottom: 10px; color: #4A5568;">
+                            <i class="fas fa-times-circle" style="color: #C62828; margin-right: 10px;"></i>
+                            <strong>Ersatz kostet ?10-30M</strong> f?r Chemie-Anlage (3-7 Jahre Projekt)
+                        </li>
+                        <li style="margin-bottom: 10px; color: #4A5568;">
+                            <i class="fas fa-times-circle" style="color: #C62828; margin-right: 10px;"></i>
+                            <strong>24/7-Betrieb</strong>: Batch-Prozesse d?rfen nicht unterbrochen werden
+                        </li>
+                        <li style="margin-bottom: 10px; color: #4A5568;">
+                            <i class="fas fa-times-circle" style="color: #C62828; margin-right: 10px;"></i>
+                            <strong>Engineering-Stationen</strong> (EWS) mit Admin-Rechten ohne MFA
+                        </li>
+                    </ul>
+                    <p style="margin: 0; padding-top: 15px; border-top: 1px solid #E0E0E0;">
+                        <strong style="color: #FFA726;">L?sung:</strong> 
+                        <a href="../services/segmentation.html" style="color: #1565C0; text-decoration: underline;">Network Segmentation Purdue Level 1-2</a> + 
+                        <a href="../services/ot-mdr.html" style="color: #1565C0; text-decoration: underline;">Passive Monitoring</a>
+                    </p>
+                </div>
+
+                <!-- Challenge 3: SIL Integration -->
+                <div class="card" style="padding: 30px; border-left: 4px solid #AB47BC;">
+                    <div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+                        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #8E24AA, #AB47BC); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-right: 20px; flex-shrink: 0; color: white; font-size: 1.5rem;">
+                            <i class="fas fa-shield-halved"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin-bottom: 0.5rem; color: #1565C0;">SIL 2-3 Integration (Safety + Security)</h3>
+                            <p style="color: #AB47BC; font-size: 0.9rem; margin: 0;">Challenge #3: Sicherheit vs. Verf?gbarkeit</p>
+                        </div>
+                    </div>
+                    <p style="color: #4A5568; line-height: 1.8; margin-bottom: 1.5rem;">
+                        Safety Instrumented Systems (SIS) mit <strong>SIL 2 oder SIL 3</strong> (IEC 61508/61511) 
+                        verhindern St?rf?lle (Explosion, Freisetzung). 
+                        Cybersecurity-Ma?nahmen (Firewall, Monitoring) d?rfen <strong>Safety-Funktion nicht beeintr?chtigen</strong> 
+                        (kein Blocking kritischer Safety-Commands).
+                    </p>
+                    <ul style="list-style: none; padding: 0; margin: 0 0 1.5rem 0;">
+                        <li style="margin-bottom: 10px; color: #4A5568;">
+                            <i class="fas fa-exclamation-triangle" style="color: #AB47BC; margin-right: 10px;"></i>
+                            <strong>SIS-Controller</strong>: Triconex, Hima, Siemens Safety PLC (separate Netzwerke)
+                        </li>
+                        <li style="margin-bottom: 10px; color: #4A5568;">
+                            <i class="fas fa-exclamation-triangle" style="color: #AB47BC; margin-right: 10px;"></i>
+                            <strong>Safety Lifecycle</strong> (IEC 61511): HAZOP, SIL Verification, Proof Tests
+                        </li>
+                        <li style="margin-bottom: 10px; color: #4A5568;">
+                            <i class="fas fa-exclamation-triangle" style="color: #AB47BC; margin-right: 10px;"></i>
+                            <strong>Firewalls</strong> in Safety Loop = potenzieller Single Point of Failure (SPF)
+                        </li>
+                        <li style="margin-bottom: 10px; color: #4A5568;">
+                            <i class="fas fa-exclamation-triangle" style="color: #AB47BC; margin-right: 10px;"></i>
+                            <strong>Triton/Trisis</strong>-Malware 2017: Erster bekannter SIS-Cyber-Angriff
+                        </li>
+                    </ul>
+                    <p style="margin: 0; padding-top: 15px; border-top: 1px solid #E0E0E0;">
+                        <strong style="color: #AB47BC;">L?sung:</strong> 
+                        <a href="../services/iec-62443.html" style="color: #1565C0; text-decoration: underline;">IEC 62443 SIL-Integration</a> + 
+                        <a href="../services/ot-risk.html" style="color: #1565C0; text-decoration: underline;">HAZOP-integrierte TARA</a>
+                    </p>
+                </div>
+
+                <!-- Challenge 4: MES/Batch IT/OT Convergence -->
+                <div class="card" style="padding: 30px; border-left: 4px solid #EF5350;">
+                    <div style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+                        <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #C62828, #EF5350); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-right: 20px; flex-shrink: 0; color: white; font-size: 1.5rem;">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div>
+                            <h3 style="margin-bottom: 0.5rem; color: #1565C0;">MES/Batch-Systeme: IT/OT-Konvergenz</h3>
+                            <p style="color: #EF5350; font-size: 0.9rem; margin: 0;">Challenge #4: Cyber-Risiken durch ERP-Integration</p>
+                        </div>
+                    </div>
+                    <p style="color: #4A5568; line-height: 1.8; margin-bottom: 1.5rem;">
+                        Manufacturing Execution Systems (MES) wie <strong>SAP MES, Siemens SIMATIC IT, Rockwell FactoryTalk Batch</strong> 
+                        verbinden ERP (SAP) mit DCS. 
+                        Rezeptur-Downloads, Chargen-Tracking, Audit Trails ? <strong>Ransomware-Einfallstor</strong> von IT zu OT.
+                    </p>
+                    <ul style="list-style: none; padding: 0; margin: 0 0 1.5rem 0;">
+                        <li style="margin-bottom: 10px; color: #4A5568;">
+                            <i class="fas fa-exclamation-triangle" style="color: #EF5350; margin-right: 10px;"></i>
+                            <strong>MES-Integration</strong>: SAP ? MES ? DCS (ISA-95 Level 3-2-1)
+                        </li>
+                        <li style="margin-bottom: 10px; color: #4A5568;">
+                            <i class="fas fa-exclamation-triangle" style="color: #EF5350; margin-right: 10px;"></i>
+                            <strong>Flat Networks</strong>: Keine DMZ zwischen ERP-LAN und Process Control Network (PCN)
+                        </li>
+                        <li style="margin-bottom: 10px; color: #4A5568;">
+                            <i class="fas fa-exclamation-triangle" style="color: #EF5350; margin-right: 10px;"></i>
+                            <strong>Shared SQL Server</strong>: MES-Datenbank auf IT-Infrastruktur (Lateral Movement)
+                        </li>
+                        <li style="margin-bottom: 10px; color: #4A5568;">
+                            <i class="fas fa-exclamation-triangle" style="color: #EF5350; margin-right: 10px;"></i>
+                            <strong>FDA 21 CFR Part 11</strong>: Electronic Signatures, Audit Trails m?ssen gesch?tzt sein
+                        </li>
+                    </ul>
+                    <p style="margin: 0; padding-top: 15px; border-top: 1px solid #E0E0E0;">
+                        <strong style="color: #EF5350;">L?sung:</strong> 
+                        <a href="../services/segmentation.html" style="color: #1565C0; text-decoration: underline;">Industrial DMZ Level 3-2</a> + 
+                        <a href="../services/iec-62443.html" style="color: #1565C0; text-decoration: underline;">Security Levels f?r MES</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Packages -->
+    <section class="section" style="background: #F5F5F5;">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center; margin-bottom: 1rem;">
+                L?sungspakete f?r Chemie & Pharma
+            </h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 3rem; color: #4A5568;">
+                Spezialisierte Services f?r DCS-Sicherheit, SIL-Integration, FDA-Compliance, MES-Segmentierung.
+            </p>
+            
+            <div class="grid-4-col" style="gap: 30px;">
+                <!-- Package 1: IEC 62443 mit SIL -->
+                <div class="card" style="padding: 30px; border-left: 4px solid #00897B; height: 100%;">
+                    <h3 style="margin-bottom: 1rem; color: #1565C0; font-size: 1.25rem;">
+                        IEC 62443 mit SIL-Integration
+                    </h3>
+                    <p style="color: #4A5568; line-height: 1.7; margin-bottom: 1.5rem; font-size: 0.95rem;">
+                        Safety + Security f?r Prozessanlagen
+                    </p>
+                    <ul style="list-style: none; padding: 0; margin: 0 0 1.5rem 0;">
+                        <li style="margin-bottom: 8px; color: #4A5568; font-size: 0.9rem;">
+                            <i class="fas fa-check-circle" style="color: #00897B; margin-right: 8px;"></i>
+                            Gap-Analyse Security Levels SL1-4
+                        </li>
+                        <li style="margin-bottom: 8px; color: #4A5568; font-size: 0.9rem;">
+                            <i class="fas fa-check-circle" style="color: #00897B; margin-right: 8px;"></i>
+                            SIL 2-3 Safety Loop-Analyse (IEC 61511)
+                        </li>
+                        <li style="margin-bottom: 8px; color: #4A5568; font-size: 0.9rem;">
+                            <i class="fas fa-check-circle" style="color: #00897B; margin-right: 8px;"></i>
+                            Zone/Conduit f?r DCS + SIS
+                        </li>
+                        <li style="margin-bottom: 8px; color: #4A5568; font-size: 0.9rem;">
+                            <i class="fas fa-check-circle" style="color: #00897B; margin-right: 8px;"></i>
+                            HAZOP-integrierte Cyber-TARA
+                        </li>
+                    </ul>
+                    <div style="margin-bottom: 1rem;">
+                        <p style="margin: 0; color: #4A5568; font-size: 0.9rem;">
+                            <strong>Preis:</strong> ?35.000 - ?70.000
+                        </p>
+                        <p style="margin: 5px 0 0 0; color: #4A5568; font-size: 0.9rem;">
+                            <strong>Dauer:</strong> 6-8 Wochen
+                        </p>
+                    </div>
+                    <a href="../services/iec-62443.html" class="btn btn-primary" style="width: 100%; text-align: center; display: block;">
+                        Mehr erfahren
+                    </a>
+                </div>
+
+                <!-- Package 2: DCS-Segmentierung -->
+                <div class="card" style="padding: 30px; border-left: 4px solid #FFA726; height: 100%;">
+                    <h3 style="margin-bottom: 1rem; color: #1565C0; font-size: 1.25rem;">
+                        DCS-Segmentierung
+                    </h3>
+                    <p style="color: #4A5568; line-height: 1.7; margin-bottom: 1.5rem; font-size: 0.95rem;">
+                        Purdue-Modell f?r Prozessleitsysteme
+                    </p>
+                    <ul style="list-style: none; padding: 0; margin: 0 0 1.5rem 0;">
+                        <li style="margin-bottom: 8px; color: #4A5568; font-size: 0.9rem;">
+                            <i class="fas fa-check-circle" style="color: #FFA726; margin-right: 8px;"></i>
+                            Purdue Level 0-3 (Feld ? Prozess ? Operations ? Enterprise)
+                        </li>
+                        <li style="margin-bottom: 8px; color: #4A5568; font-size: 0.9rem;">
+                            <i class="fas fa-check-circle" style="color: #FFA726; margin-right: 8px;"></i>
+                            Industrial DMZ f?r MES-Integration (SAP ? DCS)
+                        </li>
+                        <li style="margin-bottom: 8px; color: #4A5568; font-size: 0.9rem;">
+                            <i class="fas fa-check-circle" style="color: #FFA726; margin-right: 8px;"></i>
+                            Ex-Zonen-konforme Netzwerk-Architektur
+                        </li>
+                        <li style="margin-bottom: 8px; color: #4A5568; font-size: 0.9rem;">
+                            <i class="fas fa-check-circle" style="color: #FFA726; margin-right: 8px;"></i>
+                            Honeywell/ABB/Yokogawa-spezifische Firewall-Regeln
+                        </li>
+                    </ul>
+                    <div style="margin-bottom: 1rem;">
+                        <p style="margin: 0; color: #4A5568; font-size: 0.9rem;">
+                            <strong>Preis:</strong> ?60.000 - ?180.000
+                        </p>
+                        <p style="margin: 5px 0 0 0; color: #4A5568; font-size: 0.9rem;">
+                            <strong>Dauer:</strong> 8-12 Wochen
+                        </p>
+                    </div>
+                    <a href="../services/segmentation.html" class="btn btn-primary" style="width: 100%; text-align: center; display: block;">
+                        Mehr erfahren
+                    </a>
+                </div>
+
+                <!-- Package 3: Pharma FDA Compliance -->
+                <div class="card" style="padding: 30px; border-left: 4px solid #AB47BC; height: 100%;">
+                    <h3 style="margin-bottom: 1rem; color: #1565C0; font-size: 1.25rem;">
+                        Pharma FDA-Compliance
+                    </h3>
+                    <p style="color: #4A5568; line-height: 1.7; margin-bottom: 1.5rem; font-size: 0.95rem;">
+                        21 CFR Part 11 f?r Batch-Systeme
+                    </p>
+                    <ul style="list-style: none; padding: 0; margin: 0 0 1.5rem 0;">
+                        <li style="margin-bottom: 8px; color: #4A5568; font-size: 0.9rem;">
+                            <i class="fas fa-check-circle" style="color: #AB47BC; margin-right: 8px;"></i>
+                            Data Integrity f?r MES/Batch (ALCOA+)
+                        </li>
+                        <li style="margin-bottom: 8px; color: #4A5568; font-size: 0.9rem;">
+                            <i class="fas fa-check-circle" style="color: #AB47BC; margin-right: 8px;"></i>
+                            Access Control & Audit Trails (21 CFR Part 11)
+                        </li>
+                        <li style="margin-bottom: 8px; color: #4A5568; font-size: 0.9rem;">
+                            <i class="fas fa-check-circle" style="color: #AB47BC; margin-right: 8px;"></i>
+                            EU GMP Annex 11 Computerized Systems
+                        </li>
+                        <li style="margin-bottom: 8px; color: #4A5568; font-size: 0.9rem;">
+                            <i class="fas fa-check-circle" style="color: #AB47BC; margin-right: 8px;"></i>
+                            FDA Warning Letter-Remediation
+                        </li>
+                    </ul>
+                    <div style="margin-bottom: 1rem;">
+                        <p style="margin: 0; color: #4A5568; font-size: 0.9rem;">
+                            <strong>Preis:</strong> ?20.000 - ?35.000
+                        </p>
+                        <p style="margin: 5px 0 0 0; color: #4A5568; font-size: 0.9rem;">
+                            <strong>Dauer:</strong> 3-5 Wochen
+                        </p>
+                    </div>
+                    <a href="../services/ot-risk.html" class="btn btn-primary" style="width: 100%; text-align: center; display: block;">
+                        Mehr erfahren
+                    </a>
+                </div>
+
+                <!-- Package 4: Process Safety Training -->
+                <div class="card" style="padding: 30px; border-left: 4px solid #EF5350; height: 100%;">
+                    <h3 style="margin-bottom: 1rem; color: #1565C0; font-size: 1.25rem;">
+                        Process Safety Training
+                    </h3>
+                    <p style="color: #4A5568; line-height: 1.7; margin-bottom: 1.5rem; font-size: 0.95rem;">
+                        Safety + Security f?r Anlagenfahrer
+                    </p>
+                    <ul style="list-style: none; padding: 0; margin: 0 0 1.5rem 0;">
+                        <li style="margin-bottom: 8px; color: #4A5568; font-size: 0.9rem;">
+                            <i class="fas fa-check-circle" style="color: #EF5350; margin-right: 8px;"></i>
+                            DCS Basics (Honeywell/ABB/Yokogawa) 4h
+                        </li>
+                        <li style="margin-bottom: 8px; color: #4A5568; font-size: 0.9rem;">
+                            <i class="fas fa-check-circle" style="color: #EF5350; margin-right: 8px;"></i>
+                            SIS/SIL Awareness (IEC 61511) 4h
+                        </li>
+                        <li style="margin-bottom: 8px; color: #4A5568; font-size: 0.9rem;">
+                            <i class="fas fa-check-circle" style="color: #EF5350; margin-right: 8px;"></i>
+                            Cyber-Incident Response f?r Prozess-Ingenieure 8h
+                        </li>
+                        <li style="margin-bottom: 8px; color: #4A5568; font-size: 0.9rem;">
+                            <i class="fas fa-check-circle" style="color: #EF5350; margin-right: 8px;"></i>
+                            IEC 62443 Deep Dive f?r Chemie 8h
+                        </li>
+                    </ul>
+                    <div style="margin-bottom: 1rem;">
+                        <p style="margin: 0; color: #4A5568; font-size: 0.9rem;">
+                            <strong>Preis:</strong> ?2.000 - ?5.000/Workshop
+                        </p>
+                        <p style="margin: 5px 0 0 0; color: #4A5568; font-size: 0.9rem;">
+                            <strong>Dauer:</strong> 1-2 Tage
+                        </p>
+                    </div>
+                    <a href="../services/training.html" class="btn btn-primary" style="width: 100%; text-align: center; display: block;">
+                        Mehr erfahren
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center; margin-bottom: 3rem;">
+                Erfolgsgeschichten aus Chemie & Pharma
+            </h2>
+            
+            <div class="grid-2-col" style="gap: 30px;">
+                <!-- Case Study 1: Pharma FDA Audit -->
+                <div class="card" style="padding: 40px; background: white;">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #1565C0, #00897B); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: white; font-size: 2rem;">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3 style="margin-bottom: 1.5rem; color: #1565C0; font-size: 1.5rem;">
+                        Pharma-Hersteller: FDA 21 CFR Part 11 Audit-Vorbereitung
+                    </h3>
+                    <div style="margin-bottom: 1.5rem;">
+                        <h4 style="color: #00695C; font-size: 1rem; margin-bottom: 0.5rem;">
+                            <i class="fas fa-exclamation-circle"></i> Herausforderung:
+                        </h4>
+                        <p style="color: #4A5568; line-height: 1.7; margin: 0;">
+                            Pharma-Hersteller (300 Mitarbeiter, Tabletten-Produktion) erhielt <strong>FDA Warning Letter</strong> wegen 
+                            unzureichender Data Integrity in Batch-System (Siemens SIMATIC Batch). 
+                            <strong>Keine Audit Trails</strong> f?r Rezeptur-?nderungen, fehlende Access Controls.
+                        </p>
+                    </div>
+                    <div style="margin-bottom: 1.5rem;">
+                        <h4 style="color: #1E88E5; font-size: 1rem; margin-bottom: 0.5rem;">
+                            <i class="fas fa-cogs"></i> L?sung:
+                        </h4>
+                        <p style="color: #4A5568; line-height: 1.7; margin: 0;">
+                            <strong>FDA 21 CFR Part 11 Compliance-Audit</strong> (5 Wochen): 
+                            Implementierung Electronic Signatures (SHA-256), Audit Trail-Archivierung (10 Jahre), 
+                            Role-Based Access Control (RBAC) f?r MES, 
+                            <strong>IEC 62443 Security Levels</strong> f?r Batch-Server (SL2 erreicht).
+                        </p>
+                    </div>
+                    <div style="padding: 20px; background: linear-gradient(135deg, #E3F2FD, #E0F2F1); border-radius: 8px;">
+                        <h4 style="color: #1565C0; font-size: 1rem; margin-bottom: 0.5rem;">
+                            <i class="fas fa-check-circle"></i> Ergebnis:
+                        </h4>
+                        <ul style="list-style: none; padding: 0; margin: 0;">
+                            <li style="margin-bottom: 8px; color: #00695C; font-weight: 600;">
+                                <i class="fas fa-arrow-right" style="margin-right: 8px;"></i>
+                                FDA Re-Audit bestanden ohne Findings
+                            </li>
+                            <li style="margin-bottom: 8px; color: #00695C; font-weight: 600;">
+                                <i class="fas fa-arrow-right" style="margin-right: 8px;"></i>
+                                Warning Letter zur?ckgezogen nach 6 Monaten
+                            </li>
+                            <li style="margin-bottom: 8px; color: #00695C; font-weight: 600;">
+                                <i class="fas fa-arrow-right" style="margin-right: 8px;"></i>
+                                ?0 Chargen-R?ckrufe (Risiko war ?8M f?r 3 Chargen)
+                            </li>
+                            <li style="color: #00695C; font-weight: 600;">
+                                <i class="fas fa-arrow-right" style="margin-right: 8px;"></i>
+                                Zertifikat IEC 62443 Security Level 2 (freiwillig)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Case Study 2: Chemie DCS Segmentation -->
+                <div class="card" style="padding: 40px; background: white;">
+                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #F57C00, #FFA726); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: white; font-size: 2rem;">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3 style="margin-bottom: 1.5rem; color: #1565C0; font-size: 1.5rem;">
+                        Chemie-Anlage: DCS-Segmentierung f?r SIL 2-Prozesse
+                    </h3>
+                    <div style="margin-bottom: 1.5rem;">
+                        <h4 style="color: #00695C; font-size: 1rem; margin-bottom: 0.5rem;">
+                            <i class="fas fa-exclamation-circle"></i> Herausforderung:
+                        </h4>
+                        <p style="color: #4A5568; line-height: 1.7; margin: 0;">
+                            Chemiewerk (450 Mitarbeiter, L?sungsmittel-Produktion) mit <strong>Honeywell Experion DCS</strong> (18 Jahre alt) und 
+                            <strong>Triconex SIS</strong> (SIL 2 f?r Reaktor-Druckentlastung). 
+                            Flat Network IT ? OT, Ransomware-Risiko f?r Safety-Loop.
+                        </p>
+                    </div>
+                    <div style="margin-bottom: 1.5rem;">
+                        <h4 style="color: #1E88E5; font-size: 1rem; margin-bottom: 0.5rem;">
+                            <i class="fas fa-cogs"></i> L?sung:
+                        </h4>
+                        <p style="color: #4A5568; line-height: 1.7; margin: 0;">
+                            <strong>DCS-Segmentierung Purdue Level 0-3</strong> (12 Wochen): 
+                            Separate VLANs f?r DCS (Experion), SIS (Triconex), MES (SAP MES), Industrial DMZ f?r ERP-Integration. 
+                            <strong>IEC 62443 SIL-Integration</strong>: Firewall-Regeln ohne Blocking von Safety Commands (Fail-Safe-Mode).
+                        </p>
+                    </div>
+                    <div style="padding: 20px; background: linear-gradient(135deg, #FFF3E0, #E0F2F1); border-radius: 8px;">
+                        <h4 style="color: #F57C00; font-size: 1rem; margin-bottom: 0.5rem;">
+                            <i class="fas fa-check-circle"></i> Ergebnis:
+                        </h4>
+                        <ul style="list-style: none; padding: 0; margin: 0;">
+                            <li style="margin-bottom: 8px; color: #00695C; font-weight: 600;">
+                                <i class="fas fa-arrow-right" style="margin-right: 8px;"></i>
+                                SIL 2 Proof Test bestanden (T?V S?D)
+                            </li>
+                            <li style="margin-bottom: 8px; color: #00695C; font-weight: 600;">
+                                <i class="fas fa-arrow-right" style="margin-right: 8px;"></i>
+                                Zero OT-Incidents seit 19 Monaten
+                            </li>
+                            <li style="margin-bottom: 8px; color: #00695C; font-weight: 600;">
+                                <i class="fas fa-arrow-right" style="margin-right: 8px;"></i>
+                                Ransomware-Angriff IT-Netz gestoppt vor OT (DMZ blockierte)
+                            </li>
+                            <li style="color: #00695C; font-weight: 600;">
+                                <i class="fas fa-arrow-right" style="margin-right: 8px;"></i>
+                                ATEX Zone 1-konforme Netzwerk-Architektur implementiert
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" style="background: linear-gradient(135deg, #1565C0 0%, #00897B 100%); padding: 80px 0; color: white; text-align: center;">
+        <div class="container">
+            <h2 style="font-size: 2rem; margin-bottom: 1rem;">
+                Sichern Sie Ihre Prozessanlage
+            </h2>
+            <p style="font-size: 1.1rem; max-width: 600px; margin: 0 auto 2rem; opacity: 0.95;">
+                IEC 62443 mit SIL-Integration, DCS-Segmentierung, FDA-Compliance ? spezialisiert auf Chemie & Pharma.
+            </p>
+            <a href="../contact.html#form" class="btn btn-primary" style="background: white; color: #1565C0; padding: 15px 40px; font-size: 1.1rem;">
+                <i class="fas fa-calendar-check" style="margin-right: 10px;"></i>
+                Kostenlose Prozess-Analyse buchen
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>SecureKern GmbH</h3>
+                    <p>
+                        Spezialisiert auf OT Security f?r chemische und pharmazeutische Produktion. 
+                        IEC 62443 SIL-Integration, DCS-Segmentierung, FDA 21 CFR Part 11.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h3>Chemical & Pharma Solutions</h3>
+                    <ul>
+                        <li><a href="../services/iec-62443.html">IEC 62443 mit SIL</a></li>
+                        <li><a href="../services/segmentation.html">DCS-Segmentierung</a></li>
+                        <li><a href="../services/ot-risk.html">HAZOP-TARA Integration</a></li>
+                        <li><a href="../services/training.html">Process Safety Training</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 data-translate="footer.contact">Contact</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            info@secure-kern.de
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            +49 711 XXX XXXX
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Stuttgart, Deutschland
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SecureKern GmbH. Alle Rechte vorbehalten.</p>
+                <div class="footer-links">
+                    <a href="../impressum.html">Impressum</a>
+                    <a href="../datenschutz.html">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

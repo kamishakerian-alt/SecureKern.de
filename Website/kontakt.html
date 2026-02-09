@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - SecureKern</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="/index.html" class="nav__logo">
+                    <img src="/assets/images/logo.svg" alt="SecureKern Logo">
+                </a>
+                <button class="nav__hamburger" aria-label="Men? ?ffnen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav__menu-container">
+                    <ul class="nav__menu">
+                        <li class="nav__item"><a href="/index.html" class="nav__link" data-i18n="nav.home">Home</a></li>
+                        <li class="nav__item nav__item--has-dropdown">
+                            <a href="#" class="nav__link"><span data-i18n="nav.services">Leistungen</span> <i class="fas fa-chevron-down"></i></a>
+                            <ul class="nav__dropdown">
+                                <li><a href="/leistungen.html" class="nav__dropdown-link">Alle Leistungen</a></li>
+                                <li><a href="/services/nis2-readiness.html" class="nav__dropdown-link">NIS2-Beratung</a></li>
+                                <li><a href="/services/iec-62443.html" class="nav__dropdown-link">IEC 62443 Beratung</a></li>
+                                <li><a href="/services/ot-risk.html" class="nav__dropdown-link">OT Risikoanalyse</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__item nav__item--has-dropdown">
+                            <a href="#" class="nav__link"><span data-i18n="nav.solutions">L?sungen</span> <i class="fas fa-chevron-down"></i></a>
+                            <ul class="nav__dropdown">
+                                <li><a href="/loesungen.html" class="nav__dropdown-link" data-i18n="nav.solutions_all">Alle L?sungen</a></li>
+                                <li><a href="/segmentation.html" class="nav__dropdown-link">Secure Remote Access</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__item"><a href="/blog.html" class="nav__link" data-i18n="nav.blog">Blog</a></li>
+                        <li class="nav__item"><a href="/certifications.html" class="nav__link" data-i18n="nav.certifications">Zertifizierungen</a></li>
+                        <li class="nav__item"><a href="/contact.html" class="nav__link" data-i18n="nav.contact">Kontakt</a></li>
+                    </ul>
+                    <div class="nav__actions">
+                        <button class="btn btn--primary" data-i18n="nav.consultation">Jetzt Beraten Lassen</button>
+                        <div class="language-toggle">
+                            <button class="language-toggle__button" data-lang="de">DE</button>
+                            <button class="language-toggle__button" data-lang="en">EN</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Content for contact will go here -->
+        <section class="page-hero">
+            <div class="container">
+                <h1 data-i18n="contact.hero.headline">Kontaktieren Sie Uns</h1>
+                <p data-i18n="contact.hero.subheadline">Wir freuen uns darauf, von Ihnen zu h?ren. Ob Sie eine konkrete Anfrage haben oder ein unverbindliches Erstgespr?ch w?nschen ? hier sind Sie richtig.</p>
+            </div>
+        </section>
+
+        <section class="contact-section section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-form-container">
+                        <h2>Schreiben Sie uns eine Nachricht</h2>
+                        <form action="#" method="POST" class="contact-form">
+                            <div class="form-group">
+                                <label for="name" data-i18n="contact.form.name">Ihr Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Ihre E-Mail-Adresse</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Ihr Unternehmen</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Ihre Nachricht</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--primary" data-i18n="contact.form.submit">Nachricht senden</button>
+                        </form>
+                    </div>
+                    <div class="contact-info-container">
+                        <h2>Direkter Kontakt</h2>
+                        <ul class="contact-info">
+                            <li>
+                                <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+                                <div>
+                                    <strong>SecureKern GmbH</strong><br>
+                                    Musterstra?e 1<br>
+                                    12345 Berlin
+                                </div>
+                            </li>
+                            <li>
+                                <span class="icon"><i class="fas fa-envelope"></i></span>
+                                <div>
+                                    <a href="mailto:kontakt@securekern.de">kontakt@securekern.de</a>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="icon"><i class="fas fa-phone-alt"></i></span>
+                                <div>
+                                    <a href="tel:+493012345678">+49 (0)30 123 456 78</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <h2>Folgen Sie uns</h2>
+                        <div class="footer-socials">
+                            <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" target="_blank" title="Xing"><i class="fab fa-xing"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+                        <li><a href="services.html" data-i18n="nav.services">Leistungen</a></li>
+                        <li><a href="ueber-uns.html" data-i18n="nav.about">?ber Uns</a></li>
+                        <li><a href="contact.html" data-i18n="nav.contact">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Leistungen</h4>
+                    <ul>
+                        <li><a href="services.html#nis2">NIS2 & KRITIS Compliance</a></li>
+                        <li><a href="services.html#iec62443">IEC 62443 Audit & Consulting</a></li>
+                        <li><a href="services.html#pentesting">OT Pentesting</a></li>
+                        <li><a href="services.html#incident-response">Incident Response</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href="impressum.html">Impressum</a></li>
+                        <li><a href="datenschutz.html">Datenschutz</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Kontakt</h4>
+                    <p>
+                        SecureKern GmbH<br>
+                        Musterstra?e 1<br>
+                        12345 Berlin<br>
+                        <a href="mailto:kontakt@securekern.de">kontakt@securekern.de</a>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <a href="index.html" class="footer-logo-type">Secure<span>Kern</span></a>
+                <div class="footer-socials">
+                    <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank" title="Xing"><i class="fab fa-xing"></i></a>
+                </div>
+                <p>&copy; 2024 SecureKern GmbH. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+

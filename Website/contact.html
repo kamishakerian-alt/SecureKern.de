@@ -1,0 +1,295 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt | SecureKern GmbH � Beratungsgespr�ch buchen</title>
+  <meta name="description" content="Kontaktieren Sie SecureKern GmbH f�r ein kostenloses 30-min�tiges OT-Security Beratungsgespr�ch. Standort Stuttgart.">
+  <meta name="keywords" content="SecureKern Kontakt, OT Security Beratung, Beratungsgespr�ch buchen, Stuttgart">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <style>
+    .contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 3rem; align-items: start; }
+    .contact-info { padding: 2rem 0; }
+    .contact-info h2 { font-family: var(--font-heading); font-size: 1.8rem; color: var(--primary-navy); margin-bottom: 1.5rem; }
+    .contact-info__item { display: flex; gap: 1rem; margin-bottom: 1.5rem; align-items: flex-start; }
+    .contact-info__icon { width: 44px; height: 44px; border-radius: 10px; background: linear-gradient(135deg, var(--primary-navy), #003366); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; flex-shrink: 0; }
+    .contact-info__text h4 { font-family: var(--font-heading); font-size: 1rem; color: var(--primary-navy); margin-bottom: 0.2rem; }
+    .contact-info__text p { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.5; }
+    .contact-info__text a { color: var(--accent-cyan); text-decoration: none; }
+    .contact-info__text a:hover { text-decoration: underline; }
+    .contact-hours { background: rgba(0,163,255,0.06); border-radius: 12px; padding: 1.5rem; margin-top: 1.5rem; }
+    .contact-hours h4 { font-family: var(--font-heading); color: var(--primary-navy); margin-bottom: 0.8rem; }
+    .contact-hours__row { display: flex; justify-content: space-between; padding: 0.4rem 0; font-size: 0.9rem; color: var(--text-secondary); border-bottom: 1px solid rgba(0,0,0,0.05); }
+    .contact-hours__row:last-child { border:none; }
+    .contact-form-card { background: #fff; border-radius: 16px; padding: 2.5rem; box-shadow: 0 8px 40px rgba(0,0,0,0.1); }
+    .contact-form-card h3 { font-family: var(--font-heading); font-size: 1.4rem; color: var(--primary-navy); margin-bottom: 0.5rem; }
+    .contact-form-card > p { color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem; }
+    .calendly-placeholder { background: linear-gradient(135deg, rgba(0,31,63,0.03), rgba(0,163,255,0.05)); border: 2px dashed rgba(0,163,255,0.3); border-radius: 12px; padding: 3rem 2rem; text-align: center; margin-top: 2rem; }
+    .calendly-placeholder i { font-size: 2.5rem; color: var(--accent-cyan); margin-bottom: 1rem; display: block; }
+    .calendly-placeholder h4 { font-family: var(--font-heading); color: var(--primary-navy); margin-bottom: 0.5rem; }
+    .calendly-placeholder p { color: var(--text-secondary); font-size: 0.9rem; }
+    .map-placeholder { width: 100%; height: 300px; background: linear-gradient(135deg, #e8e8e8, #f5f5f5); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--text-secondary); margin-top: 2rem; }
+    .map-placeholder i { font-size: 2rem; margin-right: 0.8rem; }
+    @media (max-width: 768px) { .contact-grid { grid-template-columns: 1fr; } .contact-form-card { padding: 1.5rem; } }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+        <nav class="nav">
+            <a href="/index.html" class="nav__logo">
+                <img src="/assets/images/logo.svg" alt="SecureKern Logo">
+            </a>
+            <button class="nav__hamburger" aria-label="Men? ?ffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav__menu-container">
+                <ul class="nav__menu">
+                    <li class="nav__item"><a href="/index.html" class="nav__link" data-i18n="nav.home">Home</a></li>
+                    <li class="nav__item nav__item--has-dropdown">
+                        <a href="#" class="nav__link"><span data-i18n="nav.services">Leistungen</span> <i class="fas fa-chevron-down"></i></a>
+                        <ul class="nav__dropdown">
+                            <li><a href="/leistungen.html" class="nav__dropdown-link">Alle Leistungen</a></li>
+                            <li><a href="/services/nis2-readiness.html" class="nav__dropdown-link">NIS2-Beratung</a></li>
+                            <li><a href="/services/iec-62443.html" class="nav__dropdown-link">IEC 62443 Beratung</a></li>
+                            <li><a href="/services/ot-risk.html" class="nav__dropdown-link">OT Risikoanalyse</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item nav__item--has-dropdown">
+                        <a href="#" class="nav__link"><span data-i18n="nav.solutions">L?sungen</span> <i class="fas fa-chevron-down"></i></a>
+                        <ul class="nav__dropdown">
+                            <li><a href="/loesungen.html" class="nav__dropdown-link" data-i18n="nav.solutions_all">Alle L?sungen</a></li>
+                            <li><a href="/segmentation.html" class="nav__dropdown-link">Secure Remote Access</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__item"><a href="/blog.html" class="nav__link" data-i18n="nav.blog">Blog</a></li>
+                    <li class="nav__item"><a href="/certifications.html" class="nav__link" data-i18n="nav.certifications">Zertifizierungen</a></li>
+                    <li class="nav__item"><a href="/contact.html" class="nav__link" data-i18n="nav.contact">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="nav__actions">
+                <button class="btn btn--primary" data-i18n="nav.consultation">Jetzt Beraten Lassen</button>
+                <div class="language-toggle">
+                    <button class="language-toggle__button" data-lang="de">DE</button>
+                    <button class="language-toggle__button" data-lang="en">EN</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="page-hero__container">
+        <h1 data-i18n="contact.hero.headline">Lassen Sie uns sprechen</h1>
+        <p data-i18n="contact.hero.subheadline">Buchen Sie ein kostenloses 30-min?tiges Beratungsgespr?ch ? oder schreiben Sie uns direkt. Wir melden uns innerhalb von 24 Stunden.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="content-section">
+      <div class="content-section__container">
+        <div class="contact-grid">
+          <!-- LEFT: CONTACT INFO -->
+          <div class="contact-info">
+            <h2>Direkt erreichen</h2>
+
+            <div class="contact-info__item">
+              <div class="contact-info__icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-info__text">
+                <h4>E-Mail</h4>
+                <p><a href="mailto:contact@securekern.de">contact@securekern.de</a></p>
+              </div>
+            </div>
+
+            <div class="contact-info__item">
+              <div class="contact-info__icon"><i class="fas fa-phone"></i></div>
+              <div class="contact-info__text">
+                <h4>Telefon</h4>
+                <p><a href="tel:+497111234567">+49 (0) 711 123 456 7</a></p>
+              </div>
+            </div>
+
+            <div class="contact-info__item">
+              <div class="contact-info__icon"><i class="fas fa-location-dot"></i></div>
+              <div class="contact-info__text">
+                <h4>Standort</h4>
+                <p>SecureKern GmbH<br>Stuttgart, Baden-W�rttemberg<br>Deutschland</p>
+              </div>
+            </div>
+
+            <div class="contact-info__item">
+              <div class="contact-info__icon"><i class="fab fa-linkedin"></i></div>
+              <div class="contact-info__text">
+                <h4>LinkedIn</h4>
+                <p><a href="#">SecureKern GmbH auf LinkedIn</a></p>
+              </div>
+            </div>
+
+            <div class="contact-hours">
+              <h4><i class="far fa-clock"></i> Erreichbarkeit</h4>
+              <div class="contact-hours__row"><span>Montag � Freitag</span><span>09:00 � 18:00 Uhr</span></div>
+              <div class="contact-hours__row"><span>Samstag</span><span>Nach Vereinbarung</span></div>
+              <div class="contact-hours__row"><span>Sonntag</span><span>Geschlossen</span></div>
+              <div class="contact-hours__row"><span>Notfall-Hotline (MDR-Kunden)</span><span>24/7</span></div>
+            </div>
+
+            <!-- CALENDLY PLACEHOLDER -->
+            <div class="calendly-placeholder">
+              <i class="far fa-calendar-check"></i>
+              <h4>Online-Terminbuchung</h4>
+              <p>Calendly-Integration wird hier eingebettet.<br>Buchen Sie direkt einen 30-Min-Termin.</p>
+            </div>
+          </div>
+
+          <!-- RIGHT: CONTACT FORM -->
+          <div class="contact-form-card">
+            <h3 data-i18n="contact.form.title">Kontaktformular</h3>
+            <p data-i18n="contact.form.description">Beschreiben Sie kurz Ihre Herausforderung ? wir melden uns mit einer ersten Einsch?tzung.</p>
+
+            <form class="final-cta__form" action="#" method="POST">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-vorname" data-i18n="contact.form.name">Vorname *</label>
+                  <input type="text" id="contact-vorname" name="vorname" required placeholder="Max" data-i18n="contact.form.name">
+                </div>
+                <div class="form-group">
+                  <label for="contact-nachname" data-i18n="contact.form.name">Nachname *</label>
+                  <input type="text" id="contact-nachname" name="nachname" required placeholder="Mustermann" data-i18n="contact.form.name">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-unternehmen" data-i18n="contact.form.company">Unternehmen *</label>
+                  <input type="text" id="contact-unternehmen" name="unternehmen" required placeholder="Musterfirma GmbH" data-i18n="contact.form.company">
+                </div>
+                <div class="form-group">
+                  <label for="contact-position">Position</label>
+                  <input type="text" id="contact-position" name="position" placeholder="Leiter IT / OT / CISO">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-email" data-i18n="contact.form.email">E-Mail *</label>
+                  <input type="email" id="contact-email" name="email" required placeholder="max@musterfirma.de" data-i18n="contact.form.email">
+                </div>
+                <div class="form-group">
+                  <label for="contact-telefon" data-i18n="contact.form.phone">Telefon</label>
+                  <input type="tel" id="contact-telefon" name="telefon" placeholder="+49 711 ..." data-i18n="contact.form.phone">
+                </div>
+              </div>
+              <div class="form-group" style="grid-column: 1 / -1;">
+                <label for="contact-interesse">Interesse an</label>
+                <select id="contact-interesse" name="interesse" style="width:100%;padding:0.8rem;border:1px solid #ddd;border-radius:8px;font-size:0.95rem;font-family:var(--font-body);background:#fff;">
+                  <option value="">Bitte w�hlen...</option>
+                  <option value="nis2">NIS2 Readiness Sprint</option>
+                  <option value="iec62443">IEC 62443 Assessment</option>
+                  <option value="segmentation">Netzwerksegmentierung</option>
+                  <option value="risk">Risikobewertung</option>
+                  <option value="training">OT-Schulungen</option>
+                  <option value="mdr">OT-MDR &amp; Incident Response</option>
+                  <option value="allgemein">Allgemeine Beratung</option>
+                </select>
+              </div>
+              <div class="form-group" style="grid-column: 1 / -1;">
+                <label for="contact-herausforderung" data-i18n="contact.form.message">Ihre Herausforderung *</label>
+                <textarea id="contact-herausforderung" name="herausforderung" required rows="5" placeholder="Beschreiben Sie kurz Ihre aktuelle OT-Security-Situation und wo Sie Unterst?tzung ben?tigen..." data-i18n="contact.form.message"></textarea>
+              </div>
+              <div class="form-consent">
+                <input type="checkbox" id="contact-consent" name="consent" required>
+                <label for="contact-consent" data-i18n="contact.form.consent">Ich stimme der Verarbeitung meiner Daten gem?? der <a href="/datenschutz.html">Datenschutzerkl?rung</a> zu. *</label>
+              </div>
+              <button type="submit" class="form-submit-btn" data-i18n="contact.form.submit">Anfrage senden <i class="fas fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAP PLACEHOLDER -->
+    <section class="content-section content-section--alt">
+      <div class="content-section__container">
+        <div class="map-placeholder">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Karten-Integration (Google Maps / OpenStreetMap) � Stuttgart, Baden-W�rttemberg</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__content">
+      <div class="footer__column">
+        <h4>Leistungen</h4>
+        <ul class="footer__links">
+          <li><a href="/nis2-readiness.html">NIS2 Readiness</a></li>
+          <li><a href="/iec-62443.html">IEC 62443 Assessment</a></li>
+          <li><a href="/segmentation.html">Netzwerksegmentierung</a></li>
+          <li><a href="/risk-training.html">Risikobewertung</a></li>
+          <li><a href="/risk-training.html">OT-Schulungen</a></li>
+          <li><a href="/ot-mdr.html">OT-MDR</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h4>Branchen</h4>
+        <ul class="footer__links">
+          <li><a href="/manufacturing.html">Manufacturing &amp; Automotive</a></li>
+          <li><a href="/energy.html">Energy &amp; Utilities</a></li>
+          <li><a href="/chemicals.html">Chemicals &amp; Pharma</a></li>
+          <li><a href="/loesungen.html">Kritische Infrastrukturen</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h4>Unternehmen</h4>
+        <ul class="footer__links">
+          <li><a href="/ueber-uns.html">�ber uns</a></li>
+          <li><a href="/team.html">Team</a></li>
+          <li><a href="/certifications.html">Zertifizierungen</a></li>
+          <li><a href="/certifications.html">Partner</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h4>Ressourcen</h4>
+        <ul class="footer__links">
+          <li><a href="/blog.html">Blog</a></li>
+          <li><a href="/downloads.html">Whitepapers</a></li>
+          <li><a href="/webinars.html">Webinare</a></li>
+          <li><a href="/downloads.html">Downloads</a></li>
+        </ul>
+      </div>
+      <div class="footer__column">
+        <h4>Kontakt</h4>
+        <ul class="footer__links">
+          <li><a href="/kontakt.html">Kontakt</a></li>
+          <li><a href="/impressum.html">Impressum</a></li>
+          <li><a href="/datenschutz.html">Datenschutz</a></li>
+          <li><a href="/agb.html">AGB</a></li>
+        </ul>
+        <div style="margin-top:1rem;display:flex;gap:1rem;">
+          <a href="#" style="color:rgba(255,255,255,0.7);font-size:1.2rem;" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" style="color:rgba(255,255,255,0.7);font-size:1.2rem;" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>� 2026 SecureKern GmbH | Alle Rechte vorbehalten</p>
+      <p style="margin-top:0.3rem;font-size:0.85rem;">Stuttgart, Baden-W�rttemberg, Deutschland</p>
+    </div>
+  </footer>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
+
+

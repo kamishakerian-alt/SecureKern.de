@@ -1,0 +1,239 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="OT-Security-Blog von SecureKern. Aktuelle Artikel zu NIS2, IEC 62443, industrieller Cybersecurity und Best Practices.">
+    <title>Blog - OT-Security Insights &amp; News | SecureKern</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="/index.html" class="nav__logo">
+                    <img src="/assets/images/logo.svg" alt="SecureKern Logo">
+                </a>
+                <button class="nav__hamburger" aria-label="Men? ?ffnen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav__menu-container">
+                    <ul class="nav__menu">
+                        <li class="nav__item"><a href="/index.html" class="nav__link" data-i18n="nav.home">Home</a></li>
+                        <li class="nav__item nav__item--has-dropdown">
+                            <a href="#" class="nav__link"><span data-i18n="nav.services">Leistungen</span> <i class="fas fa-chevron-down"></i></a>
+                            <ul class="nav__dropdown">
+                                <li><a href="/leistungen.html" class="nav__dropdown-link">Alle Leistungen</a></li>
+                                <li><a href="/services/nis2-readiness.html" class="nav__dropdown-link">NIS2-Beratung</a></li>
+                                <li><a href="/services/iec-62443.html" class="nav__dropdown-link">IEC 62443 Beratung</a></li>
+                                <li><a href="/services/ot-risk.html" class="nav__dropdown-link">OT Risikoanalyse</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__item nav__item--has-dropdown">
+                            <a href="#" class="nav__link"><span data-i18n="nav.solutions">L?sungen</span> <i class="fas fa-chevron-down"></i></a>
+                            <ul class="nav__dropdown">
+                                <li><a href="/loesungen.html" class="nav__dropdown-link" data-i18n="nav.solutions_all">Alle L?sungen</a></li>
+                                <li><a href="/segmentation.html" class="nav__dropdown-link">Secure Remote Access</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__item"><a href="/blog.html" class="nav__link" data-i18n="nav.blog">Blog</a></li>
+                        <li class="nav__item"><a href="/certifications.html" class="nav__link" data-i18n="nav.certifications">Zertifizierungen</a></li>
+                        <li class="nav__item"><a href="/contact.html" class="nav__link" data-i18n="nav.contact">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="nav__actions">
+                    <button class="btn btn--primary" data-i18n="nav.consultation">Jetzt Beraten Lassen</button>
+                    <div class="language-toggle">
+                        <button class="language-toggle__button" data-lang="de">DE</button>
+                        <button class="language-toggle__button" data-lang="en">EN</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" style="min-height: 50vh; padding-top: 140px;">
+        <div class="hero__content">
+            <h1 class="hero__headline" data-i18n="blog.title">OT-Security Blog</h1>
+            <p class="hero__subheadline" data-i18n="blog.subtitle" style="max-width: 800px; margin: 0 auto;">
+                Aktuelle Insights, Best Practices und Branchen-News zu industrieller Cybersecurity.
+                Wissen, das Sie f?r Ihre OT-Sicherheit brauchen.
+            </p>
+        </div>
+    </section>
+
+    <!-- Blog Posts -->
+    <section class="section">
+        <div class="section__container">
+            <div class="blog-grid">
+
+                <!-- Blog Post 1 -->
+                <article class="blog-card">
+                    <div class="blog-card__image">
+                        <div style="width: 100%; height: 200px; background: linear-gradient(135deg, var(--primary-blue), var(--accent-teal)); display: flex; align-items: center; justify-content: center; border-radius: var(--radius-lg);">
+                            <i class="fas fa-shield-alt" style="font-size: 4rem; color: white;"></i>
+                        </div>
+                    </div>
+                    <div class="blog-card__content">
+                        <div class="blog-card__meta">
+                            <span class="blog-card__date">Februar 2026</span>
+                            <span class="blog-card__category">NIS2</span>
+                        </div>
+                        <h3 class="blog-card__title" data-i18n="blog.post1.title">NIS2-Readiness: Was Mittelst?ndler bis 2025 wissen m?ssen</h3>
+                        <p class="blog-card__excerpt" data-i18n="blog.post1.excerpt">
+                            Die neue NIS2-Richtlinie bringt erhebliche Ver?nderungen f?r mittelst?ndische Unternehmen.
+                            Erfahren Sie, welche Schritte Sie jetzt einleiten sollten.
+                        </p>
+                        <a href="#" class="blog-card__link">Weiterlesen <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-card">
+                    <div class="blog-card__image">
+                        <div style="width: 100%; height: 200px; background: linear-gradient(135deg, var(--accent-teal), var(--primary-blue)); display: flex; align-items: center; justify-content: center; border-radius: var(--radius-lg);">
+                            <i class="fas fa-network-wired" style="font-size: 4rem; color: white;"></i>
+                        </div>
+                    </div>
+                    <div class="blog-card__content">
+                        <div class="blog-card__meta">
+                            <span class="blog-card__date">Januar 2026</span>
+                            <span class="blog-card__category">IEC 62443</span>
+                        </div>
+                        <h3 class="blog-card__title" data-i18n="blog.post2.title">IEC 62443 Zone &amp; Conduit: Praxisguide f?r die Umsetzung</h3>
+                        <p class="blog-card__excerpt" data-i18n="blog.post2.excerpt">
+                            Wie Sie Ihr OT-Netzwerk richtig segmentieren. Praktische Tipps f?r die Implementierung
+                            von Sicherheitszonen in der Industrie 4.0.
+                        </p>
+                        <a href="#" class="blog-card__link">Weiterlesen <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-card">
+                    <div class="blog-card__image">
+                        <div style="width: 100%; height: 200px; background: linear-gradient(135deg, #003D5B, #00886B); display: flex; align-items: center; justify-content: center; border-radius: var(--radius-lg);">
+                            <i class="fas fa-industry" style="font-size: 4rem; color: white;"></i>
+                        </div>
+                    </div>
+                    <div class="blog-card__content">
+                        <div class="blog-card__meta">
+                            <span class="blog-card__date">Dezember 2025</span>
+                            <span class="blog-card__category">Case Study</span>
+                        </div>
+                        <h3 class="blog-card__title" data-i18n="blog.post3.title">Wie ein Automobilzulieferer seine Produktion vor Cyberangriffen sch?tzte</h3>
+                        <p class="blog-card__excerpt" data-i18n="blog.post3.excerpt">
+                            Eine Erfolgsgeschichte: Von der Gap-Analyse zur zertifizierten OT-Sicherheit.
+                            Lessons Learned aus der Praxis.
+                        </p>
+                        <a href="#" class="blog-card__link">Weiterlesen <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- Coming Soon -->
+            <div style="text-align: center; margin-top: 4rem; padding: 3rem; background: var(--light-gray); border-radius: var(--radius-lg);">
+                <i class="fas fa-clock" style="font-size: 3rem; color: var(--accent-teal); margin-bottom: 1rem;"></i>
+                <h3 style="margin-bottom: 1rem;">Weitere Artikel folgen bald!</h3>
+                <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto;">
+                    Wir arbeiten kontinuierlich an neuen Inhalten zu OT-Security-Themen.
+                    Abonnieren Sie unseren Newsletter, um keine Updates zu verpassen.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="section section--gray">
+        <div class="section__container" style="max-width: 600px; text-align: center;">
+            <h2 style="margin-bottom: 1rem;">Bleiben Sie informiert</h2>
+            <p style="margin-bottom: 2rem;">
+                Erhalten Sie die neuesten OT-Security-Artikel direkt in Ihr Postfach.
+                Kein Spam, nur relevantes Wissen.
+            </p>
+            <form class="newsletter-form" style="display: flex; gap: 1rem; max-width: 500px; margin: 0 auto;">
+                <input type="email" placeholder="Ihre E-Mail-Adresse" style="flex: 1; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px;">
+                <button type="submit" class="btn btn--primary">Abonnieren</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__grid">
+                <div class="footer__section">
+                    <div class="footer__logo">
+                        <svg class="footer__logo-icon" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M32 2L58 16V32C58 47 48 58 32 62C16 58 6 47 6 32V16L32 2Z" fill="#00886B"/>
+                            <path d="M32 8L52 19V32C52 44 44 53 32 56C20 53 12 44 12 32V19L32 8Z" fill="#003D5B"/>
+                            <text x="32" y="40" font-family="Montserrat" font-weight="bold" font-size="24" fill="white" text-anchor="middle">SK</text>
+                        </svg>
+                        <span>SECURE KERN</span>
+                    </div>
+                    <p>Engineering-driven OT-Security f?r den Mittelstand.</p>
+                    <div class="footer__social">
+                        <a href="https://linkedin.com/company/securekern" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:info@securekern.de" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__section">
+                    <h4>Leistungen</h4>
+                    <ul>
+                        <li><a href="/services.html">NIS2 Readiness</a></li>
+                        <li><a href="/services.html">IEC 62443 Gap-Analyse</a></li>
+                        <li><a href="/services.html">Network Segmentation</a></li>
+                        <li><a href="/services.html">Business Continuity</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4>Ressourcen</h4>
+                    <ul>
+                        <li><a href="/resources.html">Whitepapers</a></li>
+                        <li><a href="/resources.html">Checklisten</a></li>
+                        <li><a href="/resources/blog.html">Blog</a></li>
+                        <li><a href="/contact.html">Newsletter</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__section">
+                    <h4>Kontakt</h4>
+                    <p>SecureKern GmbH<br>
+                    Industriestra?e 123<br>
+                    71254 Ditzingen<br>
+                    Deutschland</p>
+                    <p><a href="mailto:info@securekern.de">info@securekern.de</a><br>
+                    <a href="tel:+497119999999">+49&nbsp;711&nbsp;999&nbsp;9999</a></p>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2024 SecureKern GmbH. Alle Rechte vorbehalten.</p>
+                <ul class="footer__legal">
+                    <li><a href="/datenschutz.html">Datenschutz</a></li>
+                    <li><a href="/impressum.html">Impressum</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
+
