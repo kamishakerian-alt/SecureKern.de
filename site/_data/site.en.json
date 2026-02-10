@@ -1,0 +1,17 @@
+{
+  "name": "SecureKern",
+  "baseUrl": "https://www.securekern.de/en",
+  "lang": "en",
+  "cta": {
+    "label": "Book a Consultation",
+    "href": "/en/kontakt.html"
+  },
+  "address": {
+    "company": "SecureKern GmbH",
+    "street": "Königstraße 10",
+    "zipCity": "70173 Stuttgart"
+  },
+  "contact": {
+    "email": "kontakt@securekern.de"
+  }
+}

@@ -19,7 +19,7 @@
 
       <div class="nav__menu-container" id="nav-menu">
         <ul class="nav__menu">
-          {% for item in navigation.main %}
+          {% for item in nav.main %}
             {% if item.children %}
               <li class="nav__item nav__item--has-dropdown">
                 <a
@@ -44,11 +44,16 @@
         </ul>
 
         <div class="nav__actions">
-          <a href="{{ site.cta.href }}" class="btn btn--primary">{{ site.cta.label }}</a>
+          <a href="{{ site_local.cta.href }}" class="btn btn--primary">{{ site_local.cta.label }}</a>
 
           <button class="nav__lang-toggle" type="button" aria-label="Sprache wechseln">
-            <img src="/assets/images/flags/de.svg" alt="Deutsch" />
-            <span class="nav__lang-label">EN</span>
+            {% if page.lang == 'en' %}
+              <img src="/assets/images/flags/gb.svg" alt="English (UK)" />
+              <span class="nav__lang-label">DE</span>
+            {% else %}
+              <img src="/assets/images/flags/de.svg" alt="Deutsch" />
+              <span class="nav__lang-label">EN</span>
+            {% endif %}
           </button>
         </div>
       </div>
