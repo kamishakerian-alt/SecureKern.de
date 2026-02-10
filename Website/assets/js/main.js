@@ -416,7 +416,7 @@ const translations = {
 
 // === STATE MANAGEMENT ===
 // Detect current language from URL or fallback to stored preference
-let currentLang = (location.pathname.startsWith('/en/') ? 'en' : (localStorage.getItem('securekern_lang') || CONFIG.lang.default));
+let currentLang = (location.pathname.startsWith('/en') ? 'en' : (localStorage.getItem('securekern_lang') || CONFIG.lang.default));
 
 function showToast(message) {
   try {
@@ -461,12 +461,12 @@ function ensureLangToggle() {
     langToggle.addEventListener('click', () => {
       // Path-based toggle: add or remove /en prefix and navigate
       const path = window.location.pathname;
-      if (path.startsWith('/en/')) {
-        // Go to German equivalent
+      if (path.startsWith('/en')) {
+        // Go to German equivalent (strip leading /en)
         const target = path.replace(/^\/en/, '') || '/';
         window.location.pathname = target;
       } else {
-        // Go to English equivalent
+        // Go to English equivalent (preserve path when prefixing)
         const target = '/en' + path;
         window.location.pathname = target;
       }

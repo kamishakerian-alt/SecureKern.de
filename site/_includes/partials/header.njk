@@ -18,8 +18,8 @@
       </button>
 
       <div class="nav__menu-container" id="nav-menu">
-        {% set site_local = ((page.lang == 'en' or (page.url and ('/en/' in page.url))) and (site_en or site['en'])) or site %}
-        {% set nav_local = ((page.lang == 'en' or (page.url and ('/en/' in page.url))) and (navigation_en or navigation['en'])) or navigation %}
+        {% set site_local = ((page.lang == 'en' or (page.url and ('/en' in page.url))) and (site_en or site['en'])) or site %}
+        {% set nav_local = ((page.lang == 'en' or (page.url and ('/en' in page.url))) and (navigation_en or navigation['en'])) or navigation %}
         <ul class="nav__menu">
           {% for item in nav_local.main %}
             {% if item.children %}
