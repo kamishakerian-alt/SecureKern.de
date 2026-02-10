@@ -48,16 +48,25 @@
         <div class="nav__actions">
           <a href="{{ site_local.cta.href }}" class="btn btn--primary">{{ site_local.cta.label }}</a>
 
-          {# Use page.lang to determine current language; show appropriate flag and label #}
-          <button class="nav__lang-toggle" type="button" aria-label="Sprache wechseln">
-            {% if (page.lang == 'en') or (page.url and ('/en/' in page.url)) %}
-              <img src="/assets/images/flags/gb.svg" alt="English (UK)" />
+          {# Compute the target URL for language toggle so it works even without JS #}
+          {% set isEn = (page.lang == 'en') or (page.url and ('/en' in page.url)) %}
+          {% if page.url and ('/en' in page.url) %}
+            {% set targetHref = page.url | replace('/en','') %}
+          {% else %}
+            {% set targetHref = '/en' + (page.url or '/') %}
+          {% endif %}
+
+          {# Render the toggle as a link (anchor) to ensure navigation works if JS fails #}
+          <a href="{{ targetHref }}" class="nav__lang-toggle" aria-label="Sprache wechseln">
+            {# Show the flag and label for the *target* language (what clicking will switch to) #}
+            {% if isEn %}
+              <img src="/assets/images/flags/de.svg" alt="Deutsch" />
               <span class="nav__lang-label">DE</span>
             {% else %}
-              <img src="/assets/images/flags/de.svg" alt="Deutsch" />
+              <img src="/assets/images/flags/gb.svg" alt="English (UK)" />
               <span class="nav__lang-label">EN</span>
             {% endif %}
-          </button>
+          </a>
         </div>
       </div>
     </nav>

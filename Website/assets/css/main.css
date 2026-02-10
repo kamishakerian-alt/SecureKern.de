@@ -316,31 +316,32 @@ a:hover {
   position: relative;
 }
 
-.nav__actions {
-  position: static;
-}
+/* Position the actions container as a single absolute block and use flexbox inside
+     so CTA and language toggle never overlap and are consistently clickable. */
+  .nav__actions {
+    position: absolute;
+    right: calc((100% - var(--container-width)) / 2 + var(--spacing-md));
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    z-index: 1100; /* ensure above other header elements */
+  }
 
-.nav__actions .btn--primary {
-  order: 2;
-  --cta-w: 200px;
-  width: var(--cta-w);
-  min-width: var(--cta-w);
-  white-space: nowrap;
-  justify-content: center;
-  position: absolute;
-  /* Pin to the right edge of the centered container */
-  right: calc((100% - var(--container-width)) / 2 + var(--spacing-md));
-  top: 50%;
-  transform: translateY(-50%);
-}
+  .nav__actions .btn--primary {
+    order: 2;
+    --cta-w: 200px;
+    width: var(--cta-w);
+    min-width: var(--cta-w);
+    white-space: nowrap;
+    justify-content: center;
+    position: static;
+  }
 
-.nav__actions .nav__lang-toggle {
-  order: 1;
-  position: absolute;
-  /* place to the left of CTA using CTA width variable */
-  right: calc((100% - var(--container-width)) / 2 + var(--spacing-md) + var(--cta-w) + 0.5rem);
-  top: 50%;
-  transform: translateY(-50%);
+  .nav__actions .nav__lang-toggle {
+    order: 1;
+    position: static;
 }
 
 /* Support alternative language toggle markup */
@@ -365,6 +366,12 @@ a:hover {
   }
   .header .container {
     position: static;
+  }
+  .nav__actions {
+    position: static;
+    transform: none;
+    right: auto;
+    top: auto;
   }
   .nav__actions .btn--primary,
   .nav__actions .nav__lang-toggle,

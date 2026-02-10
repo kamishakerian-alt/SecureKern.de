@@ -453,20 +453,23 @@ function ensureLangToggle() {
     if (actions) actions.insertBefore(langToggle, actions.firstChild);
   }
 
-  // Ensure the button contains the expected markup (flag + label)
-  langToggle.innerHTML = `<img src="${LANG_FLAGS[currentLang]}" alt="" /><span class="nav__lang-label"></span>`;
+  // Ensure the button contains the expected markup (flag + label for target language)
+  const targetLang = currentLang === 'de' ? 'en' : 'de';
+  langToggle.innerHTML = `<img src="${LANG_FLAGS[targetLang]}" alt="" /><span class="nav__lang-label"></span>`;
 
-  // attach click handler (idempotent)
+  // attach click handler (idempotent) — keep behaviour but only add when element is not a plain anchor (anchors already navigate)
   if (!langToggle._langHandlerAttached) {
-    langToggle.addEventListener('click', () => {
-      // Path-based toggle: add or remove /en prefix and navigate
+    // If the toggle is an anchor we don't need to override default navigation, but
+    // add a click handler to normalize the target for pages where JS prefers path math.
+    langToggle.addEventListener('click', (e) => {
+      // If element is an anchor with href, allow normal navigation to proceed.
+      if (langToggle.tagName.toLowerCase() === 'a' && langToggle.getAttribute('href')) return;
+      e.preventDefault();
       const path = window.location.pathname;
       if (path.startsWith('/en')) {
-        // Go to German equivalent (strip leading /en)
         const target = path.replace(/^\/en/, '') || '/';
         window.location.pathname = target;
       } else {
-        // Go to English equivalent (preserve path when prefixing)
         const target = '/en' + path;
         window.location.pathname = target;
       }
@@ -483,8 +486,8 @@ function updateLangToggleUI(){
   const label = langToggle?.querySelector('.nav__lang-label');
   const targetLang = currentLang === 'de' ? 'en' : 'de';
   if (img) {
-    img.src = LANG_FLAGS[currentLang];
-    img.alt = currentLang === 'de' ? 'Deutsch' : 'English (UK)';
+    img.src = LANG_FLAGS[targetLang];
+    img.alt = targetLang === 'de' ? 'Deutsch' : 'English (UK)';
   }
   if (label) {
     label.textContent = targetLang.toUpperCase();
