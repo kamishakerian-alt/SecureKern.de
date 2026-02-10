@@ -1,0 +1,40 @@
+<!-- Services Grid Component -->
+<div class="services-grid">
+  {% for service in collections.services %}
+  <article class="service-card">
+    {% if service.data.serviceImage %}
+    <img src="{{ service.data.serviceImage }}" alt="{{ service.data.title }}" class="service-card__image">
+    {% endif %}
+    
+    <div class="service-card__content">
+      {% if service.data.category %}
+      <span class="service-card__category">{{ service.data.category }}</span>
+      {% endif %}
+      
+      <h3 class="service-card__title">{{ service.data.title }}</h3>
+      
+      {% if service.data.description %}
+      <p class="service-card__description">{{ service.data.description }}</p>
+      {% endif %}
+      
+      <div class="service-card__meta">
+        {% if service.data.duration %}
+        <span class="service-card__duration">
+          <i class="fas fa-clock"></i> {{ service.data.duration }}
+        </span>
+        {% endif %}
+        
+        {% if service.data.priceFrom %}
+        <span class="service-card__price">
+          <i class="fas fa-euro-sign"></i> ab {{ service.data.priceFrom }}
+        </span>
+        {% endif %}
+      </div>
+      
+      <a href="{{ service.data.permalink }}" class="btn btn--secondary">
+        Mehr erfahren
+      </a>
+    </div>
+  </article>
+  {% endfor %}
+</div>

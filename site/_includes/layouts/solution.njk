@@ -1,0 +1,48 @@
+---
+layout: layouts/base.njk
+---
+
+<!-- Solution Page Template -->
+<article class="solution-page">
+  {% if heroImage %}
+  <div class="solution-hero">
+    <img src="{{ heroImage }}" alt="{{ title }}" class="solution-hero__image">
+    <div class="solution-hero__overlay"></div>
+    <div class="container">
+      <div class="solution-hero__content">
+        {% if industry %}
+        <span class="solution-hero__industry">{{ industry }}</span>
+        {% endif %}
+        <h1 class="solution-hero__title">{{ title }}</h1>
+      </div>
+    </div>
+  </div>
+  {% else %}
+  <div class="container">
+    <div class="solution-header">
+      {% if industry %}
+      <span class="solution-header__industry">{{ industry }}</span>
+      {% endif %}
+      <h1 class="solution-header__title">{{ title }}</h1>
+    </div>
+  </div>
+  {% endif %}
+
+  <div class="container">
+    <div class="solution-content">
+      {% if description %}
+      <p class="solution-lead">{{ description }}</p>
+      {% endif %}
+
+      <div class="solution-body">
+        {{ content | safe }}
+      </div>
+
+      <div class="solution-cta">
+        <a href="/kontakt.html" class="btn btn--primary btn--lg">
+          Branchenlösung anfragen
+        </a>
+      </div>
+    </div>
+  </div>
+</article>

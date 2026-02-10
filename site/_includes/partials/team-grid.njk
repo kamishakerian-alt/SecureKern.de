@@ -1,0 +1,36 @@
+<!-- Team Grid Component -->
+<div class="team-grid">
+  {% for member in collections.team %}
+  <div class="team-member">
+    {% if member.data.image %}
+    <img src="{{ member.data.image }}" alt="{{ member.data.name }}" class="team-member__image">
+    {% endif %}
+    
+    <h3 class="team-member__name">{{ member.data.name }}</h3>
+    
+    {% if member.data.position %}
+    <p class="team-member__position">{{ member.data.position }}</p>
+    {% endif %}
+    
+    {% if member.templateContent %}
+    <div class="team-member__bio">
+      {{ member.templateContent | safe }}
+    </div>
+    {% endif %}
+    
+    <div class="team-member__links">
+      {% if member.data.linkedin %}
+      <a href="{{ member.data.linkedin }}" target="_blank" rel="noopener noreferrer" class="team-member__link">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      {% endif %}
+      
+      {% if member.data.email %}
+      <a href="mailto:{{ member.data.email }}" class="team-member__link">
+        <i class="fas fa-envelope"></i>
+      </a>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>

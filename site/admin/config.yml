@@ -7,17 +7,153 @@ backend:
 media_folder: "Website/assets/images/uploads"
 public_folder: "/assets/images/uploads"
 
+# Publish mode
+publish_mode: editorial_workflow
+
+# Logo
+logo_url: /assets/images/logo.svg
+
 collections:
+  # Hauptseiten
   - name: "pages"
-    label: "Seiten"
+    label: "Hauptseiten"
     folder: "site/pages"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    filter: {field: "pageType", value: "main"}
+    fields:
+      - { label: "Seitentyp", name: "pageType", widget: "hidden", default: "main" }
+      - { label: "Layout", name: "layout", widget: "select", options: ["layouts/base.njk", "layouts/page.njk"], default: "layouts/base.njk" }
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Meta Beschreibung", name: "description", widget: "text", required: false }
+      - { label: "Permalink", name: "permalink", widget: "string" }
+      - { label: "Sprache", name: "lang", widget: "select", options: ["de", "en"], default: "de", required: false }
+      - { label: "Hero Bild", name: "heroImage", widget: "image", required: false }
+      - { label: "Inhalt", name: "body", widget: "markdown" }
+
+  # Services/Leistungen
+  - name: "services"
+    label: "Leistungen"
+    folder: "site/pages/services"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Layout", name: "layout", widget: "select", options: ["layouts/base.njk", "layouts/service.njk"], default: "layouts/service.njk" }
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Meta Beschreibung", name: "description", widget: "text", required: false }
+      - { label: "Permalink", name: "permalink", widget: "string" }
+      - { label: "Service Kategorie", name: "category", widget: "select", options: ["Beratung", "Assessment", "Implementation", "Training"], required: false }
+      - { label: "Preis (ab)", name: "priceFrom", widget: "string", required: false }
+      - { label: "Dauer", name: "duration", widget: "string", required: false }
+      - { label: "Icon/Bild", name: "serviceImage", widget: "image", required: false }
+      - { label: "Inhalt", name: "body", widget: "markdown" }
+
+  # Branchen-Lösungen
+  - name: "solutions"
+    label: "Branchen-Lösungen"
+    folder: "site/pages/solutions"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Layout", name: "layout", widget: "select", options: ["layouts/base.njk", "layouts/solution.njk"], default: "layouts/solution.njk" }
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Meta Beschreibung", name: "description", widget: "text", required: false }
+      - { label: "Permalink", name: "permalink", widget: "string" }
+      - { label: "Branche", name: "industry", widget: "string" }
+      - { label: "Hero Bild", name: "heroImage", widget: "image", required: false }
+      - { label: "Inhalt", name: "body", widget: "markdown" }
+
+  # Blog/Resources
+  - name: "blog"
+    label: "Blog & Ressourcen"
+    folder: "site/pages/resources"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Layout", name: "layout", widget: "select", options: ["layouts/base.njk", "layouts/blog-post.njk"], default: "layouts/blog-post.njk" }
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Meta Beschreibung", name: "description", widget: "text", required: false }
+      - { label: "Permalink", name: "permalink", widget: "string" }
+      - { label: "Datum", name: "date", widget: "datetime", required: false }
+      - { label: "Autor", name: "author", widget: "string", required: false }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Featured Bild", name: "featuredImage", widget: "image", required: false }
+      - { label: "Inhalt", name: "body", widget: "markdown" }
+
+  # Webinare
+  - name: "webinars"
+    label: "Webinare"
+    folder: "site/webinars"
     create: true
     slug: "{{slug}}"
     extension: "md"
     format: "frontmatter"
     fields:
       - { label: "Titel", name: "title", widget: "string" }
-      - { label: "Beschreibung", name: "description", widget: "string", required: false }
-      - { label: "Permalink", name: "permalink", widget: "string" }
+      - { label: "Beschreibung", name: "description", widget: "text" }
+      - { label: "Datum", name: "date", widget: "datetime" }
+      - { label: "Dauer", name: "duration", widget: "string" }
+      - { label: "Referent", name: "speaker", widget: "string" }
+      - { label: "Webinar Bild", name: "image", widget: "image" }
+      - { label: "Registrierungslink", name: "registrationLink", widget: "string", required: false }
+      - { label: "Status", name: "status", widget: "select", options: ["upcoming", "past", "recorded"], default: "upcoming" }
       - { label: "Inhalt", name: "body", widget: "markdown" }
+
+  # Team Mitglieder
+  - name: "team"
+    label: "Team"
+    folder: "site/team"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Position", name: "position", widget: "string" }
+      - { label: "Bild", name: "image", widget: "image" }
+      - { label: "LinkedIn", name: "linkedin", widget: "string", required: false }
+      - { label: "Email", name: "email", widget: "string", required: false }
+      - { label: "Bio", name: "body", widget: "markdown" }
+
+  # Globale Einstellungen
+  - name: "settings"
+    label: "Einstellungen"
+    files:
+      - label: "Navigation"
+        name: "navigation"
+        file: "site/_data/navigation.json"
+        fields:
+          - label: "Haupt-Navigation"
+            name: "main"
+            widget: "list"
+            fields:
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Link", name: "url", widget: "string" }
+              - label: "Untermenü"
+                name: "submenu"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Titel", name: "title", widget: "string" }
+                  - { label: "Link", name: "url", widget: "string" }
+      
+      - label: "Site Informationen"
+        name: "site"
+        file: "site/_data/site.json"
+        fields:
+          - { label: "Site Titel", name: "title", widget: "string" }
+          - { label: "Beschreibung", name: "description", widget: "text" }
+          - { label: "URL", name: "url", widget: "string" }
+          - { label: "Logo", name: "logo", widget: "image" }
+          - { label: "Kontakt Email", name: "email", widget: "string" }
+          - { label: "Telefon", name: "phone", widget: "string" }
+          - { label: "Adresse", name: "address", widget: "text" }
 

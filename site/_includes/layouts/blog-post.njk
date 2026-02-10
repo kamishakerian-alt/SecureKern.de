@@ -1,0 +1,54 @@
+---
+layout: layouts/base.njk
+---
+
+<!-- Blog Post Template -->
+<article class="blog-post">
+  {% if featuredImage %}
+  <div class="blog-post__featured-image">
+    <img src="{{ featuredImage }}" alt="{{ title }}">
+  </div>
+  {% endif %}
+
+  <div class="container">
+    <div class="blog-post__content">
+      <header class="blog-post__header">
+        <h1 class="blog-post__title">{{ title }}</h1>
+        
+        <div class="blog-post__meta">
+          {% if date %}
+          <time class="blog-post__date" datetime="{{ date | date: '%Y-%m-%d' }}">
+            <i class="fas fa-calendar"></i>
+            {{ date | date: '%d.%m.%Y' }}
+          </time>
+          {% endif %}
+          
+          {% if author %}
+          <span class="blog-post__author">
+            <i class="fas fa-user"></i>
+            {{ author }}
+          </span>
+          {% endif %}
+        </div>
+
+        {% if tags and tags.length %}
+        <div class="blog-post__tags">
+          {% for tag in tags %}
+          <span class="tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </header>
+
+      <div class="blog-post__body prose">
+        {{ content | safe }}
+      </div>
+
+      <footer class="blog-post__footer">
+        <a href="/blog.html" class="btn btn--secondary">
+          <i class="fas fa-arrow-left"></i> Zurück zum Blog
+        </a>
+      </footer>
+    </div>
+  </div>
+</article>

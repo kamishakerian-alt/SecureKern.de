@@ -1,0 +1,49 @@
+<!-- Webinars List Component -->
+<div class="webinars-list">
+  {% for webinar in collections.upcomingWebinars %}
+  <article class="webinar-card">
+    {% if webinar.data.image %}
+    <img src="{{ webinar.data.image }}" alt="{{ webinar.data.title }}" class="webinar-card__image">
+    {% endif %}
+    
+    <div class="webinar-card__content">
+      <h3 class="webinar-card__title">{{ webinar.data.title }}</h3>
+      
+      {% if webinar.data.description %}
+      <p class="webinar-card__description">{{ webinar.data.description }}</p>
+      {% endif %}
+      
+      <div class="webinar-card__meta">
+        {% if webinar.data.date %}
+        <span class="webinar-card__date">
+          <i class="fas fa-calendar"></i>
+          {{ webinar.data.date | dateFormat }}
+        </span>
+        {% endif %}
+        
+        {% if webinar.data.duration %}
+        <span class="webinar-card__duration">
+          <i class="fas fa-clock"></i>
+          {{ webinar.data.duration }}
+        </span>
+        {% endif %}
+        
+        {% if webinar.data.speaker %}
+        <span class="webinar-card__speaker">
+          <i class="fas fa-user"></i>
+          {{ webinar.data.speaker }}
+        </span>
+        {% endif %}
+      </div>
+      
+      {% if webinar.data.registrationLink %}
+      <a href="{{ webinar.data.registrationLink }}" class="btn btn--primary" target="_blank">
+        Jetzt Anmelden
+      </a>
+      {% endif %}
+    </div>
+  </article>
+  {% else %}
+  <p class="no-webinars">Aktuell sind keine Webinare geplant. Schauen Sie bald wieder vorbei!</p>
+  {% endfor %}
+</div>

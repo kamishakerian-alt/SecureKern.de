@@ -1,0 +1,48 @@
+---
+layout: layouts/base.njk
+---
+
+<!-- Service Page Template -->
+<article class="service-page">
+  {% if serviceImage %}
+  <div class="service-header">
+    <img src="{{ serviceImage }}" alt="{{ title }}" class="service-header__image">
+  </div>
+  {% endif %}
+
+  <div class="container">
+    <div class="service-content">
+      <div class="service-meta">
+        {% if category %}
+        <span class="service-meta__category">{{ category }}</span>
+        {% endif %}
+        {% if duration %}
+        <span class="service-meta__duration">
+          <i class="fas fa-clock"></i> {{ duration }}
+        </span>
+        {% endif %}
+        {% if priceFrom %}
+        <span class="service-meta__price">
+          <i class="fas fa-euro-sign"></i> ab {{ priceFrom }}
+        </span>
+        {% endif %}
+      </div>
+
+      <h1 class="service-title">{{ title }}</h1>
+      
+      {% if description %}
+      <p class="service-description">{{ description }}</p>
+      {% endif %}
+
+      <div class="service-body">
+        {{ content | safe }}
+      </div>
+
+      <div class="service-cta">
+        <a href="/kontakt.html" class="btn btn--primary btn--lg">
+          {{ site.cta.label or "Jetzt Anfragen" }}
+        </a>
+      </div>
+    </div>
+  </div>
+</article>

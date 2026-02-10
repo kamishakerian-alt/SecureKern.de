@@ -1,0 +1,52 @@
+<!-- Blog Posts Grid Component -->
+<div class="blog-posts-grid">
+  {% for post in collections.blogPosts | limit(limit or 999) %}
+  <article class="blog-card">
+    {% if post.data.featuredImage %}
+    <a href="{{ post.data.permalink }}" class="blog-card__image-link">
+      <img src="{{ post.data.featuredImage }}" alt="{{ post.data.title }}" class="blog-card__image">
+    </a>
+    {% endif %}
+    
+    <div class="blog-card__content">
+      {% if post.data.tags and post.data.tags.length %}
+      <div class="blog-card__tags">
+        {% for tag in post.data.tags | limit(3) %}
+        <span class="tag tag--small">{{ tag }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+      
+      <h3 class="blog-card__title">
+        <a href="{{ post.data.permalink }}">{{ post.data.title }}</a>
+      </h3>
+      
+      {% if post.data.description %}
+      <p class="blog-card__description">{{ post.data.description }}</p>
+      {% endif %}
+      
+      <div class="blog-card__meta">
+        {% if post.data.date %}
+        <time class="blog-card__date" datetime="{{ post.data.date | date: '%Y-%m-%d' }}">
+          <i class="fas fa-calendar"></i>
+          {{ post.data.date | dateFormat }}
+        </time>
+        {% endif %}
+        
+        {% if post.data.author %}
+        <span class="blog-card__author">
+          <i class="fas fa-user"></i>
+          {{ post.data.author }}
+        </span>
+        {% endif %}
+      </div>
+      
+      <a href="{{ post.data.permalink }}" class="blog-card__read-more">
+        Weiterlesen <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  </article>
+  {% else %}
+  <p class="no-posts">Noch keine Blogbeiträge vorhanden.</p>
+  {% endfor %}
+</div>

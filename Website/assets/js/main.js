@@ -458,7 +458,8 @@ function ensureLangToggle() {
   // attach click handler (idempotent)
   if (!langToggle._langHandlerAttached) {
     langToggle.addEventListener('click', () => {
-      showToast('Englische Version folgt in Kürze.');
+      const targetLang = currentLang === 'de' ? 'en' : 'de';
+      switchLanguage(targetLang);
     });
     langToggle._langHandlerAttached = true;
   }
@@ -479,7 +480,7 @@ function updateLangToggleUI(){
     label.textContent = targetLang.toUpperCase();
   }
   if (langToggle) {
-    langToggle.setAttribute('title', targetLang === 'en' ? 'English (kommt bald)' : 'Deutsch');
+    langToggle.setAttribute('title', targetLang === 'en' ? 'Switch to English' : 'Zu Deutsch wechseln');
   }
 }
 

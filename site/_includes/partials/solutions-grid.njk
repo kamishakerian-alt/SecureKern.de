@@ -1,0 +1,26 @@
+<!-- Solutions Grid Component -->
+<div class="solutions-grid">
+  {% for solution in collections.solutions %}
+  <article class="solution-card">
+    {% if solution.data.heroImage %}
+    <img src="{{ solution.data.heroImage }}" alt="{{ solution.data.title }}" class="solution-card__image">
+    {% endif %}
+    
+    <div class="solution-card__content">
+      {% if solution.data.industry %}
+      <span class="solution-card__industry">{{ solution.data.industry }}</span>
+      {% endif %}
+      
+      <h3 class="solution-card__title">{{ solution.data.title }}</h3>
+      
+      {% if solution.data.description %}
+      <p class="solution-card__description">{{ solution.data.description }}</p>
+      {% endif %}
+      
+      <a href="{{ solution.data.permalink }}" class="btn btn--secondary">
+        Branchenlösung ansehen
+      </a>
+    </div>
+  </article>
+  {% endfor %}
+</div>
