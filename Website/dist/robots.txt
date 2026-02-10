@@ -1,0 +1,35 @@
+# robots.txt for SecureKern OT Security Website
+# Last Updated: February 4, 2026
+
+# Allow all search engines to crawl the entire site
+User-agent: *
+Allow: /
+
+# Sitemap location (update domain after deployment)
+Sitemap: https://www.secure-kern.ch/sitemap.xml
+Sitemap: https://secure-kern.ch/sitemap.xml
+
+# Crawl delay (optional - prevents aggressive crawling)
+Crawl-delay: 1
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Block access to admin/config files (if any added later)
+Disallow: /admin/
+Disallow: /config/
+Disallow: /.git/
+Disallow: /node_modules/
+
+# Allow crawling of assets
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/images/
+
+# Priority pages for crawling (hint to search engines)
+# Homepage, Services, About, Contact
+# Individual service pages: nis2-readiness, iec-62443, segmentation, etc.

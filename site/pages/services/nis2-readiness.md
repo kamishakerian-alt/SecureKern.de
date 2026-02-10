@@ -1,0 +1,327 @@
+---
+layout: layouts/base.njk
+title: "NIS2 Readiness Sprint - Compliance in 6 Wochen | SecureKern"
+description: "NIS2 Readiness Sprint - Umfassende Gap-Analyse und Roadmap zur EU-NIS2-Compliance. €25.000-45.000, 2-6 Wochen. Expertise für KRITIS-Betreiber."
+permalink: "/services/nis2-readiness.html"
+---
+<!-- Hero -->
+    <section class="hero" style="min-height: 60vh; padding-top: 140px;">
+        <div class="hero__content">
+            <div class="section__subtitle" style="color: var(--accent-teal); margin-bottom: 1rem;" data-i18n="services.subtitle">Compliance Service</div>
+            <h1 class="hero__headline" data-i18n="services.service1.title">NIS2 Readiness Sprint</h1>
+            <p class="hero__subheadline" data-i18n="services.service1.description">
+                Umfassende Gap-Analyse und priorisierte Roadmap zur NIS2-Compliance. 
+                Machen Sie Ihr Unternehmen fit für die EU-Direktive 2022/2555.
+            </p>
+            <div class="hero__cta">
+                <a href="#pricing" class="btn btn--primary btn--large">Angebot anfragen</a>
+                <a href="#overview" class="btn btn--secondary btn--large" data-i18n="services.ctaDetails">Details ansehen</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Overview -->
+    <section class="section" id="overview">
+        <div class="section__container" style="max-width: 900px;">
+            <h2 class="section__title">Was ist der NIS2 Readiness Sprint?</h2>
+            <p style="font-size: 1.125rem; margin-bottom: 2rem;">
+                Die EU-Direktive NIS2 (Network and Information Security Directive) tritt 2024 in Kraft 
+                und betrifft <strong>ca. 29.000 Unternehmen allein in Deutschland</strong>. 
+                Als KRITIS-Betreiber, Energieversorger oder Unternehmen in kritischen Sektoren 
+                müssen Sie strikte Cybersecurity-Anforderungen erfüllen – inklusive 24h-Incident-Reporting, 
+                Supply-Chain-Security und Risikomanagement.
+            </p>
+            <p style="font-size: 1.125rem; margin-bottom: 2rem;">
+                Unser <strong>NIS2 Readiness Sprint</strong> verschafft Ihnen in <strong>2-6 Wochen</strong> 
+                vollständige Klarheit über Ihren Compliance-Status und liefert eine priorisierte 
+                Roadmap zur Umsetzung – praxisnah, fokussiert auf OT-Umgebungen, ohne Berater-Blasen.
+            </p>
+
+            <div style="background-color: var(--light-gray); padding: 2rem; border-radius: var(--radius-lg); margin: 2rem 0;">
+                <h3 style="color: var(--accent-teal); margin-bottom: 1rem;">
+                    <i class="fas fa-check-circle"></i> Was Sie erhalten:
+                </h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 1rem;">
+                        ? <strong>Gap-Report</strong> mit Risiko-Bewertung und Status Quo
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        ? <strong>Priorisierte Roadmap</strong> (Quick Wins + strategische Maßnahmen)
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        ? <strong>2 Stakeholder-Workshops</strong> (Management-Level + IT/OT-Teams)
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        ? <strong>Incident-Response-Templates</strong> für 24h-Reporting
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        ? <strong>Supply-Chain-Security-Checkliste</strong>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process & Timeline -->
+    <section class="section section--gray">
+        <div class="section__container">
+            <div class="section__header">
+                <h2 class="section__title">Unser Vorgehen</h2>
+                <p class="section__description">4 Phasen in 2-6 Wochen</p>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="card__icon" style="color: var(--accent-teal);">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3 class="card__title">Phase 1: Discovery (Woche 1)</h3>
+                    <ul class="card__features">
+                        <li>Kick-off Workshop mit Stakeholdern</li>
+                        <li>Asset-Inventory & Systemübersicht</li>
+                        <li>Interview mit IT/OT-Verantwortlichen</li>
+                        <li>Review bestehender Policies</li>
+                    </ul>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--steel-gray);">
+                        <strong>Deliverable:</strong> Discovery-Protokoll
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card__icon" style="color: var(--accent-teal);">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="card__title">Phase 2: Gap-Analyse (Woche 2-3)</h3>
+                    <ul class="card__features">
+                        <li>Mapping zu NIS2-Anforderungen</li>
+                        <li>Risiko-Bewertung (High/Medium/Low)</li>
+                        <li>Identifikation von Quick Wins</li>
+                        <li>Supply-Chain-Assessment</li>
+                    </ul>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--steel-gray);">
+                        <strong>Deliverable:</strong> Gap-Report (Excel/PDF)
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card__icon" style="color: var(--accent-teal);">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3 class="card__title">Phase 3: Roadmap (Woche 4-5)</h3>
+                    <ul class="card__features">
+                        <li>Priorisierung nach Risiko & Aufwand</li>
+                        <li>Zeitplan & Budgetrahmen</li>
+                        <li>Quick Wins (0-3 Monate)</li>
+                        <li>Strategische Maßnahmen (3-12 Monate)</li>
+                    </ul>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--steel-gray);">
+                        <strong>Deliverable:</strong> Roadmap-Dokument
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card__icon" style="color: var(--accent-teal);">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="card__title">Phase 4: Workshops (Woche 6)</h3>
+                    <ul class="card__features">
+                        <li>Management-Präsentation (2h)</li>
+                        <li>IT/OT-Team Deep Dive (4h)</li>
+                        <li>Q&A & Hands-on Support</li>
+                        <li>Incident-Template Training</li>
+                    </ul>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--steel-gray);">
+                        <strong>Deliverable:</strong> Workshop-Dokumentation
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who Is This For -->
+    <section class="section">
+        <div class="section__container" style="max-width: 900px;">
+            <h2 class="section__title">Für wen ist dieser Service?</h2>
+            
+            <div style="margin: 2rem 0;">
+                <h3 style="color: var(--accent-teal); margin-bottom: 1rem;">
+                    <i class="fas fa-check-circle"></i> Ideal für:
+                </h3>
+                <ul style="font-size: 1.125rem;">
+                    <li style="margin-bottom: 1rem;">
+                        <strong>KRITIS-Betreiber:</strong> Energieversorger, Wasserwerke, Telekommunikation
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        <strong>Kritische Sektoren:</strong> Chemie, Pharma, Lebensmittel, Gesundheit
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        <strong>Gr??ere Mittelständler:</strong> 100+ Mitarbeiter, >?50M Umsatz
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        <strong>Supply-Chain-Partner:</strong> Zulieferer für NIS2-Unternehmen
+                    </li>
+                </ul>
+            </div>
+
+            <div style="background-color: #fff3cd; padding: 1.5rem; border-radius: var(--radius-md); border-left: 4px solid #ffcc00;">
+                <h4 style="margin-bottom: 0.5rem;">
+                    <i class="fas fa-exclamation-triangle" style="color: #ffcc00;"></i> 
+                    Wichtig:
+                </h4>
+                <p style="margin-bottom: 0;">
+                    NIS2-Compliance ist <strong>verpflichtend</strong> für betroffene Unternehmen. 
+                    Verst??e können zu Bußgeldern bis €10M oder 2% des Jahresumsatzes führen. 
+                    Die Deadline für die nationale Umsetzung war <strong>Oktober 2024</strong>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section section--gray" id="pricing">
+        <div class="section__container" style="max-width: 900px;">
+            <div class="section__header">
+                <h2 class="section__title">Investition & Pakete</h2>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <h3 class="card__title">Standard</h3>
+                    <div class="card__price" style="font-size: 2rem; margin: 1rem 0;">?25.000</div>
+                    <p style="margin-bottom: 1.5rem; color: var(--steel-gray);">
+                        1 Standort, 4 Wochen, Remote + 2 On-Site Tage
+                    </p>
+                    <ul class="card__features">
+                        <li>? Gap-Report & Roadmap</li>
+                        <li>? 2 Workshops (je 4h)</li>
+                        <li>? Incident-Templates</li>
+                        <li>? Supply-Chain-Checkliste</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="border: 2px solid var(--accent-teal);">
+                    <div style="background-color: var(--accent-teal); color: white; padding: 0.5rem; margin: -2rem -2rem 1rem; border-radius: var(--radius-lg) var(--radius-lg) 0 0; text-align: center; font-weight: 600;">
+                        Empfohlen
+                    </div>
+                    <h3 class="card__title">Professional</h3>
+                    <div class="card__price" style="font-size: 2rem; margin: 1rem 0;">?35.000</div>
+                    <p style="margin-bottom: 1.5rem; color: var(--steel-gray);">
+                        1-2 Standorte, 6 Wochen, inkl. Implementation-Support
+                    </p>
+                    <ul class="card__features">
+                        <li>? Alles aus "Standard"</li>
+                        <li>? 4 Workshops (Management + IT)</li>
+                        <li>? Hands-on Implementation-Support (8h)</li>
+                        <li>? 3 Monate Follow-up E-Mail Support</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3 class="card__title">Enterprise</h3>
+                    <div class="card__price" style="font-size: 2rem; margin: 1rem 0;">?45.000+</div>
+                    <p style="margin-bottom: 1.5rem; color: var(--steel-gray);">
+                        Multi-Site, komplexe Supply-Chain
+                    </p>
+                    <ul class="card__features">
+                        <li>? Alles aus "Professional"</li>
+                        <li>? Multi-Site Assessment (2+ Standorte)</li>
+                        <li>? Supply-Chain Deep Dive</li>
+                        <li>? BSI-Audit-Vorbereitung</li>
+                        <li>? 6 Monate Follow-up Support</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <p style="font-size: 1.125rem; margin-bottom: 2rem;">
+                    <strong>Unsicher welches Paket passt?</strong> 
+                    Wir beraten Sie gerne kostenlos in einem 30-minütigen Erstgespräch.
+                </p>
+                <a href="/contact.html#form" class="btn btn--primary btn--large">
+                    Kostenloses Beratungsgespräch buchen
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why SecureKern -->
+    <section class="section">
+        <div class="section__container" style="max-width: 900px;">
+            <h2 class="section__title">Warum SecureKern für NIS2?</h2>
+            
+            <div style="margin: 2rem 0;">
+                <div style="margin-bottom: 2rem;">
+                    <h4 style="color: var(--accent-teal); margin-bottom: 0.5rem;">
+                        <i class="fas fa-industry"></i> OT-Expertise aus der Praxis
+                    </h4>
+                    <p>
+                        15 Jahre Automotive OT: Wir kennen SCADA, DCS, PLC-Systeme 
+                        und verstehen Produktionsrealität – kein theoretisches Consulting.
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 2rem;">
+                    <h4 style="color: var(--accent-teal); margin-bottom: 0.5rem;">
+                        <i class="fas fa-brain"></i> 70% schnellere Reports durch KI
+                    </h4>
+                    <p>
+                        AI-gestützte Dokumenten-Templates für Gap-Reports und Roadmaps. 
+                        Mehr Zeit für Hands-on, weniger für Papierkram.
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 2rem;">
+                    <h4 style="color: var(--accent-teal); margin-bottom: 0.5rem;">
+                        <i class="fas fa-handshake"></i> Mittelstands-Preise
+                    </h4>
+                    <p>
+                        €25.000-45.000 statt €100.000+ bei Big4. 
+                        Transparent, fair, ohne Enterprise-Overhead.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section bg-accent" style="text-align: center; padding: 4rem 1.5rem;">
+        <div class="section__container">
+            <h2 class="text-white mb-3">Starten Sie jetzt mit NIS2-Compliance</h2>
+            <p class="text-white mb-4" style="font-size: 1.125rem; max-width: 700px; margin: 0 auto 2rem;">
+                Buchen Sie ein kostenloses 30-minütiges Erstgespräch. 
+                Wir analysieren Ihren Bedarf und erstellen ein maßgeschneidertes Angebot.
+            </p>
+            <a href="/contact.html#form" class="btn btn--primary btn--large">
+                Jetzt Termin buchen
+            </a>
+        </div>
+    </section>
+
+    <!-- Related Services -->
+    <section class="section">
+        <div class="section__container">
+            <div class="section__header">
+                <h2 class="section__title">Verwandte Leistungen</h2>
+            </div>
+            
+            <div class="cards">
+                <div class="card">
+                    <h4>IEC 62443 Gap Assessment</h4>
+                    <p>Maturity-Bewertung nach IEC 62443-2-1</p>
+                    <a href="/services/iec-62443.html" class="btn btn--primary btn--small">Details</a>
+                </div>
+                
+                <div class="card">
+                    <h4>OT Risk Assessment</h4>
+                    <p>Threat & Risk Assessment (TARA) für OT</p>
+                    <a href="/services/ot-risk.html" class="btn btn--primary btn--small">Details</a>
+                </div>
+                
+                <div class="card">
+                    <h4>ISO 22301 Geschäftskontinuität</h4>
+                    <p>Business Continuity für OT-Umgebungen</p>
+                    <a href="/services/iso-22301.html" class="btn btn--primary btn--small">Details</a>
+                </div>
+            </div>
+        </div>
+    </section>

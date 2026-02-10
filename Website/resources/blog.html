@@ -24,7 +24,7 @@
                 <a href="/index.html" class="nav__logo">
                     <img src="/assets/images/logo.svg" alt="SecureKern Logo">
                 </a>
-                <button class="nav__hamburger" aria-label="Men? ?ffnen">
+                <button class="nav__hamburger" aria-label="Menü öffnen">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -42,9 +42,9 @@
                             </ul>
                         </li>
                         <li class="nav__item nav__item--has-dropdown">
-                            <a href="#" class="nav__link"><span data-i18n="nav.solutions">L?sungen</span> <i class="fas fa-chevron-down"></i></a>
+                            <a href="#" class="nav__link"><span data-i18n="nav.solutions">Lösungen</span> <i class="fas fa-chevron-down"></i></a>
                             <ul class="nav__dropdown">
-                                <li><a href="/loesungen.html" class="nav__dropdown-link" data-i18n="nav.solutions_all">Alle L?sungen</a></li>
+                                <li><a href="/loesungen.html" class="nav__dropdown-link" data-i18n="nav.solutions_all">Alle Lösungen</a></li>
                                 <li><a href="/segmentation.html" class="nav__dropdown-link">Secure Remote Access</a></li>
                             </ul>
                         </li>
@@ -54,11 +54,11 @@
                     </ul>
                 </div>
                 <div class="nav__actions">
-                    <button class="btn btn--primary" data-i18n="nav.consultation">Jetzt Beraten Lassen</button>
-                    <div class="language-toggle">
-                        <button class="language-toggle__button" data-lang="de">DE</button>
-                        <button class="language-toggle__button" data-lang="en">EN</button>
-                    </div>
+                    <a href="/contact.html" class="btn btn--primary" data-i18n="nav.consultation">Jetzt Beraten Lassen</a>
+                    <button class="nav__lang-toggle" type="button" aria-label="Switch language" title="Deutsch">
+                        <img src="/assets/images/flags/de.svg" alt="Deutsch">
+                        <span class="nav__lang-label">DE</span>
+                    </button>
                 </div>
             </nav>
         </div>
@@ -70,7 +70,7 @@
             <h1 class="hero__headline" data-i18n="blog.title">OT-Security Blog</h1>
             <p class="hero__subheadline" data-i18n="blog.subtitle" style="max-width: 800px; margin: 0 auto;">
                 Aktuelle Insights, Best Practices und Branchen-News zu industrieller Cybersecurity.
-                Wissen, das Sie f?r Ihre OT-Sicherheit brauchen.
+                Wissen, das Sie für Ihre OT-Sicherheit brauchen.
             </p>
         </div>
     </section>
@@ -92,9 +92,9 @@
                             <span class="blog-card__date">Februar 2026</span>
                             <span class="blog-card__category">NIS2</span>
                         </div>
-                        <h3 class="blog-card__title" data-i18n="blog.post1.title">NIS2-Readiness: Was Mittelst?ndler bis 2025 wissen m?ssen</h3>
+                        <h3 class="blog-card__title" data-i18n="blog.post1.title">NIS2-Readiness: Was Mittelständler bis 2025 wissen müssen</h3>
                         <p class="blog-card__excerpt" data-i18n="blog.post1.excerpt">
-                            Die neue NIS2-Richtlinie bringt erhebliche Ver?nderungen f?r mittelst?ndische Unternehmen.
+                            Die neue NIS2-Richtlinie bringt erhebliche Veränderungen für mittelständische Unternehmen.
                             Erfahren Sie, welche Schritte Sie jetzt einleiten sollten.
                         </p>
                         <a href="#" class="blog-card__link">Weiterlesen <i class="fas fa-arrow-right"></i></a>
@@ -113,9 +113,9 @@
                             <span class="blog-card__date">Januar 2026</span>
                             <span class="blog-card__category">IEC 62443</span>
                         </div>
-                        <h3 class="blog-card__title" data-i18n="blog.post2.title">IEC 62443 Zone &amp; Conduit: Praxisguide f?r die Umsetzung</h3>
+                        <h3 class="blog-card__title" data-i18n="blog.post2.title">IEC 62443 Zone &amp; Conduit: Praxisguide für die Umsetzung</h3>
                         <p class="blog-card__excerpt" data-i18n="blog.post2.excerpt">
-                            Wie Sie Ihr OT-Netzwerk richtig segmentieren. Praktische Tipps f?r die Implementierung
+                            Wie Sie Ihr OT-Netzwerk richtig segmentieren. Praktische Tipps für die Implementierung
                             von Sicherheitszonen in der Industrie 4.0.
                         </p>
                         <a href="#" class="blog-card__link">Weiterlesen <i class="fas fa-arrow-right"></i></a>
@@ -134,7 +134,7 @@
                             <span class="blog-card__date">Dezember 2025</span>
                             <span class="blog-card__category">Case Study</span>
                         </div>
-                        <h3 class="blog-card__title" data-i18n="blog.post3.title">Wie ein Automobilzulieferer seine Produktion vor Cyberangriffen sch?tzte</h3>
+                        <h3 class="blog-card__title" data-i18n="blog.post3.title">Wie ein Automobilzulieferer seine Produktion vor Cyberangriffen schützte</h3>
                         <p class="blog-card__excerpt" data-i18n="blog.post3.excerpt">
                             Eine Erfolgsgeschichte: Von der Gap-Analyse zur zertifizierten OT-Sicherheit.
                             Lessons Learned aus der Praxis.
@@ -185,7 +185,7 @@
                         </svg>
                         <span>SECURE KERN</span>
                     </div>
-                    <p>Engineering-driven OT-Security f?r den Mittelstand.</p>
+                    <p>Engineering-driven OT-Security für den Mittelstand.</p>
                     <div class="footer__social">
                         <a href="https://linkedin.com/company/securekern" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                         <a href="mailto:info@securekern.de" aria-label="Email"><i class="fas fa-envelope"></i></a>
@@ -215,7 +215,7 @@
                 <div class="footer__section">
                     <h4>Kontakt</h4>
                     <p>SecureKern GmbH<br>
-                    Industriestra?e 123<br>
+                    Industriestraße 123<br>
                     71254 Ditzingen<br>
                     Deutschland</p>
                     <p><a href="mailto:info@securekern.de">info@securekern.de</a><br>

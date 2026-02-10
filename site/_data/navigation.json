@@ -1,0 +1,48 @@
+{
+  "main": [
+    { "label": "Home", "href": "/index.html" },
+    {
+      "label": "Leistungen",
+      "href": "/leistungen.html",
+      "children": [
+        { "label": "Alle Leistungen", "href": "/leistungen.html" },
+        { "label": "NIS2 Readiness Sprint", "href": "/nis2-readiness.html" },
+        { "label": "IEC 62443 Gap Assessment", "href": "/iec-62443.html" },
+        { "label": "Netzwerksegmentierung", "href": "/segmentation.html" },
+        { "label": "OT Risk Assessment & Training", "href": "/risk-training.html" },
+        { "label": "OT-MDR & Incident Response", "href": "/ot-mdr.html" }
+      ]
+    },
+    {
+      "label": "Lösungen",
+      "href": "/loesungen.html",
+      "children": [
+        { "label": "Alle Lösungen", "href": "/loesungen.html" },
+        { "label": "Manufacturing & Automotive", "href": "/manufacturing.html" },
+        { "label": "Energy & Utilities", "href": "/energy.html" },
+        { "label": "Chemicals & Pharma", "href": "/chemicals.html" }
+      ]
+    },
+    {
+      "label": "Über uns",
+      "href": "/ueber-uns.html",
+      "children": [
+        { "label": "Über uns", "href": "/ueber-uns.html" },
+        { "label": "Team", "href": "/team.html" },
+        { "label": "Zertifizierungen", "href": "/certifications.html" }
+      ]
+    },
+    {
+      "label": "Ressourcen",
+      "href": "/ressourcen.html",
+      "children": [
+        { "label": "Ressourcen", "href": "/ressourcen.html" },
+        { "label": "Blog", "href": "/blog.html" },
+        { "label": "Downloads", "href": "/downloads.html" },
+        { "label": "Webinare", "href": "/webinars.html" }
+      ]
+    },
+    { "label": "Kontakt", "href": "/kontakt.html" }
+  ]
+}
+

@@ -1,0 +1,166 @@
+---
+layout: layouts/base.njk
+title: "OT Risk Assessment (TARA) | SecureKern"
+description: "OT Risk Assessment (TARA) - Threat & Risk Assessment für OT-Umgebungen. Risiko-Bewertung, FMEA, Threat Modeling. €20.000-35.000, 4-6 Wochen."
+permalink: "/services/ot-risk.html"
+---
+<section class="hero" style="min-height: 60vh; padding-top: 140px;">
+        <div class="hero__content">
+            <div class="section__subtitle" style="color: var(--accent-teal); margin-bottom: 1rem;">Risk Management</div>
+            <h1 class="hero__headline" data-i18n="services.otRisk.title">OT Risk Assessment (TARA)</h1>
+            <p class="hero__subheadline">
+                Systematische Bedrohungs- und Risiko-Analyse für OT-Umgebungen. 
+                Identifizieren Sie kritische Schwachstellen, priorisieren Sie Risiken.
+            </p>
+            <div class="hero__cta">
+                <a href="#pricing" class="btn btn--primary btn--large">Angebot anfragen</a>
+                <a href="#overview" class="btn btn--secondary btn--large">Details ansehen</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="overview">
+        <div class="section__container" style="max-width: 900px;">
+            <h2 class="section__title">Was ist OT Risk Assessment (TARA)?</h2>
+            <p style="font-size: 1.125rem; margin-bottom: 2rem;">
+                <strong>TARA (Threat Assessment and Risk Analysis)</strong> ist ein strukturierter Prozess 
+                zur Identifikation, Bewertung und Priorisierung von Cybersecurity-Risiken in OT-Umgebungen. 
+                Anders als klassische IT-Risk-Assessments berücksichtigt TARA die Besonderheiten von 
+                Industrial Control Systems: <strong>Safety-Auswirkungen, Produktionsstillstände und Legacy-Systeme</strong>.
+            </p>
+
+            <div style="background-color: var(--light-gray); padding: 2rem; border-radius: var(--radius-lg); margin: 2rem 0;">
+                <h3 style="color: var(--accent-teal); margin-bottom: 1rem;">
+                    <i class="fas fa-check-circle"></i> Unser TARA-Ansatz:
+                </h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 1rem;">
+                        ? <strong>Threat Modeling:</strong> STRIDE, MITRE ATT&CK for ICS
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        ? <strong>Asset-Kritikalitäts-Bewertung:</strong> Safety, Produktion, Compliance
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        ? <strong>Risiko-Matrix:</strong> Likelihood – Impact (inkl. Safety)
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        ? <strong>Priorisierte Maßnahmen-Roadmap:</strong> Quick Wins – langfristig
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--gray">
+        <div class="section__container">
+            <div class="section__header">
+                <h2 class="section__title">TARA-Prozess in 3 Phasen</h2>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="card__icon" style="color: var(--accent-teal);">
+                        <i class="fas fa-crosshairs"></i>
+                    </div>
+                    <h3 class="card__title">1. Threat Identification</h3>
+                    <ul class="card__features">
+                        <li>Threat Actor Profiling (Insider, Ransomware, Nation-State)</li>
+                        <li>Attack Vector Analysis (Remote Access, USB, Supply-Chain)</li>
+                        <li>MITRE ATT&CK for ICS Mapping</li>
+                        <li>Industry-spezifische Bedrohungen</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card__icon" style="color: var(--accent-teal);">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3 class="card__title">2. Risk Assessment</h3>
+                    <ul class="card__features">
+                        <li>Asset-Kritikalität (Safety, Produktion, Compliance)</li>
+                        <li>Likelihood-Bewertung (1-5 Skala)</li>
+                        <li>Impact-Bewertung (Safety, Financial, Reputation)</li>
+                        <li>Risiko-Matrix (High/Medium/Low)</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card__icon" style="color: var(--accent-teal);">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="card__title">3. Mitigation Planning</h3>
+                    <ul class="card__features">
+                        <li>Priorisierung nach Risiko-Score</li>
+                        <li>Technical Controls (Firewall, Monitoring, Patching)</li>
+                        <li>Organizational Controls (Policies, Training)</li>
+                        <li>Kosten-Nutzen-Analyse</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="pricing">
+        <div class="section__container" style="max-width: 900px;">
+            <div class="section__header">
+                <h2 class="section__title">Investition & Pakete</h2>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <h3 class="card__title">Standard TARA</h3>
+                    <div class="card__price" style="font-size: 2rem; margin: 1rem 0;">?20.000</div>
+                    <p style="margin-bottom: 1.5rem; color: var(--steel-gray);">
+                        1 Standort, 1-2 kritische Systeme, 4 Wochen
+                    </p>
+                    <ul class="card__features">
+                        <li>? Threat Modeling (MITRE ATT&CK)</li>
+                        <li>? Asset-Inventory & Kritikalitäts-Bewertung</li>
+                        <li>? Risiko-Matrix (Excel/PDF)</li>
+                        <li>? Maßnahmen-Roadmap (High-Level)</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="border: 2px solid var(--accent-teal);">
+                    <div style="background-color: var(--accent-teal); color: white; padding: 0.5rem; margin: -2rem -2rem 1rem; border-radius: var(--radius-lg) var(--radius-lg) 0 0; text-align: center; font-weight: 600;">
+                        Empfohlen
+                    </div>
+                    <h3 class="card__title">Professional TARA</h3>
+                    <div class="card__price" style="font-size: 2rem; margin: 1rem 0;">?28.000</div>
+                    <p style="margin-bottom: 1.5rem; color: var(--steel-gray);">
+                        1 Standort, 3-5 Systeme, 5 Wochen
+                    </p>
+                    <ul class="card__features">
+                        <li>? Alles aus "Standard"</li>
+                        <li>? Detaillierte Maßnahmen-Roadmap mit Budget</li>
+                        <li>? Safety-Impact-Analyse (SIL-Integration)</li>
+                        <li>? 2 Workshops (Kick-off + Review)</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3 class="card__title">Enterprise TARA</h3>
+                    <div class="card__price" style="font-size: 2rem; margin: 1rem 0;">?35.000+</div>
+                    <p style="margin-bottom: 1.5rem; color: var(--steel-gray);">
+                        Multi-Site, komplexe Supply-Chain
+                    </p>
+                    <ul class="card__features">
+                        <li>? Alles aus "Professional"</li>
+                        <li>? Multi-Site Assessment</li>
+                        <li>? Supply-Chain Risk Analysis</li>
+                        <li>? 3rd-Party Vendor Assessment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-accent" style="text-align: center; padding: 4rem 1.5rem;">
+        <div class="section__container">
+            <h2 class="text-white mb-3">Starten Sie Ihr OT Risk Assessment</h2>
+            <p class="text-white mb-4" style="font-size: 1.125rem; max-width: 700px; margin: 0 auto 2rem;">
+                Buchen Sie ein kostenloses 30-minütiges Erstgespräch.
+            </p>
+            <a href="/contact.html#form" class="btn btn--primary btn--large">Jetzt Termin buchen</a>
+        </div>
+    </section>

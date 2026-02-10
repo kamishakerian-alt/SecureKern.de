@@ -1,0 +1,249 @@
+---
+layout: layouts/base.njk
+title: "OT Security Retainer Support | SecureKern"
+description: "OT Security Retainer Support - Monatliche Advisory-Partnerschaft. Ad-hoc Beratung, Policy-Reviews, Incident-Support. €200-400 pro Monat."
+permalink: "/services/retainer.html"
+---
+<section class="hero" style="min-height: 60vh; padding-top: 140px;">
+        <div class="hero__content">
+            <div class="section__subtitle" style="color: var(--accent-teal); margin-bottom: 1rem;">Ongoing Partnership</div>
+            <h1 class="hero__headline" data-i18n="services.retainer.title">OT Security Retainer Support</h1>
+            <p class="hero__subheadline">
+                Ihr OT-Security-Berater auf Abruf. Monatliche Advisory-Partnerschaft 
+                für laufende Beratung, Ad-hoc-Fragen, Policy-Reviews – ohne Projektaufwand.
+            </p>
+            <div class="hero__cta">
+                <a href="#pricing" class="btn btn--primary btn--large">Pakete ansehen</a>
+                <a href="#overview" class="btn btn--secondary btn--large">Details ansehen</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="overview">
+        <div class="section__container" style="max-width: 900px;">
+            <h2 class="section__title">Was ist ein OT Security Retainer?</h2>
+            <p style="font-size: 1.125rem; margin-bottom: 2rem;">
+                Ein <strong>Retainer</strong> ist eine monatliche Advisory-Partnerschaft ? 
+                Sie zahlen eine feste Gebühr (€200-400/Monat) und erhalten dafür laufenden 
+                Support für OT-Security-Fragen, Policy-Reviews, Incident-Triage und strategische Beratung.
+            </p>
+            <p style="font-size: 1.125rem; margin-bottom: 2rem;">
+                <strong>Perfekt für:</strong> Unternehmen, die nach einem Projekt (z.B. NIS2 Readiness, 
+                IEC 62443 Gap Assessment) eine langfristige Beziehung wünschen – ohne großes 
+                Folge-Projekt buchen zu müssen.
+            </p>
+
+            <div style="background-color: var(--light-gray); padding: 2rem; border-radius: var(--radius-lg); margin: 2rem 0;">
+                <h3 style="color: var(--accent-teal); margin-bottom: 1rem;">
+                    <i class="fas fa-check-circle"></i> Was Sie erhalten:
+                </h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 1rem;">
+                        ? <strong>Ad-hoc Beratung:</strong> E-Mail/Telefon für OT-Security-Fragen
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        ? <strong>Policy-Reviews:</strong> Schnelle Reviews von Security Policies, SOPs
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        ? <strong>Incident-Triage:</strong> Erste Einschätzung bei Security-Vorfällen
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        ? <strong>Quarterly Check-ins:</strong> 1x pro Quartal strategischer Call (30 Min)
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        ? <strong>Prioritäts-Support:</strong> Antwortzeit < 24h (Werktags)
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--gray">
+        <div class="section__container">
+            <div class="section__header">
+                <h2 class="section__title">Wann macht ein Retainer Sinn?</h2>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="card__icon" style="color: var(--accent-teal);">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3 class="card__title">Nach einem Projekt</h3>
+                    <p>
+                        Sie haben ein NIS2 Readiness oder IEC 62443 Gap Assessment gemacht. 
+                        Jetzt implementieren Sie die Roadmap intern – aber brauchen gelegentlich 
+                        Sparring für Fragen wie: "Welche Firewall-Regel ist sicher?", 
+                        "Wie priorisieren wir Quick Wins?"
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card__icon" style="color: var(--accent-teal);">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3 class="card__title">Kein Full-Time CISO</h3>
+                    <p>
+                        Sie sind ein Mittelständler (50-200 Mitarbeiter), haben keinen 
+                        dedizierten OT-Security-Experten – aber brauchen gelegentlich 
+                        strategische Beratung (z.B. Vendor-Evaluierung, Compliance-Fragen, 
+                        Budget-Planung).
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card__icon" style="color: var(--accent-teal);">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="card__title">Laufende Compliance</h3>
+                    <p>
+                        NIS2, IEC 62443, KRITIS – Compliance ist kein Projekt, sondern ein Journey. 
+                        Ein Retainer stellt sicher, dass Sie bei Policy-Updates, Audits oder 
+                        neuen Bedrohungen (z.B. MITRE ATT&CK-Techniques) immer jemanden haben, 
+                        der Ihre OT-Umgebung kennt.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="pricing">
+        <div class="section__container" style="max-width: 900px;">
+            <div class="section__header">
+                <h2 class="section__title">Retainer-Pakete</h2>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <h3 class="card__title">Lite</h3>
+                    <div class="card__price" style="font-size: 2rem; margin: 1rem 0;">?200/Monat</div>
+                    <p style="margin-bottom: 1.5rem; color: var(--steel-gray);">
+                        Basis-Support, ideal für kleinere Mittelständler
+                    </p>
+                    <ul class="card__features">
+                        <li>? 2 E-Mail-Anfragen/Monat (Antwort < 48h)</li>
+                        <li>? 1 Policy-Review/Quartal (max. 10 Seiten)</li>
+                        <li>? Quarterly Check-in (30 Min, remote)</li>
+                        <li>? Kein Telefon-Support</li>
+                        <li>? Kein Incident-Triage</li>
+                    </ul>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--steel-gray);">
+                        <strong>Mindestlaufzeit:</strong> 6 Monate
+                    </p>
+                </div>
+
+                <div class="card" style="border: 2px solid var(--accent-teal);">
+                    <div style="background-color: var(--accent-teal); color: white; padding: 0.5rem; margin: -2rem -2rem 1rem; border-radius: var(--radius-lg) var(--radius-lg) 0 0; text-align: center; font-weight: 600;">
+                        Empfohlen
+                    </div>
+                    <h3 class="card__title">Standard</h3>
+                    <div class="card__price" style="font-size: 2rem; margin: 1rem 0;">?300/Monat</div>
+                    <p style="margin-bottom: 1.5rem; color: var(--steel-gray);">
+                        Vollständiger Support für laufende Beratung
+                    </p>
+                    <ul class="card__features">
+                        <li>? Unlimitierte E-Mail-Anfragen (Antwort < 24h)</li>
+                        <li>? 1 Telefon-Call/Monat (30 Min)</li>
+                        <li>? 2 Policy-Reviews/Quartal (max. 20 Seiten)</li>
+                        <li>? Incident-Triage (erste Einschätzung)</li>
+                        <li>? Quarterly Check-in (60 Min)</li>
+                    </ul>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--steel-gray);">
+                        <strong>Mindestlaufzeit:</strong> 3 Monate
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3 class="card__title">Premium</h3>
+                    <div class="card__price" style="font-size: 2rem; margin: 1rem 0;">?400/Monat</div>
+                    <p style="margin-bottom: 1.5rem; color: var(--steel-gray);">
+                        Strategische Partnerschaft mit erweiterten Leistungen
+                    </p>
+                    <ul class="card__features">
+                        <li>? Alles aus "Standard"</li>
+                        <li>? 2 Telefon-Calls/Monat (je 30 Min)</li>
+                        <li>? Unlimitierte Policy-Reviews</li>
+                        <li>? Prioritäts-Incident-Support (Antwort < 4h)</li>
+                        <li>? 1 On-Site-Besuch/Jahr (inkl. Reise)</li>
+                    </ul>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--steel-gray);">
+                        <strong>Mindestlaufzeit:</strong> 12 Monate
+                    </p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <p style="font-size: 1.125rem; margin-bottom: 2rem;">
+                    <strong>Monatlich kündbar</strong> nach Mindestlaufzeit. 
+                    Ungenutzte Kontingente verfallen am Monatsende (kein Rollover).
+                </p>
+                <a href="/contact.html#form" class="btn btn--primary btn--large">
+                    Retainer anfragen
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--gray">
+        <div class="section__container" style="max-width: 900px;">
+            <h2 class="section__title">Häufige Fragen</h2>
+            
+            <div style="margin-top: 3rem;">
+                <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid #e5e7eb;">
+                    <h4 style="color: var(--accent-teal); margin-bottom: 0.5rem;">
+                        Was passiert, wenn ich mehr Support brauche als im Paket?
+                    </h4>
+                    <p>
+                        Zusätzliche Calls/Reviews werden nach Aufwand abgerechnet (€120/h). 
+                        Oder Sie upgraden auf ein höheres Paket.
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid #e5e7eb;">
+                    <h4 style="color: var(--accent-teal); margin-bottom: 0.5rem;">
+                        Kann ich den Retainer für gr??ere Projekte nutzen?
+                    </h4>
+                    <p>
+                        Nein. Retainer ist für laufende Beratung – gr??ere Projekte (z.B. IEC 62443 
+                        Implementation) werden separat gebucht. Aber: Als Retainer-Kunde erhalten 
+                        Sie 10% Rabatt auf Projekt-Angebote.
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid #e5e7eb;">
+                    <h4 style="color: var(--accent-teal); margin-bottom: 0.5rem;">
+                        Wie funktioniert die Kündigung?
+                    </h4>
+                    <p>
+                        Monatlich kündbar nach Mindestlaufzeit (z.B. 3 Monate bei "Standard"). 
+                        Kündigung per E-Mail, 30 Tage vor Monatsende.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 style="color: var(--accent-teal); margin-bottom: 0.5rem;">
+                        Was ist der Unterschied zu einem Projekt?
+                    </h4>
+                    <p>
+                        Projekt = fester Scope, fester Preis, zeitlich begrenzt (z.B. NIS2 Readiness, 
+                        4 Wochen, €25k). Retainer = laufende Beratung, keine Deliverables, 
+                        monatlich verlängerbar. Denken Sie an Retainer wie an eine Versicherung ? 
+                        Sie zahlen monatlich, haben aber Zugang zu Expertise, wenn Sie sie brauchen.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-accent" style="text-align: center; padding: 4rem 1.5rem;">
+        <div class="section__container">
+            <h2 class="text-white mb-3">Starten Sie Ihre Retainer-Partnerschaft</h2>
+            <p class="text-white mb-4" style="font-size: 1.125rem; max-width: 700px; margin: 0 auto 2rem;">
+                Buchen Sie ein kostenloses 30-minütiges Erstgespräch. 
+                Wir besprechen Ihre Bedürfnisse und empfehlen das passende Paket.
+            </p>
+            <a href="/contact.html#form" class="btn btn--primary btn--large">
+                Jetzt Termin buchen
+            </a>
+        </div>
+    </section>

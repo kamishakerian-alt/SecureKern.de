@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>SecureKern – OT-Cybersicherheit für kritische Infrastrukturen | NIS2 &amp; IEC 62443</title>
+    <meta name="description" content="Spezialisierte OT/ICS-Cybersicherheit für deutsche Industrieunternehmen. NIS2-Readiness, IEC 62443 Gap-Analysen, Netzwerksegmentierung. 15+ Jahre Praxiserfahrung. Kostenlosen Security-Check buchen." />
+    <link rel="canonical" href="https://www.securekern.de/" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+  <div class="container">
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a href="/index.html" class="nav__logo" aria-label="SecureKern Startseite">
+        <img src="/assets/images/logo.svg" alt="SecureKern Logo" />
+      </a>
+
+      <button
+        class="nav__hamburger"
+        type="button"
+        aria-label="Menü öffnen"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav__menu-container" id="nav-menu">
+        <ul class="nav__menu">
+          
+            
+              <li class="nav__item"><a href="/index.html" class="nav__link">Home</a></li>
+            
+          
+            
+              <li class="nav__item nav__item--has-dropdown">
+                <a
+                  href="/leistungen.html"
+                  class="nav__link"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-controls="dropdown-2"
+                >
+                  Leistungen <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </a>
+                <ul class="nav__dropdown" id="dropdown-2">
+                  
+                    <li><a href="/leistungen.html" class="nav__dropdown-link">Alle Leistungen</a></li>
+                  
+                    <li><a href="/nis2-readiness.html" class="nav__dropdown-link">NIS2 Readiness Sprint</a></li>
+                  
+                    <li><a href="/iec-62443.html" class="nav__dropdown-link">IEC 62443 Gap Assessment</a></li>
+                  
+                    <li><a href="/segmentation.html" class="nav__dropdown-link">Netzwerksegmentierung</a></li>
+                  
+                    <li><a href="/risk-training.html" class="nav__dropdown-link">OT Risk Assessment &amp; Training</a></li>
+                  
+                    <li><a href="/ot-mdr.html" class="nav__dropdown-link">OT-MDR &amp; Incident Response</a></li>
+                  
+                </ul>
+              </li>
+            
+          
+            
+              <li class="nav__item nav__item--has-dropdown">
+                <a
+                  href="/loesungen.html"
+                  class="nav__link"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-controls="dropdown-3"
+                >
+                  Lösungen <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </a>
+                <ul class="nav__dropdown" id="dropdown-3">
+                  
+                    <li><a href="/loesungen.html" class="nav__dropdown-link">Alle Lösungen</a></li>
+                  
+                    <li><a href="/manufacturing.html" class="nav__dropdown-link">Manufacturing &amp; Automotive</a></li>
+                  
+                    <li><a href="/energy.html" class="nav__dropdown-link">Energy &amp; Utilities</a></li>
+                  
+                    <li><a href="/chemicals.html" class="nav__dropdown-link">Chemicals &amp; Pharma</a></li>
+                  
+                </ul>
+              </li>
+            
+          
+            
+              <li class="nav__item nav__item--has-dropdown">
+                <a
+                  href="/ueber-uns.html"
+                  class="nav__link"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-controls="dropdown-4"
+                >
+                  Über uns <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </a>
+                <ul class="nav__dropdown" id="dropdown-4">
+                  
+                    <li><a href="/ueber-uns.html" class="nav__dropdown-link">Über uns</a></li>
+                  
+                    <li><a href="/team.html" class="nav__dropdown-link">Team</a></li>
+                  
+                    <li><a href="/certifications.html" class="nav__dropdown-link">Zertifizierungen</a></li>
+                  
+                </ul>
+              </li>
+            
+          
+            
+              <li class="nav__item nav__item--has-dropdown">
+                <a
+                  href="/ressourcen.html"
+                  class="nav__link"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-controls="dropdown-5"
+                >
+                  Ressourcen <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </a>
+                <ul class="nav__dropdown" id="dropdown-5">
+                  
+                    <li><a href="/ressourcen.html" class="nav__dropdown-link">Ressourcen</a></li>
+                  
+                    <li><a href="/blog.html" class="nav__dropdown-link">Blog</a></li>
+                  
+                    <li><a href="/downloads.html" class="nav__dropdown-link">Downloads</a></li>
+                  
+                    <li><a href="/webinars.html" class="nav__dropdown-link">Webinare</a></li>
+                  
+                </ul>
+              </li>
+            
+          
+            
+              <li class="nav__item"><a href="/kontakt.html" class="nav__link">Kontakt</a></li>
+            
+          
+        </ul>
+
+        <div class="nav__actions">
+          <a href="/kontakt.html" class="btn btn--primary">Jetzt Beraten Lassen</a>
+
+          <button class="nav__lang-toggle" type="button" aria-label="Sprache wechseln">
+            <img src="/assets/images/flags/de.svg" alt="Deutsch" />
+            <span class="nav__lang-label">EN</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+    <main id="main-content">
+      <!-- ===== HERO SECTION ===== -->
+<p><div class="hero">
+<img src="/assets/images/visual-assets/hero-industrial.jpg" alt="Moderne Fertigungshalle mit Robotern" class="hero__background">
+<div class="hero__overlay"></div>
+<div class="container">
+<div class="hero__content">
+<h1 data-i18n="hero.headline">Schutz für Deutschlands industrielles Herz.</h1>
+<p class="hero__subtitle" data-i18n="hero.subheadline">
+Wir sichern Ihre OT- und Produktionsanlagen gegen Cyberangriffe. <br>
+Praxisnah, mittelstandsorientiert und nach IEC 62443 &amp; NIS2.
+</p>
+<div class="hero__cta-group">
+<a href="/kontakt.html" class="btn btn--primary btn--lg" data-i18n="hero.ctaPrimary">Kostenlosen Security-Check buchen</a>
+<a href="/leistungen.html" class="btn btn--secondary btn--lg" data-i18n="hero.ctaSecondary">Unsere Leistungen entdecken</a>
+</div>
+</div>
+</div>
+</div></p>
+<p><!-- ===== VALUE PROPOSITION SECTION ===== -->
+<section class="value-props-section section">
+<div class="container">
+<div class="section-title">
+<h2 data-i18n="home.why.title">Warum Unternehmen auf SecureKern setzen</h2>
+<p data-i18n="home.why.subtitle">Wir kombinieren tiefgreifendes OT-Verständnis mit modernster Technologie und regulatorischer Expertise.</p>
+</div></p>
+<p><div class="value-props-grid">
+<div class="value-card">
+<div class="value-card__icon"><i class="fas fa-industry"></i></div>
+<h3 data-i18n="home.values.ot_title">OT-Spezialisierung</h3>
+<p data-i18n="home.values.ot_specialization">Wir arbeiten dort, wo klassische IT-Security endet: in Produktionsnetzen, SCADA-Systemen und mit industriellen Protokollen. Unser Fokus liegt auf Hochverfügbarkeit und Safety.</p>
+<a href="/ueber-uns.html" class="value-card__cta" data-i18n="home.cta.more_expertise">Mehr über unsere Expertise <i class="fas fa-arrow-right"></i></a>
+</div></p>
+<p><div class="value-card">
+<div class="value-card__icon"><i class="fas fa-certificate"></i></div>
+<h3 data-i18n="home.values.method_title">Regulatorisch &amp; Technisch Fundiert</h3>
+<p data-i18n="home.values.method_text">Unsere Methodik orientiert sich an IEC 62443, NIS2 und ISO 27001. Das Ergebnis: Audit-sichere Nachweisführung für Behörden, Versicherer und Prüfer.</p>
+<a href="/leistungen.html" class="value-card__cta" data-i18n="home.values.method_cta">Unsere Methodik <i class="fas fa-arrow-right"></i></a>
+</div></p>
+<p><div class="value-card">
+<div class="value-card__icon"><i class="fas fa-bolt"></i></div>
+<h3 data-i18n="home.values.tech_title">KI-unterstützte Analyse</h3>
+<p data-i18n="home.values.tech_text">Durch KI-gestützte Dokumentenverarbeitung liefern wir Risikoanalysen und Compliance-Checks bis zu 70% schneller als traditionelle Beratungen – bei gleicher fachlicher Tiefe.</p>
+<a href="/loesungen.html" class="value-card__cta" data-i18n="home.values.tech_cta">Technologie im Einsatz <i class="fas fa-arrow-right"></i></a>
+</div></p>
+<p><div class="value-card">
+<div class="value-card__icon"><i class="fas fa-puzzle-piece"></i></div>
+<h3>Mittelstand-gerecht &amp; Modular</h3>
+<p data-i18n="index.no_enterprise_programs">Keine überdimensionierten Konzern-Programme. Wir bieten modulare Pakete und budget-realistische Maßnahmenpläne mit transparenten Preisen, die zu Ihrem Tempo passen.</p>
+<a href="/kontakt.html" class="value-card__cta">Jetzt beraten lassen <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
+</div>
+</section></p>
+<p><!-- ===== SERVICES OVERVIEW SECTION ===== -->
+<section class="services-section section">
+<div class="container">
+<div class="section-title">
+<h2 data-i18n="services.title">Unsere Kernleistungen</h2>
+<p>OT-Sicherheit ist ein Prozess, kein Produkt. Unsere Leistungen decken den gesamten Lebenszyklus ab: Bewerten – Planen – Umsetzen – Betreiben.</p>
+</div></p>
+<p><div class="services-grid">
+<div class="service-card">
+<div class="service-card__header">
+<div class="service-card__icon"><i class="fas fa-shield-halved"></i></div>
+<div>
+<h3 data-i18n="services.service1.title">NIS2-Readiness &amp; Compliance</h3>
+</div>
+</div>
+<p class="service-card__description" data-i18n="index.nis2_notice">Die NIS2-Richtlinie betrifft ab Oktober 2024 ~30.000 deutsche Unternehmen. Wir führen Sie durch den gesamten Prozess, von der Betroffenheitsanalyse bis zur prüfsicheren Dokumentation.</p>
+<div class="service-card__details">
+<ul>
+<li>Vermeidung von Bußgeldern bis 10 Mio. ?</li>
+<li>Prüfsichere Nachweisführung</li>
+<li>Management-Haftung reduzieren</li>
+</ul>
+</div>
+<a href="/nis2-readiness.html" class="service-card__cta">NIS2-Sprint starten <i class="fas fa-arrow-right"></i></a>
+</div></p>
+<p><div class="service-card">
+<div class="service-card__header">
+<div class="service-card__icon"><i class="fas fa-clipboard-check"></i></div>
+<div>
+<h3 data-i18n="services.service2.title">IEC 62443 Gap Assessment</h3>
+</div>
+</div>
+<p class="service-card__description" data-i18n="index.iec_description">IEC 62443 ist der führende Standard für die Sicherheit industrieller Automatisierungssysteme (IACS). Wir analysieren Ihre Systeme und erstellen eine detaillierte Roadmap zur Konformität.</p>
+<div class="service-card__details">
+<ul>
+<li>Detaillierter Gap-Report (50-80 Seiten)</li>
+<li>Zonen- und Conduit-Diagramme</li>
+<li>Reifegradmatrix (Security Level 0-4)</li>
+</ul>
+</div>
+<a href="/iec-62443.html" class="service-card__cta">Assessment anfragen <i class="fas fa-arrow-right"></i></a>
+</div></p>
+<p><div class="service-card">
+<div class="service-card__header">
+<div class="service-card__icon"><i class="fas fa-project-diagram"></i></div>
+<div>
+<h3>OT-Netzwerksegmentierung</h3>
+</div>
+</div>
+<p class="service-card__description" data-i18n="index.segmentation_description">Flache OT-Netze sind ein hohes Risiko. Wir entwerfen und planen die Umsetzung eines robusten Zonenmodells nach IEC 62443, um die Angriffsfläche zu minimieren.</p>
+<div class="service-card__details">
+<ul>
+<li>Schutz vor lateraler Bewegung von Angreifern</li>
+<li>Detailliertes Zonenmodell &amp; Firewall-Regelwerk</li>
+<li>Begleitung bei der Implementierung</li>
+</ul>
+</div>
+<a href="/segmentation.html" class="service-card__cta">Segmentierung planen <i class="fas fa-arrow-right"></i></a>
+</div></p>
+<p><div class="service-card">
+<div class="service-card__header">
+<div class="service-card__icon"><i class="fas fa-eye"></i></div>
+<div>
+<h3>OT-MDR &amp; Incident Response</h3>
+</div>
+</div>
+<p class="service-card__description" data-i18n="index.mdr_description">Cyberangriffe erfolgen 24/7. Unser Managed Detection &amp; Response Service überwacht Ihre OT-Netze, alarmiert bei Anomalien und unterstützt im Ernstfall bei der Reaktion.</p>
+<div class="service-card__details">
+<ul>
+<li>24/7-Monitoring mit ICS-spezifischer Detection</li>
+<li>Schnelle Incident-Response-Unterstützung</li>
+<li>Monatliche Reports &amp; Quarterly Reviews</li>
+</ul>
+</div>
+<a href="/ot-mdr.html" class="service-card__cta">MDR-Service anfragen <i class="fas fa-arrow-right"></i></a>
+</div>
+</div>
+</div>
+</section></p>
+<p><!-- ===== TRUST INDICATORS SECTION ===== -->
+<section class="trust-section section">
+<div class="container">
+<div class="section-title">
+<h2>Vertrauen durch Expertise und Erfahrung</h2>
+<p>Unsere Arbeit basiert auf jahrelanger Praxiserfahrung und anerkannter Methodik.</p>
+</div>
+<div class="trust-grid">
+<div class="trust-item">
+<div class="trust-item__icon"><i class="fas fa-clock"></i></div>
+<h3>15+ Jahre OT-Erfahrung</h3>
+<p>Praxiserfahrung aus komplexen Automotive- und Manufacturing-Umgebungen.</p>
+</div>
+<div class="trust-item">
+<div class="trust-item__icon"><i class="fas fa-cogs"></i></div>
+<h3>IEC 62443-Methodik</h3>
+<p data-i18n="index.systematic_approach">Systematisches Vorgehen nach dem führenden internationalen Standard für industrielle Cybersicherheit.</p>
+</div>
+<div class="trust-item">
+<div class="trust-item__icon"><i class="fas fa-building"></i></div>
+<h3>Branchen-Know-how</h3>
+<p data-i18n="index.deep_understanding">Tiefes Verständnis für die Prozesse in Automotive, Fertigung, Energie und Kritischen Infrastrukturen.</p>
+</div>
+<div class="trust-item">
+<div class="trust-item__icon"><i class="fas fa-handshake"></i></div>
+<h3 data-i18n="index.independent_consulting">Unabhängige Beratung</h3>
+<p>Wir haben keine Hardware-Verkaufsinteressen und bieten reine, objektive Consulting-Expertise.</p>
+</div>
+<div class="trust-item">
+<div class="trust-item__icon"><i class="fas fa-users"></i></div>
+<h3>Mittelstand-fokussiert</h3>
+<p data-i18n="index.realistic_solutions">Wir entwickeln realistische Lösungen, die zu realistischen Budgets passen – keine Konzern-Preise.</p>
+</div>
+</div>
+</div>
+</section></p>
+<p><!-- ===== CASE STUDIES SECTION ===== -->
+<section class="case-studies-section section">
+<div class="container">
+<div class="section-title">
+<h2>Erfahrungen aus der Praxis</h2>
+<p>Aus Vertraulichkeitsgründen anonymisieren wir Referenzen. Bei Interesse stellen wir direkte Kontakte her.</p>
+</div></p>
+<p><div class="case-studies-grid">
+<div class="case-card">
+<div class="case-card__header">
+<div class="case-card__badge">50% Kosteneinsparung</div>
+<h3>Mittelständischer Automobilzulieferer</h3>
+</div>
+<div class="case-card__body">
+<div class="case-card__section">
+<h4>Herausforderung</h4>
+<p>NIS2-Betroffenheit war unklar, keine internen Ressourcen für ein Compliance-Programm an 5 Standorten.</p>
+</div>
+<div class="case-card__section">
+<h4>Lösung</h4>
+<p>Quick-Assessment aller Standorte, Gap-Analyse gegen NIS2 &amp; IEC 62443 und Erstellung eines priorisierten Maßnahmenplans in 4 Wochen.</p>
+</div>
+</div>
+<div class="case-card__quote">&quot;Wir waren in 12 Wochen NIS2-konform, statt der geplanten 9 Monate. SecureKern hat uns nicht nur beraten, sondern befähigt.&quot;</div>
+</div></p>
+<p><div class="case-card">
+<div class="case-card__header">
+<div class="case-card__badge">Volle OT-Transparenz</div>
+<h3>Stadtwerke (Energieversorger)</h3>
+</div>
+<div class="case-card__body">
+<div class="case-card__section">
+<h4>Herausforderung</h4>
+<p>Eine historisch gewachsene SCADA-Landschaft und eine bevorstehende BSI-Prüfung erforderten eine vollständige übersicht der OT-Assets.</p>
+</div>
+<div class="case-card__section">
+<h4>Lösung</h4>
+<p>Passive Network Discovery in allen OT-Netzen, IEC 62443 Gap Assessment und Design eines Zonenmodells mit Firewall-Regelwerk.</p>
+</div>
+</div>
+<div class="case-card__quote">&quot;Zum ersten Mal wissen wir wirklich, was in unseren Netzen läuft. Die BSI-Prüfung wurde ohne Beanstandungen bestanden.&quot;</div>
+</div></p>
+<p><div class="case-card">
+<div class="case-card__header">
+<div class="case-card__badge">Incident Response in 2h</div>
+<h3>Chemieunternehmen</h3>
+</div>
+<div class="case-card__body">
+<div class="case-card__section">
+<h4>Herausforderung</h4>
+<p>Nach einem Ransomware-Angriff auf die Office-IT herrschte Panik: Ist die Produktion betroffen? Es gab keine dokumentierten IR-Prozesse.</p>
+</div>
+<div class="case-card__section">
+<h4>Lösung</h4>
+<p>Remote-Assessment und Forensik innerhalb von 4 Stunden nach Anruf. Entwicklung von OT-spezifischen IR-Playbooks in der Folgewoche.</p>
+</div>
+</div>
+<div class="case-card__quote">&quot;SecureKern hat uns in 2 Stunden Klarheit verschafft, sodass die Produktion weiterlaufen konnte. Die IR-Playbooks sind Gold wert.&quot;</div>
+</div>
+</div>
+</div>
+</section></p>
+<p><!-- ===== INDUSTRY TEASER SECTION ===== -->
+<section class="industry-teaser-section">
+<div class="container">
+<h2>Für jede Branche die richtige Strategie</h2>
+<p>Ob Energieversorgung, Automotive oder kritische Infrastruktur – wir übersetzen komplexe IT-Sicherheitsanforderungen in pragmatische Lösungen für Ihr OT-Umfeld.</p>
+<a href="services.html" class="btn btn--secondary">Entdecken Sie unsere Branchenkompetenz</a>
+</div>
+</section></p>
+<p><!-- ===== FINAL CTA SECTION ===== -->
+<section class="final-cta-section section">
+<div class="container">
+<h2>Bereit, Ihre OT-Sicherheit zu stärken?</h2>
+<p>Ein unverbindliches Erstgespräch ist der beste Weg, um Ihre spezifischen Herausforderungen zu verstehen und erste Lösungsansätze zu skizzieren.</p>
+<a href="contact.html" class="btn btn--primary">Jetzt Erstgespräch vereinbaren</a>
+</div>
+</section></p>
+
+    </main>
+
+    <footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-column">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/leistungen.html">Leistungen</a></li>
+          <li><a href="/loesungen.html">Lösungen</a></li>
+          <li><a href="/ueber-uns.html">Über uns</a></li>
+          <li><a href="/ressourcen.html">Ressourcen</a></li>
+          <li><a href="/kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Leistungen</h4>
+        <ul>
+          <li><a href="/nis2-readiness.html">NIS2 Readiness Sprint</a></li>
+          <li><a href="/iec-62443.html">IEC 62443 Gap Assessment</a></li>
+          <li><a href="/segmentation.html">Netzwerksegmentierung</a></li>
+          <li><a href="/ot-mdr.html">OT-MDR</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href="/impressum.html">Impressum</a></li>
+          <li><a href="/datenschutz.html">Datenschutz</a></li>
+          <li><a href="/agb.html">AGB</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Kontakt</h4>
+        <p>
+          SecureKern GmbH<br />
+          Königstraße 10<br />
+          70173 Stuttgart<br />
+          <a href="mailto:kontakt@securekern.de">kontakt@securekern.de</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <a href="/index.html" class="footer-logo-type">Secure<span>Kern</span></a>
+      <div class="footer-socials">
+        <a href="#" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" target="_blank" rel="noopener" title="Xing" aria-label="Xing"><i class="fab fa-xing"></i></a>
+      </div>
+      <p>&copy; 2026 SecureKern GmbH. Alle Rechte vorbehalten.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
+

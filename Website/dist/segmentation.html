@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>OT-Netzwerksegmentierung | SecureKern</title>
+    <meta name="description" content="Schützen Sie Ihre Produktion durch professionelle Netzwerksegmentierung nach IEC 62443. SecureKern analysiert, designt und implementiert sichere Zonenmodelle für Ihre OT-Umgebung." />
+    <link rel="canonical" href="https://www.securekern.de/segmentation.html" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+  <div class="container">
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a href="/index.html" class="nav__logo" aria-label="SecureKern Startseite">
+        <img src="/assets/images/logo.svg" alt="SecureKern Logo" />
+      </a>
+
+      <button
+        class="nav__hamburger"
+        type="button"
+        aria-label="Menü öffnen"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav__menu-container" id="nav-menu">
+        <ul class="nav__menu">
+          
+            
+              <li class="nav__item"><a href="/index.html" class="nav__link">Home</a></li>
+            
+          
+            
+              <li class="nav__item nav__item--has-dropdown">
+                <a
+                  href="/leistungen.html"
+                  class="nav__link"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-controls="dropdown-2"
+                >
+                  Leistungen <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </a>
+                <ul class="nav__dropdown" id="dropdown-2">
+                  
+                    <li><a href="/leistungen.html" class="nav__dropdown-link">Alle Leistungen</a></li>
+                  
+                    <li><a href="/nis2-readiness.html" class="nav__dropdown-link">NIS2 Readiness Sprint</a></li>
+                  
+                    <li><a href="/iec-62443.html" class="nav__dropdown-link">IEC 62443 Gap Assessment</a></li>
+                  
+                    <li><a href="/segmentation.html" class="nav__dropdown-link">Netzwerksegmentierung</a></li>
+                  
+                    <li><a href="/risk-training.html" class="nav__dropdown-link">OT Risk Assessment &amp; Training</a></li>
+                  
+                    <li><a href="/ot-mdr.html" class="nav__dropdown-link">OT-MDR &amp; Incident Response</a></li>
+                  
+                </ul>
+              </li>
+            
+          
+            
+              <li class="nav__item nav__item--has-dropdown">
+                <a
+                  href="/loesungen.html"
+                  class="nav__link"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-controls="dropdown-3"
+                >
+                  Lösungen <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </a>
+                <ul class="nav__dropdown" id="dropdown-3">
+                  
+                    <li><a href="/loesungen.html" class="nav__dropdown-link">Alle Lösungen</a></li>
+                  
+                    <li><a href="/manufacturing.html" class="nav__dropdown-link">Manufacturing &amp; Automotive</a></li>
+                  
+                    <li><a href="/energy.html" class="nav__dropdown-link">Energy &amp; Utilities</a></li>
+                  
+                    <li><a href="/chemicals.html" class="nav__dropdown-link">Chemicals &amp; Pharma</a></li>
+                  
+                </ul>
+              </li>
+            
+          
+            
+              <li class="nav__item nav__item--has-dropdown">
+                <a
+                  href="/ueber-uns.html"
+                  class="nav__link"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-controls="dropdown-4"
+                >
+                  Über uns <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </a>
+                <ul class="nav__dropdown" id="dropdown-4">
+                  
+                    <li><a href="/ueber-uns.html" class="nav__dropdown-link">Über uns</a></li>
+                  
+                    <li><a href="/team.html" class="nav__dropdown-link">Team</a></li>
+                  
+                    <li><a href="/certifications.html" class="nav__dropdown-link">Zertifizierungen</a></li>
+                  
+                </ul>
+              </li>
+            
+          
+            
+              <li class="nav__item nav__item--has-dropdown">
+                <a
+                  href="/ressourcen.html"
+                  class="nav__link"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-controls="dropdown-5"
+                >
+                  Ressourcen <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </a>
+                <ul class="nav__dropdown" id="dropdown-5">
+                  
+                    <li><a href="/ressourcen.html" class="nav__dropdown-link">Ressourcen</a></li>
+                  
+                    <li><a href="/blog.html" class="nav__dropdown-link">Blog</a></li>
+                  
+                    <li><a href="/downloads.html" class="nav__dropdown-link">Downloads</a></li>
+                  
+                    <li><a href="/webinars.html" class="nav__dropdown-link">Webinare</a></li>
+                  
+                </ul>
+              </li>
+            
+          
+            
+              <li class="nav__item"><a href="/kontakt.html" class="nav__link">Kontakt</a></li>
+            
+          
+        </ul>
+
+        <div class="nav__actions">
+          <a href="/kontakt.html" class="btn btn--primary">Jetzt Beraten Lassen</a>
+
+          <button class="nav__lang-toggle" type="button" aria-label="Sprache wechseln">
+            <img src="/assets/images/flags/de.svg" alt="Deutsch" />
+            <span class="nav__lang-label">EN</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+    <main id="main-content">
+      <section class="service-detail-hero">
+            <div class="container">
+                <div class="service-detail-hero__content">
+                    <h1 class="service-detail-hero__title" data-i18n="services.service3.title">OT-Netzwerksegmentierung</h1>
+                    <p class="service-detail-hero__subtitle">Ihr erster und wichtigster Schutzwall gegen Cyberangriffe in der Produktion. Wir schaffen klare Grenzen für maximale Sicherheit.</p>
+                    <a href="contact.html?service=segmentation" class="btn btn--primary">Jetzt Segmentierung anfragen</a>
+                </div>
+            </div>
+        </section>
+<p><div class="service-detail-layout container">
+<div class="service-detail-content">
+<h2>Das Problem: Flache Netzwerke als Einfallstor</h2>
+<p>In vielen Industrieunternehmen sind OT-Netzwerke historisch gewachsen und kaum segmentiert. Ein einziger kompromittierter Rechner kann sich ungehindert durch die gesamte Anlage ausbreiten und die Produktion lahmlegen. Direkte, unkontrollierte Verbindungen zwischen Office-IT und Produktionssystemen sind eine offene Einladung für Angreifer.</p></p>
+<p><div class="icon-grid">
+<div class="icon-grid__item">
+<div class="icon-grid__icon"><img src="assets/images/icons/icon-flat-network.svg" alt="Flaches Netzwerk Icon"></div>
+<h3 class="icon-grid__title">Ungehinderte Ausbreitung</h3>
+<p>Ohne interne Barrieren kann sich Malware wie Ransomware frei im gesamten OT-Netzwerk bewegen (Lateral Movement) und maximalen Schaden anrichten.</p>
+</div>
+<div class="icon-grid__item">
+<div class="icon-grid__icon"><img src="assets/images/icons/icon-compliance-issue.svg" alt="Compliance Problem Icon"></div>
+<h3 class="icon-grid__title">Fehlende Compliance</h3>
+<p>Standards wie die IEC 62443 und gesetzliche Vorgaben wie NIS2 fordern explizit die Einrichtung von Sicherheitszonen und kontrollierten Kommunikationskanälen.</p>
+</div>
+</div></p>
+<p><h2>Unser Vorgehen: 4 Schritte zur sicheren Segmentierung</h2>
+<p>SecureKern konzipiert und implementiert Zonenmodelle nach IEC 62443, die Ihre kritischen Systeme wirksam isolieren und schützen. Unser Vorgehen ist praxiserprobt und minimiert Risiken für den laufenden Betrieb.</p></p>
+<p><ol class="process-steps">
+<li class="process-steps__item">
+<strong>Analyse (Passive Discovery):</strong> Wir erfassen nicht-invasiv alle OT-Assets und deren Kommunikationsbeziehungen. Das Ergebnis ist ein vollständiges Inventar und eine Kommunikationsmatrix als Basis für das Design.
+</li>
+<li class="process-steps__item">
+<strong>Design (Zonenmodell):</strong> Basierend auf der Analyse konzipieren wir ein Zonenmodell nach IEC 62443-3-2. Wir definieren Sicherheitszonen, Conduits und Security Levels, die auf Ihre Anlage zugeschnitten sind.
+</li>
+<li class="process-steps__item">
+<strong>Implementierungsplanung:</strong> Wir arbeiten detaillierte Firewall-Regelwerke, VLAN-Konfigurationen und einen phasierten Rollout-Plan aus, der die Produktionsverfügbarkeit jederzeit sicherstellt.
+</li>
+<li class="process-steps__item">
+<strong>Umsetzungsbegleitung:</strong> Wir begleiten die Implementierung in geplanten Wartungsfenstern, validieren die Konfiguration im Betrieb und schulen Ihr Team für den Umgang mit der neuen, sicheren Architektur.
+</li>
+</ol></p>
+<p><h2>Ihre Vorteile durch eine saubere Segmentierung</h2>
+<div class="icon-grid">
+<div class="icon-grid__item">
+<div class="icon-grid__icon"><img src="assets/images/icons/icon-attack-surface.svg" alt="Angriffsfläche reduzieren Icon"></div>
+<h3 class="icon-grid__title">Reduzierte Angriffsfläche</h3>
+<p>Schadsoftware wird in einer Zone eingedämmt und kann sich nicht auf die gesamte Anlage ausbreiten. Der potenzielle Schaden wird drastisch minimiert.</p>
+</div>
+<div class="icon-grid__item">
+<div class="icon-grid__icon"><img src="assets/images/icons/icon-visibility.svg" alt="Sichtbarkeit erhöhen Icon"></div>
+<h3 class="icon-grid__title">Verbesserte Sichtbarkeit</h3>
+<p>Klar definierte Zonengrenzen und Conduits ermöglichen eine effektive überwachung des Netzwerkverkehrs und eine schnelle Erkennung von Anomalien.</p>
+</div>
+<div class="icon-grid__item">
+<div class="icon-grid__icon"><img src="assets/images/icons/icon-compliance.svg" alt="Compliance Icon"></div>
+<h3 class="icon-grid__title">Nachweisbare Compliance</h3>
+<p>Erfüllen Sie eine Kernforderung von IEC 62443 und NIS2 und weisen Sie Auditoren eine strukturierte und sichere Netzwerkarchitektur nach.</p>
+</div>
+</div>
+</div></p>
+<p><aside class="service-detail-content__sidebar">
+<div class="sidebar-widget">
+<h3 class="sidebar-widget__title">Leistungspakete</h3>
+<div class="sidebar-widget__content">
+<div class="pricing-package">
+<h4 class="pricing-package__name">Segmentierungs-Design</h4>
+<p class="pricing-package__price">ab 10.000 €</p>
+<p class="pricing-package__description">Analyse, Zonenmodell und vollständige Dokumentation (Firewall-Regeln, Diagramme).</p>
+</div>
+<div class="pricing-package">
+<h4 class="pricing-package__name">Design &amp; Umsetzung</h4>
+<p class="pricing-package__price">20.000 – 35.000 €</p>
+<p class="pricing-package__description">Vollständiges Design plus aktive Begleitung bei der Implementierung und Validierung.</p>
+</div>
+<p class="sidebar-widget__note">Alle Preise zzgl. MwSt. und abhängig von der Komplexität der Anlage.</p>
+</div>
+</div>
+<div class="sidebar-widget">
+<h3 class="sidebar-widget__title">Ihre Deliverables</h3>
+<div class="sidebar-widget__content">
+<ul class="deliverables-list">
+<li><img src="assets/images/icons/icon-check.svg" alt="Check Icon">Zonenmodell-Diagramme (Visio/Draw.io)</li>
+<li><img src="assets/images/icons/icon-check.svg" alt="Check Icon">Firewall-Regelwerk (Excel)</li>
+<li><img src="assets/images/icons/icon-check.svg" alt="Check Icon">Kommunikationsmatrix</li>
+<li><img src="assets/images/icons/icon-check.svg" alt="Check Icon">Implementierungsleitfaden</li>
+</ul>
+</div>
+</div>
+<div class="sidebar-widget sidebar-widget--cta">
+<h3 class="sidebar-widget__title">Bereit für den ersten Schritt?</h3>
+<div class="sidebar-widget__content">
+<p>Schützen Sie Ihre Produktion mit professioneller Segmentierung. Lassen Sie uns in einem kostenlosen Erstgespräch Ihren Bedarf analysieren.</p>
+<a href="contact.html?service=segmentation" class="btn btn--primary btn--full-width">Kostenloses Gespräch buchen</a>
+</div>
+</div>
+</aside>
+</div></p>
+
+    </main>
+
+    <footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-column">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/leistungen.html">Leistungen</a></li>
+          <li><a href="/loesungen.html">Lösungen</a></li>
+          <li><a href="/ueber-uns.html">Über uns</a></li>
+          <li><a href="/ressourcen.html">Ressourcen</a></li>
+          <li><a href="/kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Leistungen</h4>
+        <ul>
+          <li><a href="/nis2-readiness.html">NIS2 Readiness Sprint</a></li>
+          <li><a href="/iec-62443.html">IEC 62443 Gap Assessment</a></li>
+          <li><a href="/segmentation.html">Netzwerksegmentierung</a></li>
+          <li><a href="/ot-mdr.html">OT-MDR</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Rechtliches</h4>
+        <ul>
+          <li><a href="/impressum.html">Impressum</a></li>
+          <li><a href="/datenschutz.html">Datenschutz</a></li>
+          <li><a href="/agb.html">AGB</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Kontakt</h4>
+        <p>
+          SecureKern GmbH<br />
+          Königstraße 10<br />
+          70173 Stuttgart<br />
+          <a href="mailto:kontakt@securekern.de">kontakt@securekern.de</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <a href="/index.html" class="footer-logo-type">Secure<span>Kern</span></a>
+      <div class="footer-socials">
+        <a href="#" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="#" target="_blank" rel="noopener" title="Xing" aria-label="Xing"><i class="fab fa-xing"></i></a>
+      </div>
+      <p>&copy; 2026 SecureKern GmbH. Alle Rechte vorbehalten.</p>
+    </div>
+  </div>
+</footer>
+
+
+
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,57 @@
+<header class="header">
+  <div class="container">
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a href="/index.html" class="nav__logo" aria-label="SecureKern Startseite">
+        <img src="/assets/images/logo.svg" alt="SecureKern Logo" />
+      </a>
+
+      <button
+        class="nav__hamburger"
+        type="button"
+        aria-label="Menü öffnen"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav__menu-container" id="nav-menu">
+        <ul class="nav__menu">
+          {% for item in navigation.main %}
+            {% if item.children %}
+              <li class="nav__item nav__item--has-dropdown">
+                <a
+                  href="{{ item.href }}"
+                  class="nav__link"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  aria-controls="dropdown-{{ loop.index }}"
+                >
+                  {{ item.label }} <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                </a>
+                <ul class="nav__dropdown" id="dropdown-{{ loop.index }}">
+                  {% for child in item.children %}
+                    <li><a href="{{ child.href }}" class="nav__dropdown-link">{{ child.label }}</a></li>
+                  {% endfor %}
+                </ul>
+              </li>
+            {% else %}
+              <li class="nav__item"><a href="{{ item.href }}" class="nav__link">{{ item.label }}</a></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+
+        <div class="nav__actions">
+          <a href="{{ site.cta.href }}" class="btn btn--primary">{{ site.cta.label }}</a>
+
+          <button class="nav__lang-toggle" type="button" aria-label="Sprache wechseln">
+            <img src="/assets/images/flags/de.svg" alt="Deutsch" />
+            <span class="nav__lang-label">EN</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>

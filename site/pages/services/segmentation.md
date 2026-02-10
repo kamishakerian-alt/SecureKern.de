@@ -1,0 +1,401 @@
+---
+layout: layouts/base.njk
+title: "OT Network Segmentation Design | SecureKern"
+description: "OT Network Segmentation Design & Implementation - Zonenkonzept, Firewall-Design, Industrial DMZ nach IEC 62443-3-2. €60.000-180.000, 8-12 Wochen."
+permalink: "/services/segmentation.html"
+---
+<!-- Hero -->
+    <section class="hero" style="min-height: 60vh; padding-top: 140px;">
+        <div class="hero__content">
+            <div class="section__subtitle" style="color: var(--accent-teal); margin-bottom: 1rem;">Network Architecture</div>
+            <h1 class="hero__headline" data-i18n="services.service3.title">OT Network Segmentation Design & Implementation</h1>
+            <p class="hero__subheadline">
+                Professionelles Zonenkonzept, Firewall-Design und Industrial DMZ 
+                nach IEC 62443-3-2 – für sichere und performante OT-Netzwerke.
+            </p>
+            <div class="hero__cta">
+                <a href="#pricing" class="btn btn--primary btn--large">Angebot anfragen</a>
+                <a href="#overview" class="btn btn--secondary btn--large" data-i18n="services.ctaDetails">Details ansehen</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Overview -->
+    <section class="section" id="overview">
+        <div class="section__container" style="max-width: 900px;">
+            <h2 class="section__title">Warum OT Network Segmentation?</h2>
+            <p style="font-size: 1.125rem; margin-bottom: 2rem;">
+                Die meisten OT-Umgebungen sind <strong>nicht ausreichend segmentiert</strong>. 
+                Flat Networks erlauben laterale Bewegung von Angreifern – ein einziger 
+                kompromittierter Endpoint kann zur Kompromittierung der gesamten Produktion führen 
+                (siehe Colonial Pipeline, Norsk Hydro).
+            </p>
+            <p style="font-size: 1.125rem; margin-bottom: 2rem;">
+                Professionelle <strong>Network Segmentation</strong> nach IEC 62443-3-2 schafft 
+                sichere Zonen mit kontrollierten Conduits, reduziert die Angriffsfläche und 
+                ermöglicht Defence-in-Depth.
+            </p>
+
+            <div style="background-color: var(--light-gray); padding: 2rem; border-radius: var(--radius-lg); margin: 2rem 0;">
+                <h3 style="color: var(--accent-teal); margin-bottom: 1rem;">
+                    <i class="fas fa-check-circle"></i> Was Sie erhalten:
+                </h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="margin-bottom: 1rem;">
+                        ? <strong>Zonenkonzept</strong> nach IEC 62443-3-2 (Level 2-4 Zonen)
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        ? <strong>Conduit-Design</strong> mit Firewall-Ruleset-Empfehlungen
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        ? <strong>Industrial DMZ-Architektur</strong> für IT/OT-Integration
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        ? <strong>Netzwerkpläne</strong> (Visio/Draw.io) mit IP-Schema
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        ? <strong>Implementation-Unterstützung</strong> (On-Site + Remote)
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Purdue Model -->
+    <section class="section section--gray">
+        <div class="section__container">
+            <div class="section__header">
+                <h2 class="section__title">Purdue Enterprise Reference Architecture (PERA)</h2>
+                <p class="section__description">Das Fundament für OT-Segmentierung</p>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="card__badge" style="background-color: var(--primary-blue);">Level 4-5</div>
+                    <h3 class="card__title">Enterprise Zone</h3>
+                    <ul class="card__features">
+                        <li>ERP (SAP, Oracle)</li>
+                        <li>Business Intelligence</li>
+                        <li>Corporate IT-Systeme</li>
+                    </ul>
+                    <p style="margin-top: 1rem; font-size: 0.9rem;">
+                        <strong>Firewall:</strong> DMZ mit strict rules
+                    </p>
+                </div>
+
+                <div class="card" style="border: 2px solid var(--accent-teal);">
+                    <div class="card__badge" style="background-color: var(--accent-teal);">DMZ</div>
+                    <h3 class="card__title">Industrial DMZ</h3>
+                    <ul class="card__features">
+                        <li>MES (Manufacturing Execution)</li>
+                        <li>Historian (OSIsoft PI)</li>
+                        <li>Asset Management</li>
+                    </ul>
+                    <p style="margin-top: 1rem; font-size: 0.9rem;">
+                        <strong>Kritisch:</strong> IT/OT-Integration-Point
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card__badge" style="background-color: #e74c3c;">Level 3</div>
+                    <h3 class="card__title">SCADA/Control Zone</h3>
+                    <ul class="card__features">
+                        <li>SCADA Server</li>
+                        <li>HMI Workstations</li>
+                        <li>Engineering Stations</li>
+                    </ul>
+                    <p style="margin-top: 1rem; font-size: 0.9rem;">
+                        <strong>Firewall:</strong> Zone Level 2 – Level 3
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card__badge" style="background-color: #2c3e50;">Level 0-2</div>
+                    <h3 class="card__title">Process Control Zone</h3>
+                    <ul class="card__features">
+                        <li>PLC/DCS (Siemens, Rockwell)</li>
+                        <li>Safety Systems (SIS)</li>
+                        <li>Field Devices (Sensoren, Aktoren)</li>
+                    </ul>
+                    <p style="margin-top: 1rem; font-size: 0.9rem;">
+                        <strong>Kritisch:</strong> Safety-Anforderungen beachten
+                    </p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem; padding: 1.5rem; background-color: #d1ecf1; border-radius: var(--radius-md);">
+                <p style="margin: 0; font-size: 1.125rem;">
+                    <i class="fas fa-info-circle" style="color: #0c5460;"></i>
+                    <strong>Best Practice:</strong> Jede Zone hat eigenes IP-Subnetz, eigene VLANs 
+                    und separate Firewall-Regelwerke. Minimum: 3 Zonen (Enterprise, DMZ, Control).
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process & Timeline -->
+    <section class="section">
+        <div class="section__container">
+            <div class="section__header">
+                <h2 class="section__title">Unser Vorgehen</h2>
+                <p class="section__description">8-12 Wochen (Design + Implementation)</p>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="card__icon" style="color: var(--accent-teal);">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="card__title">Phase 1: Discovery (Woche 1-2)</h3>
+                    <ul class="card__features">
+                        <li>Netzwerk-Discovery & Asset-Inventory</li>
+                        <li>VLAN-Analyse & IP-Schema-Review</li>
+                        <li>Traffic-Flow-Analyse (Wireshark, Nozomi)</li>
+                        <li>Interview mit OT-Engineers</li>
+                    </ul>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--steel-gray);">
+                        <strong>Deliverable:</strong> Network-Inventory (Excel)
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card__icon" style="color: var(--accent-teal);">
+                        <i class="fas fa-drafting-compass"></i>
+                    </div>
+                    <h3 class="card__title">Phase 2: Design (Woche 3-5)</h3>
+                    <ul class="card__features">
+                        <li>Zonen-Definition (nach IEC 62443-3-2)</li>
+                        <li>Conduit-Design & Traffic-Matrix</li>
+                        <li>Firewall-Ruleset (Fortinet/Palo Alto)</li>
+                        <li>Industrial DMZ-Architektur</li>
+                    </ul>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--steel-gray);">
+                        <strong>Deliverable:</strong> Zonenplan (Visio) + Ruleset
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card__icon" style="color: var(--accent-teal);">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="card__title">Phase 3: Implementation (Woche 6-10)</h3>
+                    <ul class="card__features">
+                        <li>Firewall-Installation & Konfiguration</li>
+                        <li>VLAN-Umstellung (schrittweise)</li>
+                        <li>Testing & Validation (je Zone)</li>
+                        <li>Rollback-Planung</li>
+                    </ul>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--steel-gray);">
+                        <strong>Deliverable:</strong> As-Built-Dokumentation
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card__icon" style="color: var(--accent-teal);">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3 class="card__title">Phase 4: Testing & übergabe (Woche 11-12)</h3>
+                    <ul class="card__features">
+                        <li>End-to-End Testing (Produktion)</li>
+                        <li>Performance-Monitoring</li>
+                        <li>Knowledge Transfer (Workshop)</li>
+                        <li>Runbook & Support-Übergabe</li>
+                    </ul>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--steel-gray);">
+                        <strong>Deliverable:</strong> Final Documentation + Runbook
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who Is This For -->
+    <section class="section section--gray">
+        <div class="section__container" style="max-width: 900px;">
+            <h2 class="section__title">Für wen ist Segmentation-Design?</h2>
+            
+            <div style="margin: 2rem 0;">
+                <h3 style="color: var(--accent-teal); margin-bottom: 1rem;">
+                    <i class="fas fa-check-circle"></i> Ideal für:
+                </h3>
+                <ul style="font-size: 1.125rem;">
+                    <li style="margin-bottom: 1rem;">
+                        <strong>Flat Networks:</strong> Keine oder unzureichende Segmentierung
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        <strong>IT/OT-Konvergenz-Projekte:</strong> Integration MES, ERP, Cloud
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        <strong>NIS2/KRITIS-Compliance:</strong> Segmentierung ist Pflicht-Anforderung
+                    </li>
+                    <li style="margin-bottom: 1rem;">
+                        <strong>Post-Incident:</strong> Lessons Learned nach Cyberangriff
+                    </li>
+                </ul>
+            </div>
+
+            <div style="background-color: #fff3cd; padding: 1.5rem; border-radius: var(--radius-md); border-left: 4px solid #ffcc00;">
+                <h4 style="margin-bottom: 0.5rem;">
+                    <i class="fas fa-exclamation-triangle" style="color: #ffcc00;"></i> 
+                    Wichtig:
+                </h4>
+                <p style="margin-bottom: 0;">
+                    Segmentierung ist ein <strong>Produktions-relevantes Projekt</strong>. 
+                    Wir planen mit Maintenance Windows, Rollback-Szenarien und stufenweiser 
+                    Einführung – ohne Produktionsstillstand.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="section" id="pricing">
+        <div class="section__container" style="max-width: 900px;">
+            <div class="section__header">
+                <h2 class="section__title">Investition & Pakete</h2>
+                <p class="section__description">Preise verstehen sich zzgl. Hardware (Firewalls, Switches)</p>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <h3 class="card__title">Design Only</h3>
+                    <div class="card__price" style="font-size: 2rem; margin: 1rem 0;">?60.000</div>
+                    <p style="margin-bottom: 1.5rem; color: var(--steel-gray);">
+                        1 Standort, 3-4 Zonen, 6 Wochen
+                    </p>
+                    <ul class="card__features">
+                        <li>? Discovery & Asset-Inventory</li>
+                        <li>? Zonenkonzept (Visio)</li>
+                        <li>? Firewall-Ruleset-Empfehlungen</li>
+                        <li>? DMZ-Architektur</li>
+                        <li>? Keine Implementation</li>
+                    </ul>
+                </div>
+
+                <div class="card" style="border: 2px solid var(--accent-teal);">
+                    <div style="background-color: var(--accent-teal); color: white; padding: 0.5rem; margin: -2rem -2rem 1rem; border-radius: var(--radius-lg) var(--radius-lg) 0 0; text-align: center; font-weight: 600;">
+                        Empfohlen
+                    </div>
+                    <h3 class="card__title">Design + Implementation</h3>
+                    <div class="card__price" style="font-size: 2rem; margin: 1rem 0;">?120.000</div>
+                    <p style="margin-bottom: 1.5rem; color: var(--steel-gray);">
+                        1 Standort, 3-4 Zonen, 10 Wochen
+                    </p>
+                    <ul class="card__features">
+                        <li>? Alles aus "Design Only"</li>
+                        <li>? Hands-on Implementation-Support</li>
+                        <li>? Firewall-Konfiguration & Testing</li>
+                        <li>? VLAN-Migration (On-Site Support)</li>
+                        <li>? 3 Monate Post-Implementation Support</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3 class="card__title">Turnkey Solution</h3>
+                    <div class="card__price" style="font-size: 2rem; margin: 1rem 0;">?180.000+</div>
+                    <p style="margin-bottom: 1.5rem; color: var(--steel-gray);">
+                        Multi-Site, inkl. Hardware-Beschaffung
+                    </p>
+                    <ul class="card__features">
+                        <li>? Alles aus "Design + Implementation"</li>
+                        <li>? Hardware-Beschaffung (Firewalls, Switches)</li>
+                        <li>? Multi-Site Rollout (2+ Standorte)</li>
+                        <li>? Industrial DMZ mit HA-Setup</li>
+                        <li>? 12 Monate Managed Firewall Service</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <p style="font-size: 1.125rem; margin-bottom: 2rem;">
+                    <strong>Hardware-Empfehlungen:</strong> Fortinet FortiGate (OT-optimiert), 
+                    Palo Alto PA-Series, Cisco Industrial Firewalls. Wir sind vendor-agnostic.
+                </p>
+                <a href="/contact.html#form" class="btn btn--primary btn--large">
+                    Kostenloses Beratungsgespräch buchen
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why SecureKern -->
+    <section class="section section--gray">
+        <div class="section__container" style="max-width: 900px;">
+            <h2 class="section__title">Warum SecureKern für Network Segmentation?</h2>
+            
+            <div style="margin: 2rem 0;">
+                <div style="margin-bottom: 2rem;">
+                    <h4 style="color: var(--accent-teal); margin-bottom: 0.5rem;">
+                        <i class="fas fa-industry"></i> Produktions-Know-how
+                    </h4>
+                    <p>
+                        15 Jahre Automotive: Wir kennen die Realität von 24/7-Produktion, 
+                        Maintenance Windows und Zero-Downtime-Requirements. Keine akademischen Konzepte.
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 2rem;">
+                    <h4 style="color: var(--accent-teal); margin-bottom: 0.5rem;">
+                        <i class="fas fa-network-wired"></i> IEC 62443-3-2 Expertise
+                    </h4>
+                    <p>
+                        Zertifiziert in IEC 62443 Network Segmentation. Praktische Erfahrung 
+                        mit Zonenkonzepten in Automotive, Chemie, Energie-Umgebungen.
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 2rem;">
+                    <h4 style="color: var(--accent-teal); margin-bottom: 0.5rem;">
+                        <i class="fas fa-tools"></i> Hands-on Implementation
+                    </h4>
+                    <p>
+                        Kein theoretisches Consulting. Wir rollen die ?rmel hoch, konfigurieren 
+                        Firewalls, migrieren VLANs und testen End-to-End – bis es funktioniert.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section bg-accent" style="text-align: center; padding: 4rem 1.5rem;">
+        <div class="section__container">
+            <h2 class="text-white mb-3">Sichern Sie Ihre OT-Umgebung ab</h2>
+            <p class="text-white mb-4" style="font-size: 1.125rem; max-width: 700px; margin: 0 auto 2rem;">
+                Buchen Sie ein kostenloses 30-minütiges Erstgespräch. 
+                Wir besprechen Ihre Netzwerk-Architektur und erstellen ein maßgeschneidertes Angebot.
+            </p>
+            <a href="/contact.html#form" class="btn btn--primary btn--large">
+                Jetzt Termin buchen
+            </a>
+        </div>
+    </section>
+
+    <!-- Related Services -->
+    <section class="section">
+        <div class="section__container">
+            <div class="section__header">
+                <h2 class="section__title">Verwandte Leistungen</h2>
+            </div>
+            
+            <div class="cards">
+                <div class="card">
+                    <h4>IEC 62443 Gap Assessment</h4>
+                    <p>Maturity-Bewertung & Implementierungs-Roadmap</p>
+                    <a href="/services/iec-62443.html" class="btn btn--primary btn--small">Details</a>
+                </div>
+                
+                <div class="card">
+                    <h4>OT Security Monitoring (OT-MDR)</h4>
+                    <p>24/7 Threat Detection für segmentierte Netzwerke</p>
+                    <a href="/services/ot-mdr.html" class="btn btn--primary btn--small">Details</a>
+                </div>
+                
+                <div class="card">
+                    <h4>OT Risk Assessment (TARA)</h4>
+                    <p>Threat & Risk Assessment für Zonenkonzept</p>
+                    <a href="/services/ot-risk.html" class="btn btn--primary btn--small">Details</a>
+                </div>
+            </div>
+        </div>
+    </section>

@@ -1,0 +1,300 @@
+---
+layout: layouts/base.njk
+title: "OT Security für Automotive Zulieferer | SecureKern"
+description: "OT Security für Automotive Tier 1-3 Zulieferer. UNECE R155, ISO/SAE 21434, Produktionssicherheit. Bewährte Expertise."
+permalink: "/solutions/automotive.html"
+---
+<section class="hero" style="background: linear-gradient(135deg, rgba(26, 39, 68, 0.92) 0%, rgba(45, 74, 111, 0.88) 100%), url('../assets/images/automotive-factory.jpg') center/cover no-repeat; min-height: 70vh; padding-top: 140px;">
+        <div class="hero__content">
+            <div class="section__subtitle" data-i18n="solutions.subtitle" style="color: white; margin-bottom: 1rem; opacity: 0.9;">Automotive & Tier 1-3 Zulieferer</div>
+            <h1 class="hero__headline" data-i18n="solutions.automotive.title" style="color: white;">Produktionssicherheit für die Automobilindustrie</h1>
+            <p class="hero__subheadline" data-i18n="solutions.automotive.subtitle" style="color: white; opacity: 0.95;">
+                15 Jahre Automotive OT-Erfahrung. Von UNECE R155 über ISO/SAE 21434 
+                bis zu sicheren Produktionslinien – wir kennen Ihre Herausforderungen.
+            </p>
+            <div class="hero__cta" style="margin-top: 2rem;">
+                <a href="/contact.html#form" class="btn btn--primary btn--large" style="background: white; color: var(--primary-blue);">
+                    Kostenlose Erstberatung
+                </a>
+                <a href="#challenges" class="btn btn--secondary btn--large" style="border-color: white; color: white;">
+                    Typische Challenges
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: white; padding: 4rem 1.5rem;">
+        <div class="section__container" style="max-width: 900px;">
+            <h2 class="section__title" style="text-align: center; margin-bottom: 3rem;">Warum OT Security für Automotive?</h2>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 3rem;">
+                <div style="background: var(--light-gray); padding: 2rem; border-radius: var(--radius-lg);">
+                    <h3 style="color: var(--accent-teal); margin-bottom: 1rem;">
+                        <i class="fas fa-gavel"></i> Regulatorische Pflicht
+                    </h3>
+                    <p style="font-size: 0.95rem;">
+                        <strong>UNECE R155</strong> (Cybersecurity) und <strong>R156</strong> (Software Updates) 
+                        sind seit Juli 2024 Pflicht für alle Neufahrzeuge in der EU. 
+                        Zulieferer müssen nachweisen, dass ihre Komponenten (z.B. ADAS, Infotainment) 
+                        cybersecurity-konform sind.
+                    </p>
+                </div>
+
+                <div style="background: var(--light-gray); padding: 2rem; border-radius: var(--radius-lg);">
+                    <h3 style="color: var(--accent-teal); margin-bottom: 1rem;">
+                        <i class="fas fa-industry"></i> Produktionsstillstände
+                    </h3>
+                    <p style="font-size: 0.95rem;">
+                        Ein <strong>Ransomware-Angriff</strong> auf SCADA/MES-Systeme kann die Produktion 
+                        für Tage lahmlegen. Kosten: <strong>?1-5 Millionen pro Tag</strong> bei Tier 1-Zulieferern. 
+                        Beispiel: Continental 2021, Eberspächer 2020.
+                    </p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+                <p style="font-size: 1.125rem; font-weight: 600; color: var(--steel-gray);">
+                    <i class="fas fa-check-circle" style="color: var(--accent-teal);"></i> 
+                    SecureKern kombiniert <strong>15 Jahre Automotive OT-Erfahrung</strong> 
+                    mit aktuellen Compliance-Anforderungen – für Tier 1-3 Zulieferer bezahlbar.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--gray" id="challenges">
+        <div class="section__container">
+            <div class="section__header">
+                <h2 class="section__title">Typische Automotive OT-Challenges</h2>
+                <p style="text-align: center; max-width: 700px; margin: 0 auto; font-size: 1.125rem;">
+                    Basierend auf 15 Jahren Automotive-Projekten: Mercedes, Nissan und mehr
+                </p>
+            </div>
+
+            <div class="cards" style="margin-top: 3rem;">
+                <div class="card">
+                    <div class="card__icon" style="color: var(--accent-teal);">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="card__title">Legacy-Produktionssysteme</h3>
+                    <p style="margin-bottom: 1rem;">
+                        Ihre Produktionslinien laufen auf <strong>Windows XP/7</strong>, 
+                        <strong>Siemens S7-300 PLCs</strong> aus den 90ern. 
+                        Wie sichern Sie diese ohne Patches?
+                    </p>
+                    <ul class="card__features">
+                        <li>Keine Hersteller-Updates mehr verfügbar</li>
+                        <li>24/7-Verfügbarkeit verhindert Neustarts</li>
+                        <li>Hohe Investitionskosten für Austausch (€5-10M)</li>
+                    </ul>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--accent-teal); font-weight: 600;">
+                        – Lösung: Network Segmentation + OT-MDR Monitoring
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card__icon" style="color: var(--accent-teal);">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3 class="card__title">UNECE R155 Compliance</h3>
+                    <p style="margin-bottom: 1rem;">
+                        OEMs verlangen <strong>Cybersecurity-Nachweise</strong> für Ihre Komponenten 
+                        (Airbags, Bremssysteme, Infotainment, ADAS). Ohne Zertifizierung verlieren Sie Aufträge.
+                    </p>
+                    <ul class="card__features">
+                        <li>TARA (Threat Assessment Risk Analysis) für jede Komponente</li>
+                        <li>ISO/SAE 21434 Zertifizierung erforderlich</li>
+                        <li>CSMS (Cyber Security Management System) aufbauen</li>
+                    </ul>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--accent-teal); font-weight: 600;">
+                        – Lösung: IEC 62443 Gap Assessment + ISO 21434 TARA
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card__icon" style="color: var(--accent-teal);">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3 class="card__title">IT/OT-Konvergenz</h3>
+                    <p style="margin-bottom: 1rem;">
+                        MES-Systeme (z.B. SAP ME, Siemens Opcenter) verbinden IT mit OT. 
+                        <strong>Ransomware</strong> kann sich von IT-Netzwerk auf SCADA ausbreiten.
+                    </p>
+                    <ul class="card__features">
+                        <li>Keine Firewall zwischen IT und OT (Flat Network)</li>
+                        <li>Shared Credentials (Active Directory)</li>
+                        <li>Remote-Access über VPN kompromittiert</li>
+                    </ul>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--accent-teal); font-weight: 600;">
+                        – Lösung: OT Network Segmentation + Industrial DMZ
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card__icon" style="color: var(--accent-teal);">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3 class="card__title">Fehlende OT-Expertise</h3>
+                    <p style="margin-bottom: 1rem;">
+                        Ihre IT-Security-Teams kennen <strong>SCADA, PLC, HMI</strong> nicht. 
+                        OT-Incidents werden zu spät erkannt – Produktion läuft unbemerkt weiter.
+                    </p>
+                    <ul class="card__features">
+                        <li>IT-Tools (Antivirus) funktionieren nicht in OT</li>
+                        <li>Keine OT-spezifischen Detection Rules (MITRE ATT&CK for ICS)</li>
+                        <li>Wartungsfenster nur 2x/Jahr (Weihnachten, Sommer)</li>
+                    </ul>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--accent-teal); font-weight: 600;">
+                        – Lösung: OT Security Training + OT-MDR Managed Service
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" style="background: white;">
+        <div class="section__container" style="max-width: 1000px;">
+            <div class="section__header">
+                <h2 class="section__title">Unsere Automotive-Lösungen</h2>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                <div style="border-left: 4px solid var(--accent-teal); padding-left: 2rem;">
+                    <h3 style="color: var(--accent-teal); margin-bottom: 1rem;">
+                        <i class="fas fa-shield-alt"></i> Compliance-Paket
+                    </h3>
+                    <p style="margin-bottom: 1rem;">Erfüllen Sie UNECE R155 + ISO/SAE 21434 Anforderungen</p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 0.5rem;">? TARA (Threat Assessment) für Komponenten</li>
+                        <li style="margin-bottom: 0.5rem;">? CSMS (Cyber Security Management System)</li>
+                        <li style="margin-bottom: 0.5rem;">? Audit-Vorbereitung (TÜV, DEKRA)</li>
+                        <li style="margin-bottom: 0.5rem;">? Dokumentation für OEM-Anforderungen</li>
+                    </ul>
+                    <p style="margin-top: 1rem;">
+                        <strong>Preis:</strong> €35.000–70.000 | 
+                        <strong>Dauer:</strong> 6-8 Wochen
+                    </p>
+                    <a href="/services/iec-62443.html" class="btn btn--secondary" style="margin-top: 1rem;" data-i18n="services.ctaDetails">Details ansehen</a>
+                </div>
+
+                <div style="border-left: 4px solid var(--accent-teal); padding-left: 2rem;">
+                    <h3 style="color: var(--accent-teal); margin-bottom: 1rem;">
+                        <i class="fas fa-industry"></i> Produktionssicherheit
+                    </h3>
+                    <p style="margin-bottom: 1rem;">Schützen Sie Ihre SCADA/MES-Systeme vor Ransomware</p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 0.5rem;">? Network Segmentation (Purdue-Modell)</li>
+                        <li style="margin-bottom: 0.5rem;">? Industrial DMZ für IT/OT-Trennung</li>
+                        <li style="margin-bottom: 0.5rem;">? Firewall-Ruleset für Siemens/Rockwell</li>
+                        <li style="margin-bottom: 0.5rem;">? OT-MDR 24/7 Monitoring (optional)</li>
+                    </ul>
+                    <p style="margin-top: 1rem;">
+                        <strong>Preis:</strong> €60.000–180.000 | 
+                        <strong>Dauer:</strong> 8-12 Wochen
+                    </p>
+                    <a href="/services/segmentation.html" class="btn btn--secondary" style="margin-top: 1rem;" data-i18n="services.ctaDetails">Details ansehen</a>
+                </div>
+
+                <div style="border-left: 4px solid var(--accent-teal); padding-left: 2rem;">
+                    <h3 style="color: var(--accent-teal); margin-bottom: 1rem;">
+                        <i class="fas fa-clipboard-check"></i> NIS2-Readiness
+                    </h3>
+                    <p style="margin-bottom: 1rem;">Tier 1-Zulieferer fallen oft unter NIS2 (>250 MA, >?50M)</p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 0.5rem;">? Gap-Analyse (24h-Incident-Reporting)</li>
+                        <li style="margin-bottom: 0.5rem;">? Supply-Chain Security für Sub-Tier</li>
+                        <li style="margin-bottom: 0.5rem;">? Business Continuity Plan (ISO 22301)</li>
+                        <li style="margin-bottom: 0.5rem;">? NIS2-Compliance-Roadmap</li>
+                    </ul>
+                    <p style="margin-top: 1rem;">
+                        <strong>Preis:</strong> €25.000–45.000 | 
+                        <strong>Dauer:</strong> 4-6 Wochen
+                    </p>
+                    <a href="/services/nis2-readiness.html" class="btn btn--secondary" style="margin-top: 1rem;">Details ansehen</a>
+                </div>
+
+                <div style="border-left: 4px solid var(--accent-teal); padding-left: 2rem;">
+                    <h3 style="color: var(--accent-teal); margin-bottom: 1rem;">
+                        <i class="fas fa-chalkboard-teacher"></i> OT Security Training
+                    </h3>
+                    <p style="margin-bottom: 1rem;">Schulen Sie Ihre Maintenance/Engineering-Teams</p>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 0.5rem;">? SCADA Security Basics (4h Workshop)</li>
+                        <li style="margin-bottom: 0.5rem;">? Incident Response für OT (8h)</li>
+                        <li style="margin-bottom: 0.5rem;">? IEC 62443 Deep Dive (8h)</li>
+                        <li style="margin-bottom: 0.5rem;">? UNECE R155 Awareness (2h)</li>
+                    </ul>
+                    <p style="margin-top: 1rem;">
+                        <strong>Preis:</strong> €2.000–5.000/Workshop | 
+                        <strong>Dauer:</strong> 1-2 Tage
+                    </p>
+                    <a href="/services/training.html" class="btn btn--secondary" style="margin-top: 1rem;">Details ansehen</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section--gray">
+        <div class="section__container" style="max-width: 900px;">
+            <h2 class="section__title" style="text-align: center; margin-bottom: 3rem;">Erfolgsgeschichten (Anonymisiert)</h2>
+            
+            <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); margin-bottom: 2rem;">
+                <div style="display: flex; gap: 2rem; align-items: flex-start;">
+                    <div style="flex-shrink: 0;">
+                        <div style="width: 60px; height: 60px; background: var(--accent-teal); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-building" style="font-size: 2rem; color: white;"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--accent-teal); margin-bottom: 0.5rem;">Tier 1 Automotive Zulieferer (Stuttgart)</h4>
+                        <p style="font-size: 0.95rem; margin-bottom: 1rem;">
+                            <strong>Challenge:</strong> UNECE R155 Zertifizierung für ADAS-Komponenten erforderlich, aber keine interne OT-Security-Expertise.
+                        </p>
+                        <p style="font-size: 0.95rem; margin-bottom: 1rem;">
+                            <strong>Solution:</strong> IEC 62443 Gap Assessment (4 Wochen) + TARA für 3 kritische Systeme. 
+                            Dokumentation für TÜV-Audit erstellt.
+                        </p>
+                        <p style="font-size: 0.95rem; font-weight: 600; color: var(--accent-teal);">
+                            <i class="fas fa-check-circle"></i> Ergebnis: Zertifizierung bestanden, OEM-Vertrag gesichert (€50M Volumen)
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="background: white; padding: 2rem; border-radius: var(--radius-lg); box-shadow: var(--shadow-md);">
+                <div style="display: flex; gap: 2rem; align-items: flex-start;">
+                    <div style="flex-shrink: 0;">
+                        <div style="width: 60px; height: 60px; background: var(--accent-teal); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-industry" style="font-size: 2rem; color: white;"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--accent-teal); margin-bottom: 0.5rem;">Tier 2 Zulieferer (München)</h4>
+                        <p style="font-size: 0.95rem; margin-bottom: 1rem;">
+                            <strong>Challenge:</strong> Ransomware-Angriff (WannaCry-Variante) legte Produktion für 3 Tage lahm. Kosten: €4,5M.
+                        </p>
+                        <p style="font-size: 0.95rem; margin-bottom: 1rem;">
+                            <strong>Solution:</strong> Network Segmentation (Purdue-Modell) für 2 Werke + OT-MDR 24/7 Monitoring. 
+                            Industrial DMZ trennt IT/OT.
+                        </p>
+                        <p style="font-size: 0.95rem; font-weight: 600; color: var(--accent-teal);">
+                            <i class="fas fa-check-circle"></i> Ergebnis: Keine Incidents seit 18 Monaten, Versicherungsprämie -30%
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-accent" style="text-align: center; padding: 4rem 1.5rem;">
+        <div class="section__container">
+            <h2 class="text-white mb-3">Sichern Sie Ihre Automotive-Produktion</h2>
+            <p class="text-white mb-4" style="font-size: 1.125rem; max-width: 700px; margin: 0 auto 2rem;">
+                15 Jahre Automotive OT-Erfahrung – von ADAS bis Produktionssicherheit. 
+                Buchen Sie ein kostenloses 30-minütiges Erstgespräch.
+            </p>
+            <a href="/contact.html#form" class="btn btn--primary btn--large" style="background: white; color: var(--primary-blue);">
+                Jetzt Termin buchen
+            </a>
+        </div>
+    </section>

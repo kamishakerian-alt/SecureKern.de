@@ -6,6 +6,20 @@
 
 ---
 
+## ⚙️ Hinweis (Neu): Headless CMS + Generator
+
+Diese Website wird jetzt **dynamisch generiert** (Static Site Generation) mit:
+
+- **Eleventy (11ty)**: generiert die Website nach `Website/dist`
+- **Decap CMS**: Content-UI unter `https://IHRE-DOMAIN/admin`
+
+Für Deployment (Netlify/Vercel) ist daher wichtig:
+
+- **Build command:** `npm run build`
+- **Publish directory:** `Website/dist`
+
+---
+
 ## 🎯 Quick Decision: Which Hosting?
 
 | Option | Cost | Time | Best For |
@@ -35,8 +49,8 @@
 
 5. **Upload files:**
    - Click "uploading an existing file"
-   - Drag & drop entire `Website` folder contents
-   - **Important:** Upload files directly (not in a subfolder)
+   - Drag & drop **alle Dateien aus dem Projekt-Root** (u. a. `site/`, `Website/`, `package.json`, `package-lock.json`)
+   - **Wichtig:** Keine extra Unterordner-Ebene beim Upload (die Dateien müssen im Repository-Root liegen)
    - Click "Commit changes"
 
 #### 2. Deploy to Netlify
@@ -48,8 +62,8 @@
 5. **Authorize** Netlify (allow GitHub access)
 6. **Select repository:** `securekern-website`
 7. **Configure:**
-   - Build command: (leave empty)
-   - Publish directory: `./` (dot slash)
+   - Build command: `npm run build`
+   - Publish directory: `Website/dist`
 8. **Click:** "Deploy site"
 
 #### 3. Wait 2 Minutes
@@ -59,7 +73,16 @@ Netlify will:
 - ✅ Generate SSL certificate (https://)
 - ✅ Give you a URL: `https://random-name-123.netlify.app`
 
-#### 4. Custom Domain (Optional)
+#### 4. (Optional) CMS aktivieren (`/admin`)
+
+Wenn Sie Inhalte später selbst pflegen wollen (Headless CMS):
+
+1. **Netlify Dashboard → Site settings → Identity → Enable Identity**
+2. **Identity → Services → Enable Git Gateway**
+3. **Identity → Invite users** (oder Registration auf „Invite only“ lassen)
+4. Öffnen: `https://IHRE-DOMAIN/admin`
+
+#### 5. Custom Domain (Optional)
 
 **If you own `secure-kern.ch` or `secure-kern.de`:**
 
@@ -100,7 +123,10 @@ Netlify will:
 2. **Sign up** with GitHub
 3. **Click:** "Add New" → "Project"
 4. **Import** `securekern-website` repository
-5. **Deploy** (leave settings default)
+5. **Project Settings (Build):**
+   - Build Command: `npm run build`
+   - Output Directory: `Website/dist`
+6. **Deploy**
 
 **Custom domain:** Same DNS setup as Netlify.
 
@@ -159,11 +185,15 @@ systemctl enable nginx
 **On your Windows PC (PowerShell):**
 
 ```powershell
-# Navigate to Website folder
-cd "C:\Users\skk2abt\Desktop\Nexus\05_Securekern_OT_Security\Website"
+# Navigate to project root
+cd "C:\Users\skk2abt\Desktop\WP_Projetcs\SecureKern.de"
+
+# Build the site (outputs to Website/dist)
+npm install
+npm run build
 
 # Upload files (replace YOUR_SERVER_IP)
-scp -r * root@YOUR_SERVER_IP:/var/www/html/
+scp -r Website/dist/* root@YOUR_SERVER_IP:/var/www/html/
 ```
 
 **Enter password** when prompted.

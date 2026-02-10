@@ -1,0 +1,17 @@
+{
+  "name": "securekern-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "eleventy",
+    "dev": "eleventy --serve --watch",
+    "cms": "decap-server",
+    "fix:encoding": "node scripts/fix-encoding.mjs",
+    "migrate:pages": "node scripts/migrate-pages-to-cms.mjs"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "decap-server": "^3.5.0",
+    "markdown-it": "^14.1.0"
+  }
+}
