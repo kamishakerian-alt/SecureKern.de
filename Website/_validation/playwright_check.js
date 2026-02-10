@@ -69,26 +69,54 @@ async function run() {
   const context = await browser.newContext({ viewport: { width: 1440, height: 900 } });
   const page = await context.newPage();
 
-  const targets = [
-    '/index.html',
-    '/services/nis2-readiness.html',
-    '/services/iec-62443.html',
-    '/services/segmentation.html',
-    '/leistungen.html',
-    '/loesungen.html',
-    '/ressourcen.html',
-    '/contact.html',
-    '/certifications.html',
-    '/team.html',
-    '/resources/blog.html'
-  ];
+  // Auto-discover all HTML pages under the generated site (prefer ./dist if present)
+  const PREFERRED_DIST = path.join(__dirname, '..', 'dist');
+  const SITE_ROOT = fs.existsSync(PREFERRED_DIST) ? PREFERRED_DIST : path.join(__dirname, '..');
+
+  function collectHtmlFiles(dir, out = []) {
+    for (const name of fs.readdirSync(dir)) {
+      const p = path.join(dir, name);
+      const stat = fs.statSync(p);
+      if (stat.isDirectory()) {
+        collectHtmlFiles(p, out);
+      } else if (stat.isFile() && path.extname(p).toLowerCase() === '.html') {
+        // ignore 404 or hidden files if any
+        const rel = '/' + path.relative(SITE_ROOT, p).replace(/\\/g, '/');
+        out.push(rel);
+      }
+    }
+    return out;
+  }
+
+  // Ensure the screenshot dir exists and is empty (remove old screenshots)
+  if (fs.existsSync(SCREEN_DIR)) {
+    for (const f of fs.readdirSync(SCREEN_DIR)) {
+      const p = path.join(SCREEN_DIR, f);
+      try { fs.unlinkSync(p); } catch (e) { /* ignore */ }
+    }
+  } else {
+    fs.mkdirSync(SCREEN_DIR, { recursive: true });
+  }
+
+  const targets = collectHtmlFiles(SITE_ROOT).sort();
 
   const results = [];
 
   for (const p of targets) {
     const url = base + p;
     await page.goto(url, { waitUntil: 'domcontentloaded' });
-    await page.waitForTimeout(150);
+
+    // Wait for images and network to settle to avoid blank hero captures
+    try {
+      await page.waitForSelector('img.hero__background', { timeout: 2000 });
+    } catch (e) {
+      // ignore if no hero image on the page
+    }
+    try {
+      await page.waitForLoadState('networkidle', { timeout: 2000 });
+    } catch (e) {
+      // best-effort only
+    }
 
     // CTA alignment check (best-effort)
     const cta = await page.$('.nav__actions .btn.btn--primary, .nav__actions .btn--primary, .nav__actions .btn');
@@ -100,9 +128,9 @@ async function run() {
       }
     }
 
-    const shotName = p.replace(/^\//, '').replace(/[\\/]/g, '_');
+    const shotName = p.replace(/^\//, '').replace(/[\\\/]/g, '_');
     const outPath = path.join(SCREEN_DIR, `${shotName}.png`);
-    await page.screenshot({ path: outPath, fullPage: false });
+    await page.screenshot({ path: outPath, fullPage: true });
 
     results.push({ path: p, ctaRight });
   }

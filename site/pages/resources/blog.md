@@ -5,13 +5,17 @@ description: "OT-Security-Blog von SecureKern. Aktuelle Artikel zu NIS2, IEC 624
 permalink: "/resources/blog.html"
 ---
 <!-- Hero -->
-    <section class="hero" style="min-height: 50vh; padding-top: 140px;">
-        <div class="hero__content">
-            <h1 class="hero__headline" data-i18n="blog.title">OT-Security Blog</h1>
-            <p class="hero__subheadline" data-i18n="blog.subtitle" style="max-width: 800px; margin: 0 auto;">
-                Aktuelle Insights, Best Practices und Branchen-News zu industrieller Cybersecurity.
-                Wissen, das Sie für Ihre OT-Sicherheit brauchen.
-            </p>
+    <section class="hero">
+        <img src="/assets/images/visual-assets/hero-bg.jpg" alt="OT-Security Blog" class="hero__background">
+        <div class="hero__overlay"></div>
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__headline" data-i18n="blog.title">OT-Security Blog</h1>
+                <p class="hero__subheadline" data-i18n="blog.subtitle" style="max-width: 800px; margin: 0 auto;">
+                    Aktuelle Insights, Best Practices und Branchen-News zu industrieller Cybersecurity.
+                    Wissen, das Sie für Ihre OT-Sicherheit brauchen.
+                </p>
+            </div>
         </div>
     </section>
 

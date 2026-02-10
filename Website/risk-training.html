@@ -24,7 +24,7 @@
     <div class="container">
         <nav class="nav">
             <a href="/index.html" class="nav__logo">
-                <img src="/assets/images/logo.svg" alt="SecureKern Logo">
+                <img src="./assets/images/brand/logo.svg" alt="SecureKern Logo">
             </a>
             <button class="nav__hamburger" aria-label="Menü öffnen">
                 <span></span>
@@ -33,9 +33,9 @@
             </button>
             <div class="nav__menu-container">
                 <ul class="nav__menu">
-                    <li class="nav__item"><a href="/index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="/index.html" class="nav__link" data-i18n="nav.home">Home</a></li>
                     <li class="nav__item nav__item--has-dropdown">
-                        <a href="#" class="nav__link">Leistungen <i class="fas fa-chevron-down"></i></a>
+                        <a href="#" class="nav__link"><span data-i18n="nav.services">Leistungen</span> <i class="fas fa-chevron-down"></i></a>
                         <ul class="nav__dropdown">
                             <li><a href="/leistungen.html" class="nav__dropdown-link">Alle Leistungen</a></li>
                             <li><a href="/services/nis2-readiness.html" class="nav__dropdown-link">NIS2-Beratung</a></li>
@@ -45,35 +45,57 @@
                     </li>
                     <li class="nav__item nav__item--has-dropdown">
                         <a href="#" class="nav__link"><span data-i18n="nav.solutions">Lösungen</span> <i class="fas fa-chevron-down"></i></a>
-                            <ul class="nav__dropdown">
-                                <li><a href="/loesungen.html" class="nav__dropdown-link" data-i18n="nav.solutions_all">Alle Lösungen</a></li>
+                        <ul class="nav__dropdown">
+                            <li><a href="/loesungen.html" class="nav__dropdown-link" data-i18n="nav.solutions_all">Alle Lösungen</a></li>
                             <li><a href="/segmentation.html" class="nav__dropdown-link">Secure Remote Access</a></li>
-                            <li><a href="/ot-mdr.html" class="nav__dropdown-link">OT Monitoring</a></li>
-                            <li><a href="/loesungen.html" class="nav__dropdown-link">OT Schwachstellenmanagement</a></li>
                         </ul>
                     </li>
-                    <li class="nav__item"><a href="/ueber-uns.html" class="nav__link">über Uns</a></li>
-                    <li class="nav__item"><a href="/blog.html" class="nav__link">Blog</a></li>
-                    <li class="nav__item"><a href="/certifications.html" class="nav__link">Zertifizierungen</a></li>
+                    <li class="nav__item"><a href="/blog.html" class="nav__link" data-i18n="nav.blog">Blog</a></li>
+                    <li class="nav__item"><a href="/certifications.html" class="nav__link" data-i18n="nav.certifications">Zertifizierungen</a></li>
+                    <li class="nav__item"><a href="/contact.html" class="nav__link" data-i18n="nav.contact">Kontakt</a></li>
                 </ul>
                 <div class="nav__actions">
-                    <a href="/contact.html" class="btn btn--primary" data-i18n="nav.cta">Jetzt Beraten Lassen</a>
+                    <a href="/contact.html" class="btn btn--primary" data-i18n="nav.consultation">Jetzt Beraten Lassen</a>
+                    <button class="nav__lang-toggle" type="button" aria-label="Switch language" title="Deutsch">
+                        <img src="./assets/images/flags/de.svg" alt="Deutsch">
+                        <span class="nav__lang-label">DE</span>
+                    </button>
                 </div>
             </div>
         </nav>
     </div>
 </header>
-            </nav>
-        </div>
-    </header>
 
     <main>
-        <section class="service-detail-hero">
+        <section class="hero" style="background-image: url('./assets/images/visual-assets/background.webp');">
+            <div class="hero__container">
+                <div class="hero__text">
+                    <span class="hero__tag" data-i18n="solutions.automotive.tag">Risikobewertung & Training</span>
+                    <h1 class="hero__title" data-i18n="solutions.automotive.title">OT-Risikobewertung & Training</h1>
+                    <p class="hero__subtitle" data-i18n="solutions.automotive.subtitle">Kennen Sie Ihre Schwachstellen? Wir identifizieren Ihre Risiken systematisch und befähigen Ihr Team, zur ersten Verteidigungslinie zu werden.</p>
+                    <a href="contact.html" class="btn btn--primary" data-i18n="hero.cta">Jetzt Beraten Lassen</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="value-props-section section">
             <div class="container">
-                <div class="service-detail-hero__content">
-                    <h1 class="service-detail-hero__title" data-i18n="pages.risk-training.title">Risikobewertung & Training</h1>
-                    <p class="service-detail-hero__subtitle">Kennen Sie Ihre Schwachstellen? Wir identifizieren Ihre Risiken systematisch und befähigen Ihr Team, zur ersten Verteidigungslinie zu werden.</p>
-                    <a href="contact.html?service=risk-training" class="btn btn--primary">Beratungsgespräch vereinbaren</a>
+                <div class="value-props-grid">
+                    <div class="value-prop">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3 data-i18n="value_props.prop1.title">Schutz Kritischer Infrastrukturen</h3>
+                        <p data-i18n="value_props.prop1.description">Wir sichern Ihre OT-Systeme gegen Cyber-Bedrohungen ab und gewährleisten die Einhaltung gesetzlicher Vorschriften.</p>
+                    </div>
+                    <div class="value-prop">
+                        <i class="fas fa-industry"></i>
+                        <h3 data-i18n="value_props.prop2.title">Produktionsausfallsicherheit</h3>
+                        <p data-i18n="value_props.prop2.description">Minimieren Sie das Risiko von Produktionsstillständen durch robuste und resiliente Sicherheitsarchitekturen.</p>
+                    </div>
+                    <div class="value-prop">
+                        <i class="fas fa-cogs"></i>
+                        <h3 data-i18n="value_props.prop3.title">Effizienz & Produktivität</h3>
+                        <p data-i18n="value_props.prop3.description">Unsere Lösungen optimieren Ihre Prozesse und steigern die Effizienz ohne Kompromisse bei der Sicherheit.</p>
+                    </div>
                 </div>
             </div>
         </section>

@@ -20,43 +20,92 @@
 </head>
 <body>
     <header class="header">
-        <nav class="nav">
-            <a href="/" class="nav__logo">
-                <img src="/assets/images/brand/logo-inverted.png" srcset="/assets/images/brand/logo-inverted@2x.png 2x" alt="SecureKern Logo" class="nav__logo-icon">
-            </a>
-            
-            <ul class="nav__menu">
-                <li><a href="/" class="nav__link">Start</a></li>
-                <li><a href="/services.html" class="nav__link">Leistungen</a></li>
-                <li><a href="/solutions.html" class="nav__link active">Lösungen</a></li>
-                <li><a href="/ueber-uns.html" class="nav__link">ber uns</a></li>
-                <li><a href="/contact.html" class="nav__link">Kontakt</a></li>
-            </ul>
-            
-            <button class="nav__lang-toggle">EN</button>
-            <button class="nav__hamburger" aria-label="Toggle navigation">
-                <span class="nav__hamburger-line"></span>
-                <span class="nav__hamburger-line"></span>
-                <span class="nav__hamburger-line"></span>
-            </button>
-        </nav>
+        <div class="container">
+            <nav class="nav">
+                <a href="/" class="nav__logo">
+                    <img src="/assets/images/brand/logo-inverted.png" srcset="/assets/images/brand/logo-inverted@2x.png 2x" alt="SecureKern Logo" class="nav__logo-icon">
+                    <span>SECURE KERN</span>
+                </a>
+
+                <button class="nav__hamburger" type="button" aria-label="Menü öffnen">
+                    <span class="nav__hamburger-line"></span>
+                    <span class="nav__hamburger-line"></span>
+                    <span class="nav__hamburger-line"></span>
+                </button>
+
+                <div class="nav__menu-container">
+                    <ul class="nav__menu">
+                        <li class="nav__item"><a href="/" class="nav__link">Start</a></li>
+                        <li class="nav__item"><a href="/services.html" class="nav__link">Leistungen</a></li>
+                        <li class="nav__item"><a href="/solutions.html" class="nav__link active" data-i18n="nav.solutions">Lösungen</a></li>
+                        <li class="nav__item"><a href="/about.html" class="nav__link">über uns</a></li>
+                        <li class="nav__item"><a href="/resources.html" class="nav__link">Ressourcen</a></li>
+                        <li class="nav__item"><a href="/contact.html" class="nav__link">Kontakt</a></li>
+                    </ul>
+
+                    <div class="nav__actions">
+                        <button class="nav__lang-toggle" type="button" aria-label="Sprache wechseln">EN</button>
+                        <a href="/contact.html" class="btn btn--primary" data-i18n="nav.cta">Jetzt Beraten Lassen</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <section class="hero" style="background: linear-gradient(135deg, rgba(26, 39, 68, 0.92) 0%, rgba(45, 74, 111, 0.88) 100%), url('../assets/images/automotive-factory.jpg') center/cover no-repeat; min-height: 70vh; padding-top: 140px;">
+    <section class="hero" style="min-height: 60vh; padding-top: 140px;">
         <div class="hero__content">
-            <div class="section__subtitle" data-i18n="solutions.subtitle" style="color: white; margin-bottom: 1rem; opacity: 0.9;">Automotive & Tier 1-3 Zulieferer</div>
-            <h1 class="hero__headline" data-i18n="solutions.automotive.title" style="color: white;">Produktionssicherheit für die Automobilindustrie</h1>
-            <p class="hero__subheadline" data-i18n="solutions.automotive.subtitle" style="color: white; opacity: 0.95;">
+            <div class="section__subtitle" style="color: var(--accent-teal); margin-bottom: 1rem;">Automotive & Tier 1-3 Zulieferer</div>
+            <h1 class="hero__headline" data-i18n="solutions.automotive.title">Produktionssicherheit für die Automobilindustrie</h1>
+            <p class="hero__subheadline" data-i18n="solutions.automotive.subtitle">
                 15 Jahre Automotive OT-Erfahrung. Von UNECE R155 über ISO/SAE 21434 
                 bis zu sicheren Produktionslinien – wir kennen Ihre Herausforderungen.
             </p>
-            <div class="hero__cta" style="margin-top: 2rem;">
-                <a href="/contact.html#form" class="btn btn--primary btn--large" style="background: white; color: var(--primary-blue);">
+            <div class="hero__cta">
+                <a href="/contact.html#form" class="btn btn--primary btn--large">
                     Kostenlose Erstberatung
                 </a>
-                <a href="#challenges" class="btn btn--secondary btn--large" style="border-color: white; color: white;">
+                <a href="#challenges" class="btn btn--secondary btn--large">
                     Typische Challenges
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="value-props-section section">
+        <div class="container">
+            <div class="section-title">
+                <h2 data-i18n="home.why.title">Warum Unternehmen auf SecureKern setzen</h2>
+                <p data-i18n="home.why.subtitle">Wir kombinieren tiefgreifendes OT-Verständnis mit modernster Technologie und regulatorischer Expertise.</p>
+            </div>
+
+            <div class="value-props-grid">
+                <div class="value-card">
+                    <div class="value-card__icon"><i class="fas fa-industry"></i></div>
+                    <h3 data-i18n="home.values.ot_title">OT-Spezialisierung</h3>
+                    <p data-i18n="home.values.ot_specialization">Wir arbeiten dort, wo klassische IT-Security endet: in Produktionsnetzen, SCADA-Systemen und mit industriellen Protokollen. Unser Fokus liegt auf Hochverfügbarkeit und Safety.</p>
+                    <a href="/ueber-uns.html" class="value-card__cta" data-i18n="home.cta.more_expertise">Mehr über unsere Expertise <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-card__icon"><i class="fas fa-certificate"></i></div>
+                    <h3 data-i18n="home.values.method_title">Regulatorisch &amp; Technisch Fundiert</h3>
+                    <p data-i18n="home.values.method_text">Unsere Methodik orientiert sich an IEC 62443, NIS2 und ISO 27001. Das Ergebnis: Audit-sichere Nachweisführung für Behörden, Versicherer und Prüfer.</p>
+                    <a href="/leistungen.html" class="value-card__cta" data-i18n="home.values.method_cta">Unsere Methodik <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-card__icon"><i class="fas fa-bolt"></i></div>
+                    <h3 data-i18n="home.values.tech_title">KI-unterstützte Analyse</h3>
+                    <p data-i18n="home.values.tech_text">Durch KI-gestützte Dokumentenverarbeitung liefern wir Risikoanalysen und Compliance-Checks bis zu 70% schneller als traditionelle Beratungen – bei gleicher fachlicher Tiefe.</p>
+                    <a href="/loesungen.html" class="value-card__cta" data-i18n="home.values.tech_cta">Technologie im Einsatz <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-card__icon"><i class="fas fa-puzzle-piece"></i></div>
+                    <h3>Mittelstand-gerecht &amp; Modular</h3>
+                    <p data-i18n="index.no_enterprise_programs">Keine überdimensionierten Konzern-Programme. Wir bieten modulare Pakete und budget-realistische Maßnahmenpläne mit transparenten Preisen, die zu Ihrem Tempo passen.</p>
+                    <a href="/kontakt.html" class="value-card__cta">Jetzt beraten lassen <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
         </div>
     </section>

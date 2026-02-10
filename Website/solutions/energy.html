@@ -21,81 +21,105 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="site-header">
+    <header class="header">
         <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <a href="/index.html">
-                        <i class="fas fa-shield-alt"></i>
-                        <span>Secure<strong>Kern</strong></span>
-                    </a>
-                </div>
-                
-                <nav class="main-nav">
-                    <ul>
-                        <li><a href="/index.html" data-translate="nav.home">Home</a></li>
-                        <li><a href="/services.html" data-translate="nav.services">Services</a></li>
-                        <li><a href="/about.html" data-translate="nav.about">About</a></li>
-                        <li><a href="/contact.html" data-translate="nav.contact">Contact</a></li>
-                        <li class="language-switcher">
-                            <button id="langToggle" aria-label="Switch Language">
-                                <i class="fas fa-globe"></i>
-                                <span id="currentLang">DE</span>
-                            </button>
-                        </li>
-                    </ul>
-                </nav>
-                
-                <button class="mobile-menu-toggle" aria-label="Toggle Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+            <nav class="nav">
+                <a href="/" class="nav__logo">
+                    <img src="/assets/images/brand/logo-inverted.png" srcset="/assets/images/brand/logo-inverted@2x.png 2x" alt="SecureKern Logo" class="nav__logo-icon">
+                    <span>SECURE KERN</span>
+                </a>
+
+                <button class="nav__hamburger" type="button" aria-label="Menü öffnen">
+                    <span class="nav__hamburger-line"></span>
+                    <span class="nav__hamburger-line"></span>
+                    <span class="nav__hamburger-line"></span>
                 </button>
-            </div>
+
+                <div class="nav__menu-container">
+                    <ul class="nav__menu">
+                        <li class="nav__item"><a href="/" class="nav__link">Start</a></li>
+                        <li class="nav__item"><a href="/services.html" class="nav__link">Leistungen</a></li>
+                        <li class="nav__item"><a href="/solutions.html" class="nav__link active" data-i18n="nav.solutions">Lösungen</a></li>
+                        <li class="nav__item"><a href="/about.html" class="nav__link">über uns</a></li>
+                        <li class="nav__item"><a href="/resources.html" class="nav__link">Ressourcen</a></li>
+                        <li class="nav__item"><a href="/contact.html" class="nav__link">Kontakt</a></li>
+                    </ul>
+
+                    <div class="nav__actions">
+                        <button class="nav__lang-toggle" type="button" aria-label="Sprache wechseln">EN</button>
+                        <a href="/contact.html" class="btn btn--primary" data-i18n="nav.cta">Jetzt Beraten Lassen</a>
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-section" style="background: linear-gradient(135deg, rgba(26, 39, 68, 0.92) 0%, rgba(0, 105, 92, 0.88) 100%), url('../assets/images/energy-control-room.jpg') center/cover no-repeat; padding: 100px 0 80px;">
+    <section class="hero">
+        <div class="hero__content">
+            <div class="section__subtitle">Energy & KRITIS</div>
+            <h1 class="hero__headline">Kritische Infrastruktur sichern</h1>
+            <p class="hero__subheadline">
+                OT Security für Energieversorger, Stadtwerke und Netzbetreiber. NIS2-Compliance, 24h-Meldepflicht, SCADA-Schutz für kritische Infrastrukturen.
+            </p>
+            <div class="hero__cta">
+                <a href="/contact.html#form" class="btn btn--primary btn--large">Kostenlose KRITIS-Beratung</a>
+                <a href="#challenges" class="btn btn--secondary btn--large">Typische Herausforderungen</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="value-props-section section">
         <div class="container">
-            <div class="hero-content" style="text-align: center; color: white;">
-                <h1 style="font-size: 2.5rem; margin-bottom: 1.5rem;">
-                    Kritische Infrastruktur sichern
-                </h1>
-                <p style="font-size: 1.25rem; max-width: 800px; margin: 0 auto 2rem; opacity: 0.95;">
-                    OT Security für Energieversorger, Stadtwerke und Netzbetreiber. NIS2-Compliance, 24h-Meldepflicht, SCADA-Schutz für kritische Infrastrukturen.
-                </p>
-                <div style="background: rgba(255, 255, 255, 0.1); padding: 15px 30px; border-radius: 8px; display: inline-block; margin-bottom: 2rem;">
-                    <p style="margin: 0; font-weight: 600;">
-                        <i class="fas fa-exclamation-triangle" style="color: #FFC107; margin-right: 10px;"></i>
-                        NIS2-Richtlinie: Energiesektor KRITIS-pflichtig ab 2025
-                    </p>
+            <div class="section-title">
+                <h2 data-i18n="home.why.title">Warum Unternehmen auf SecureKern setzen</h2>
+                <p data-i18n="home.why.subtitle">Wir kombinieren tiefgreifendes OT-Verständnis mit modernster Technologie und regulatorischer Expertise.</p>
+            </div>
+
+            <div class="value-props-grid">
+                <div class="value-card">
+                    <div class="value-card__icon"><i class="fas fa-industry"></i></div>
+                    <h3 data-i18n="home.values.ot_title">OT-Spezialisierung</h3>
+                    <p data-i18n="home.values.ot_specialization">Wir arbeiten dort, wo klassische IT-Security endet: in Produktionsnetzen, SCADA-Systemen und mit industriellen Protokollen. Unser Fokus liegt auf Hochverfügbarkeit und Safety.</p>
+                    <a href="/ueber-uns.html" class="value-card__cta" data-i18n="home.cta.more_expertise">Mehr über unsere Expertise <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
-                    <a href="../contact.html#form" class="btn btn-primary" style="background: white; color: #003D5B;">
-                        Kostenlose KRITIS-Beratung
-                    </a>
-                    <a href="#challenges" class="btn btn-secondary" style="background: transparent; border: 2px solid white; color: white;">
-                        Typische Herausforderungen
-                    </a>
+
+                <div class="value-card">
+                    <div class="value-card__icon"><i class="fas fa-certificate"></i></div>
+                    <h3 data-i18n="home.values.method_title">Regulatorisch &amp; Technisch Fundiert</h3>
+                    <p data-i18n="home.values.method_text">Unsere Methodik orientiert sich an IEC 62443, NIS2 und ISO 27001. Das Ergebnis: Audit-sichere Nachweisführung für Behörden, Versicherer und Prüfer.</p>
+                    <a href="/leistungen.html" class="value-card__cta" data-i18n="home.values.method_cta">Unsere Methodik <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-card__icon"><i class="fas fa-bolt"></i></div>
+                    <h3 data-i18n="home.values.tech_title">KI-unterstützte Analyse</h3>
+                    <p data-i18n="home.values.tech_text">Durch KI-gestützte Dokumentenverarbeitung liefern wir Risikoanalysen und Compliance-Checks bis zu 70% schneller als traditionelle Beratungen – bei gleicher fachlicher Tiefe.</p>
+                    <a href="/loesungen.html" class="value-card__cta" data-i18n="home.values.tech_cta">Technologie im Einsatz <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="value-card">
+                    <div class="value-card__icon"><i class="fas fa-puzzle-piece"></i></div>
+                    <h3>Mittelstand-gerecht &amp; Modular</h3>
+                    <p data-i18n="index.no_enterprise_programs">Keine überdimensionierten Konzern-Programme. Wir bieten modulare Pakete und budget-realistische Maßnahmenpläne mit transparenten Preisen, die zu Ihrem Tempo passen.</p>
+                    <a href="/kontakt.html" class="value-card__cta">Jetzt beraten lassen <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Why OT Security for Energy -->
-    <section class="section" style="background: #F5F5F5;">
+    <section class="section">
         <div class="container">
-            <h2 class="section-title" style="text-align: center; margin-bottom: 3rem;">
+            <h2 class="section-title">
                 Warum OT Security für den Energiesektor?
             </h2>
-            <div class="grid-2-col" style="gap: 30px;">
-                <div class="card" style="padding: 30px; text-align: center;">
-                    <div style="width: 80px; height: 80px; background: linear-gradient(135deg, #003D5B, #00886B); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: white; font-size: 2rem;">
+            <div class="grid-2-col">
+                <div class="card">
+                    <div class="card__icon">
                         <i class="fas fa-gavel"></i>
                     </div>
                     <h3 style="margin-bottom: 1rem; color: #003D5B;">NIS2-Pflicht für Energieversorger</h3>
