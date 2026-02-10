@@ -11,6 +11,7 @@ lang: "en"
     <h1>Blog</h1>
     <p>Insights, case studies and guides about OT cybersecurity and compliance.</p>
 
-    {% include "partials/blog-posts-grid.njk" with { limit: 10 } %}
+    {% set limit = 10 %}
+    {% include "partials/blog-posts-grid.njk" %}
   </div>
 </section>

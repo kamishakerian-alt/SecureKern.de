@@ -11,6 +11,7 @@ lang: "en"
     <h1>Resources</h1>
     <p>Whitepapers, guides and webinar recordings to help you improve OT security and compliance.</p>
 
-    {% include "partials/blog-posts-grid.njk" with { limit: 6 } %}
+    {% set limit = 6 %}
+    {% include "partials/blog-posts-grid.njk" %}
   </div>
 </section>
