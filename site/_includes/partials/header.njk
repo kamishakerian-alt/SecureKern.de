@@ -18,7 +18,7 @@
       </button>
 
       <div class="nav__menu-container" id="nav-menu">
-        {% set site_local = (page.lang == 'en' and (site_en or site['en'])) or site %}
+        {% set site_local = ((page.lang == 'en' or (page.url and ('/en/' in page.url))) and (site_en or site['en'])) or site %}
         {% set nav_local = ((page.lang == 'en' or (page.url and ('/en/' in page.url))) and (navigation_en or navigation['en'])) or navigation %}
         <ul class="nav__menu">
           {% for item in nav_local.main %}
@@ -50,7 +50,7 @@
 
           {# Use page.lang to determine current language; show appropriate flag and label #}
           <button class="nav__lang-toggle" type="button" aria-label="Sprache wechseln">
-            {% if page.lang == 'en' %}
+            {% if (page.lang == 'en') or (page.url and ('/en/' in page.url)) %}
               <img src="/assets/images/flags/gb.svg" alt="English (UK)" />
               <span class="nav__lang-label">DE</span>
             {% else %}
