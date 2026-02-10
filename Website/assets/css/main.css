@@ -1,6 +1,6 @@
 ﻿/* ====================================
    SecureKern - OT Security Website
-   Main Stylesheet ? Enhanced Brand Design
+   Main Stylesheet – Enhanced Brand Design
    ==================================== */
 
 /* === CSS VARIABLES === */
@@ -39,6 +39,7 @@
   --spacing-lg: 5rem;    /* 80px */
   --spacing-xl: 7.5rem;  /* 120px */
   --container-width: 1280px;
+  --header-height: 80px;
   
   /* UI Elements */
   --radius-sm: 4px;
@@ -48,6 +49,35 @@
   /* Transitions */
   --transition-fast: 0.2s ease-out;
   --transition-base: 0.3s ease-out;
+
+  /* Compatibility aliases (legacy sections still using old tokens) */
+  --neutral-white: var(--surface-light);
+  --neutral-light-gray: var(--surface-off-white);
+  --neutral-gray: #E2E8F0;
+  --primary-blue: var(--primary-navy);
+  --bg-light: var(--surface-off-white);
+  --background-light: var(--surface-light);
+  --border-color: rgba(0, 0, 0, 0.12);
+  --border-radius-sm: var(--radius-sm);
+  --border-radius-md: var(--radius-md);
+
+  --font-family-base: var(--font-body);
+  --font-family-headings: var(--font-heading);
+  --font-size-sm: 0.875rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-h1: clamp(2.25rem, 4vw, 3.25rem);
+  --font-size-h2: clamp(1.75rem, 3vw, 2.25rem);
+
+  --space-xs: var(--spacing-xs);
+  --space-sm: var(--spacing-sm);
+  --space-md: var(--spacing-md);
+  --space-lg: var(--spacing-lg);
+  --space-xl: var(--spacing-xl);
+
+  --text-normal: var(--text-primary);
+  --text-muted: var(--text-secondary);
 }
 
 /* === RESET & BASE === */
@@ -64,7 +94,7 @@ html {
 
 body {
   font-family: var(--font-body);
-  font-size: 1.125rem; /* 18px */
+  font-size: 1rem; /* 16px */
   line-height: 1.6;
   color: var(--text-secondary);
   background-color: var(--surface-light);
@@ -92,9 +122,9 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: var(--spacing-sm);
 }
 
-h1 { font-size: clamp(2.5rem, 5vw, 4rem); } /* 64px */
-h2 { font-size: clamp(2rem, 4vw, 2.625rem); } /* 42px */
-h3 { font-size: clamp(1.5rem, 3vw, 1.75rem); } /* 28px */
+h1 { font-size: var(--font-size-h1); }
+h2 { font-size: var(--font-size-h2); }
+h3 { font-size: clamp(1.375rem, 2.4vw, 1.75rem); }
 h4 { font-size: 1.25rem; } /* 20px */
 
 p {
@@ -194,7 +224,14 @@ a:hover {
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   transition: all var(--transition-base);
-  padding: 0.5rem 0;
+  height: var(--header-height);
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.header .container {
+  height: 100%;
 }
 
 .header--scrolled {
@@ -203,10 +240,21 @@ a:hover {
 }
 
 .nav {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  gap: 1.25rem;
+  gap: 1rem;
+  height: 100%;
+}
+
+/* Ensure the menu is centered and actions are pinned to the right
+   so CTA buttons stay aligned across pages */
+.nav__menu {
+  justify-self: center;
+}
+
+.nav__actions {
+  justify-self: end;
 }
 
 /* Support both logo markup variants:
@@ -223,9 +271,8 @@ a:hover {
 }
 
 .nav__logo img,
-.nav__logo-icon,
-.nav__logo {
-  height: 48px;
+.nav__logo-icon {
+  height: 60px;
   width: auto;
   transition: transform var(--transition-base);
 }
@@ -237,6 +284,8 @@ a:hover {
 .nav__menu-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
   flex: 1;
   min-width: 0;
 }
@@ -244,10 +293,13 @@ a:hover {
 .nav__menu {
   display: flex;
   list-style: none;
-  gap: 2.5rem;
+  flex: 1;
+  justify-content: center;
+  gap: 1.75rem;
   align-items: center;
   padding: 0;
-  margin: 0 auto; /* center menu between logo and actions */
+  margin: 0;
+  white-space: nowrap;
 }
 
 .nav__actions {
@@ -255,6 +307,78 @@ a:hover {
   align-items: center;
   gap: 0.75rem;
   flex-shrink: 0;
+  justify-self: end;
+  min-width: 0;
+}
+
+/* Ensure CTA is pinned to the visual right edge of the centered container for pixel-consistent alignment */
+.header .container {
+  position: relative;
+}
+
+.nav__actions {
+  position: static;
+}
+
+.nav__actions .btn--primary {
+  order: 2;
+  --cta-w: 200px;
+  width: var(--cta-w);
+  min-width: var(--cta-w);
+  white-space: nowrap;
+  justify-content: center;
+  position: absolute;
+  /* Pin to the right edge of the centered container */
+  right: calc((100% - var(--container-width)) / 2 + var(--spacing-md));
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav__actions .nav__lang-toggle {
+  order: 1;
+  position: absolute;
+  /* place to the left of CTA using CTA width variable */
+  right: calc((100% - var(--container-width)) / 2 + var(--spacing-md) + var(--cta-w) + 0.5rem);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Support alternative language toggle markup */
+.nav__actions .language-toggle {
+  order: 1;
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  position: absolute;
+  right: calc((100% - var(--container-width)) / 2 + var(--spacing-md) + var(--cta-w) + 0.5rem);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Disable absolute header positioning on smaller screens */
+@media (max-width: 1024px) {
+  .nav {
+    display: flex; /* revert to flow-based layout on narrow screens */
+  }
+  .nav__menu {
+    justify-self: stretch;
+  }
+  .header .container {
+    position: static;
+  }
+  .nav__actions .btn--primary,
+  .nav__actions .nav__lang-toggle,
+  .nav__actions .language-toggle {
+    position: static;
+    transform: none;
+    order: initial;
+    width: auto;
+  }
+}
+
+.nav__actions .btn {
+  padding: 0.75rem 1.25rem;
+  font-size: 0.95rem;
 }
 
 .nav__lang-toggle {
@@ -296,6 +420,29 @@ a:hover {
   border: 0;
 }
 
+.sk-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 1.25rem;
+  transform: translateX(-50%) translateY(8px);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 2000;
+  background: rgba(10, 25, 47, 0.95);
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  box-shadow: var(--shadow-lg);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  transition: opacity var(--transition-fast), transform var(--transition-fast);
+}
+
+.sk-toast--show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
 .nav__lang-toggle:hover {
   background: var(--surface-off-white);
   border-color: rgba(0, 0, 0, 0.25);
@@ -305,7 +452,8 @@ a:hover {
   color: var(--text-primary);
   font-weight: 500;
   position: relative;
-  padding: 0.5rem 0;
+  padding: 0.35rem 0;
+  font-size: 0.95rem;
 }
 
 .nav__link:hover,
@@ -369,7 +517,7 @@ a:hover {
   position: relative;
 }
 .nav__item--has-dropdown > .nav__link {
-  cursor: default;
+  cursor: pointer;
   display: flex;
   align-items: center;
   gap: 0.3rem;
@@ -382,7 +530,7 @@ a:hover {
 }
 .nav__dropdown {
   position: absolute;
-  top: calc(100% + 1rem);
+  top: calc(100% + 0.5rem);
   left: 50%;
   transform: translateX(-50%);
   min-width: 240px;
@@ -399,11 +547,29 @@ a:hover {
   border: 1px solid rgba(0,0,0,0.08);
 }
 
+.nav__item--has-dropdown::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  height: 12px;
+}
+
 .nav__item--has-dropdown:hover .nav__dropdown {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
   transform: translateX(-50%) translateY(-0.5rem);
+}
+
+@media (min-width: 1201px) {
+  .nav__item--has-dropdown.open .nav__dropdown {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(-0.5rem);
+  }
 }
 .nav__dropdown-link {
   display: block;
@@ -502,7 +668,7 @@ a:hover {
 }
 
 .hero__content .hero__subtitle {
-    font-size: 1.375rem; /* 22px */
+    font-size: 1.25rem;
     color: rgba(255, 255, 255, 0.9);
     margin-bottom: 2rem;
     line-height: 1.5;
@@ -762,7 +928,7 @@ a:hover {
 }
 
 /* === RESPONSIVE DESIGN === */
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .nav__hamburger {
     display: flex;
   }
@@ -847,6 +1013,10 @@ a:hover {
         flex-direction: column;
         gap: 1rem;
         text-align: center;
+    }
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
     }
 }
 
@@ -1264,6 +1434,7 @@ a:hover {
     resize: vertical;
 }
 
+.contact-info,
 .contact-info ul {
     list-style: none;
     padding: 0;
