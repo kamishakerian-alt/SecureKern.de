@@ -415,7 +415,8 @@ const translations = {
 };
 
 // === STATE MANAGEMENT ===
-let currentLang = CONFIG.lang.default;
+// Detect current language from URL or fallback to stored preference
+let currentLang = (location.pathname.startsWith('/en/') ? 'en' : (localStorage.getItem('securekern_lang') || CONFIG.lang.default));
 
 function showToast(message) {
   try {
@@ -458,8 +459,17 @@ function ensureLangToggle() {
   // attach click handler (idempotent)
   if (!langToggle._langHandlerAttached) {
     langToggle.addEventListener('click', () => {
-      const targetLang = currentLang === 'de' ? 'en' : 'de';
-      switchLanguage(targetLang);
+      // Path-based toggle: add or remove /en prefix and navigate
+      const path = window.location.pathname;
+      if (path.startsWith('/en/')) {
+        // Go to German equivalent
+        const target = path.replace(/^\/en/, '') || '/';
+        window.location.pathname = target;
+      } else {
+        // Go to English equivalent
+        const target = '/en' + path;
+        window.location.pathname = target;
+      }
     });
     langToggle._langHandlerAttached = true;
   }

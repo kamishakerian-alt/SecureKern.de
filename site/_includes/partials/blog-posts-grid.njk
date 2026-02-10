@@ -27,7 +27,7 @@
       
       <div class="blog-card__meta">
         {% if post.data.date %}
-        <time class="blog-card__date" datetime="{{ post.data.date | date: '%Y-%m-%d' }}">
+        <time class="blog-card__date" datetime="{{ post.data.date | date('%Y-%m-%d') }}">
           <i class="fas fa-calendar"></i>
           {{ post.data.date | dateFormat }}
         </time>
