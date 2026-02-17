@@ -18,7 +18,7 @@ permalink: "/blog.html"
                 <div class="blog-grid">
                     <!-- Blog Post 1 -->
                     <article class="blog-card">
-                        <img src="./assets/images/visual-assets/blog-post-1.jpg" alt="Abstraktes Netzwerk" class="blog-card__image">
+                        <img src="/assets/images/visual-assets/blog-post-1.jpg" alt="Abstraktes Netzwerk" class="blog-card__image">
                         <div class="blog-card__content">
                             <div class="blog-card__meta">
                                 <span><i class="fas fa-tag"></i> NIS2</span>
@@ -33,7 +33,7 @@ permalink: "/blog.html"
 
                     <!-- Blog Post 2 -->
                     <article class="blog-card">
-                        <img src="./assets/images/visual-assets/blog-post-2.jpg" alt="Industrielle Anlage" class="blog-card__image">
+                        <img src="/assets/images/visual-assets/blog-post-2.jpg" alt="Industrielle Anlage" class="blog-card__image">
                         <div class="blog-card__content">
                             <div class="blog-card__meta">
                                 <span><i class="fas fa-tag"></i> IEC 62443</span>
@@ -48,7 +48,7 @@ permalink: "/blog.html"
 
                     <!-- Blog Post 3 -->
                     <article class="blog-card">
-                        <img src="./assets/images/visual-assets/blog-post-3.jpg" alt="Serverraum" class="blog-card__image">
+                        <img src="/assets/images/visual-assets/blog-post-3.jpg" alt="Serverraum" class="blog-card__image">
                         <div class="blog-card__content">
                             <div class="blog-card__meta">
                                 <span><i class="fas fa-tag"></i> Incident Response</span>
@@ -63,7 +63,7 @@ permalink: "/blog.html"
 
                     <!-- Blog Post 4 -->
                     <article class="blog-card">
-                        <img src="./assets/images/visual-assets/blog-post-4.jpg" alt="Automobil Fertigungsstraße" class="blog-card__image">
+                        <img src="/assets/images/visual-assets/blog-post-4.jpg" alt="Automobil Fertigungsstraße" class="blog-card__image">
                         <div class="blog-card__content">
                             <div class="blog-card__meta">
                                 <span><i class="fas fa-tag"></i> Branchen</span>
@@ -78,7 +78,7 @@ permalink: "/blog.html"
 
                     <!-- Blog Post 5 -->
                     <article class="blog-card">
-                        <img src="./assets/images/visual-assets/blog-post-5.jpg" alt="Schaltkasten" class="blog-card__image">
+                        <img src="/assets/images/visual-assets/blog-post-5.jpg" alt="Schaltkasten" class="blog-card__image">
                         <div class="blog-card__content">
                             <div class="blog-card__meta">
                                 <span><i class="fas fa-tag"></i> Best Practices</span>
@@ -93,7 +93,7 @@ permalink: "/blog.html"
 
                     <!-- Blog Post 6 -->
                     <article class="blog-card">
-                        <img src="./assets/images/visual-assets/blog-post-6.jpg" alt="Roboterarm" class="blog-card__image">
+                        <img src="/assets/images/visual-assets/blog-post-6.jpg" alt="Roboterarm" class="blog-card__image">
                         <div class="blog-card__content">
                             <div class="blog-card__meta">
                                 <span><i class="fas fa-tag"></i> Best Practices</span>

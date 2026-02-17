@@ -55,16 +55,16 @@ permalink: "/certifications.html"
                     <h3>OT Visibility & Threat Detection</h3>
                     <div class="partner-grid">
                         <div class="partner-logo" title="Claroty">
-                            <img src="./assets/images/partners/claroty-logo.svg" alt="Claroty Logo">
+                            <img src="/assets/images/partners/claroty-logo.svg" alt="Claroty Logo">
                         </div>
                         <div class="partner-logo" title="Nozomi Networks">
-                            <img src="./assets/images/partners/nozomi-logo.svg" alt="Nozomi Networks Logo">
+                            <img src="/assets/images/partners/nozomi-logo.svg" alt="Nozomi Networks Logo">
                         </div>
                         <div class="partner-logo" title="Dragos">
-                            <img src="./assets/images/partners/dragos-logo.svg" alt="Dragos Logo">
+                            <img src="/assets/images/partners/dragos-logo.svg" alt="Dragos Logo">
                         </div>
                         <div class="partner-logo" title="Microsoft Defender for IoT">
-                            <img src="./assets/images/partners/microsoft-logo.svg" alt="Microsoft Logo">
+                            <img src="/assets/images/partners/microsoft-logo.svg" alt="Microsoft Logo">
                         </div>
                     </div>
                 </div>
@@ -73,16 +73,16 @@ permalink: "/certifications.html"
                     <h3>Industrielle Netzwerkkomponenten</h3>
                     <div class="partner-grid">
                         <div class="partner-logo" title="Fortinet">
-                            <img src="./assets/images/partners/fortinet-logo.svg" alt="Fortinet Logo">
+                            <img src="/assets/images/partners/fortinet-logo.svg" alt="Fortinet Logo">
                         </div>
                         <div class="partner-logo" title="Palo Alto Networks">
-                            <img src="./assets/images/partners/palo-alto-logo.svg" alt="Palo Alto Networks Logo">
+                            <img src="/assets/images/partners/palo-alto-logo.svg" alt="Palo Alto Networks Logo">
                         </div>
                         <div class="partner-logo" title="Cisco">
-                            <img src="./assets/images/partners/cisco-logo.svg" alt="Cisco Logo">
+                            <img src="/assets/images/partners/cisco-logo.svg" alt="Cisco Logo">
                         </div>
                         <div class="partner-logo" title="Hirschmann">
-                            <img src="./assets/images/partners/hirschmann-logo.svg" alt="Hirschmann Logo">
+                            <img src="/assets/images/partners/hirschmann-logo.svg" alt="Hirschmann Logo">
                         </div>
                     </div>
                 </div>

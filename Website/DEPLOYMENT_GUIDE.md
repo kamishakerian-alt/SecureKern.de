@@ -10,13 +10,14 @@
 
 Diese Website wird jetzt **dynamisch generiert** (Static Site Generation) mit:
 
-- **Eleventy (11ty)**: generiert die Website nach `Website/dist`
+- **Eleventy (11ty)**: generiert die Website nach `dist`
 - **Decap CMS**: Content-UI unter `https://IHRE-DOMAIN/admin`
 
 Für Deployment (Netlify/Vercel) ist daher wichtig:
 
 - **Build command:** `npm run build`
-- **Publish directory:** `Website/dist`
+
+> Note: The canonical build output directory is `dist/` (not `Website/dist`).- **Publish directory:** `Website/dist`
 
 ---
 

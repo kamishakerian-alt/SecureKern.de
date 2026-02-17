@@ -13,7 +13,7 @@ Die SecureKern Website ist eine moderne, **headless CMS-gesteuerte** statische W
 - **Template Engine**: Nunjucks
 - **Styling**: Custom CSS
 - **JavaScript**: Vanilla JS mit i18n-Unterstützung
-- **Deployment**: Statische HTML-Dateien
+- **Deployment**: Statische HTML-Dateien (build output → `dist/`)
 
 ## ✨ Features
 

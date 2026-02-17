@@ -1,12 +1,13 @@
 ---
 layout: layouts/base.njk
-title: "SecureKern – OT cybersecurity for critical infrastructure | NIS2 & IEC 62443"
-description: "Specialized OT/ICS cybersecurity for German industrial companies. NIS2 readiness, IEC 62443 gap assessments, network segmentation. 15+ years of practical experience. Book a free security check."
-permalink: "/en/index.html"
-lang: "en"
+title: 'SecureKern – OT cybersecurity for critical infrastructure | NIS2 & IEC 62443'
+description: 'Specialized OT/ICS cybersecurity for German industrial companies. NIS2 readiness, IEC 62443 gap assessments, network segmentation. 15+ years of practical experience. Book a free security check.'
+permalink: '/en/index.html'
+lang: 'en'
 ---
 
 <!-- ===== HERO SECTION ===== -->
+
     <div class="hero">
         <img src="/assets/images/visual-assets/hero-industrial.jpg" alt="Modern production hall with robots" class="hero__background">
         <div class="hero__overlay"></div>
@@ -18,8 +19,8 @@ lang: "en"
                     Practice-oriented, SME-focused and compliant with IEC 62443 &amp; NIS2.
                 </p>
                 <div class="hero__cta-group">
-                    <a href="/en/kontakt.html" class="btn btn--primary btn--lg" data-i18n="hero.ctaPrimary">Book a free 30-min risk scan</a>
-                    <a href="/en/leistungen.html" class="btn btn--secondary btn--lg" data-i18n="hero.ctaSecondary">Explore our services</a>
+                    <a href="/en/contact.html" class="btn btn--primary btn--lg" data-i18n="hero.ctaPrimary">Book a free 30-min risk scan</a>
+                    <a href="/en/services.html" class="btn btn--secondary btn--lg" data-i18n="hero.ctaSecondary">Explore our services</a>
                 </div>
             </div>
         </div>
@@ -38,28 +39,28 @@ lang: "en"
                     <div class="value-card__icon"><i class="fas fa-industry"></i></div>
                     <h3 data-i18n="home.values.ot_title">OT Specialization</h3>
                     <p data-i18n="home.values.ot_specialization">We work where traditional IT security ends: in production networks, SCADA systems and with industrial protocols. Our focus is on high availability and safety.</p>
-                    <a href="/en/ueber-uns.html" class="value-card__cta" data-i18n="home.cta.more_expertise">More about our expertise <i class="fas fa-arrow-right"></i></a>
+                    <a href="/en/about.html" class="value-card__cta" data-i18n="home.cta.more_expertise">More about our expertise <i class="fas fa-arrow-right"></i></a>
                 </div>
 
                 <div class="value-card">
                     <div class="value-card__icon"><i class="fas fa-certificate"></i></div>
                     <h3 data-i18n="home.values.method_title">Regulatory &amp; Technically Sound</h3>
                     <p data-i18n="home.values.method_text">Our methodology is based on IEC 62443, NIS2 and ISO 27001. The result: audit-proof documentation for authorities, insurers and auditors.</p>
-                    <a href="/en/leistungen.html" class="value-card__cta" data-i18n="home.values.method_cta">Our Methodology <i class="fas fa-arrow-right"></i></a>
+                    <a href="/en/services.html" class="value-card__cta" data-i18n="home.values.method_cta">Our Methodology <i class="fas fa-arrow-right"></i></a>
                 </div>
 
                 <div class="value-card">
                     <div class="value-card__icon"><i class="fas fa-bolt"></i></div>
                     <h3 data-i18n="home.values.tech_title">AI-Assisted Analysis</h3>
                     <p data-i18n="home.values.tech_text">Through AI-supported document processing, we deliver risk analyses and compliance checks up to 70% faster than traditional consulting – with the same technical depth.</p>
-                    <a href="/en/loesungen.html" class="value-card__cta" data-i18n="home.values.tech_cta">Technology in Action <i class="fas fa-arrow-right"></i></a>
+                    <a href="/en/solutions.html" class="value-card__cta" data-i18n="home.values.tech_cta">Technology in Action <i class="fas fa-arrow-right"></i></a>
                 </div>
 
                 <div class="value-card">
                     <div class="value-card__icon"><i class="fas fa-puzzle-piece"></i></div>
                     <h3>SME-Focused &amp; Modular</h3>
                     <p data-i18n="index.no_enterprise_programs">No oversized corporate programs. We offer modular packages and budget-realistic action plans with transparent pricing that fit your pace.</p>
-                    <a href="/en/kontakt.html" class="value-card__cta">Get Advice Now <i class="fas fa-arrow-right"></i></a>
+                    <a href="/en/contact.html" class="value-card__cta">Get Advice Now <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>

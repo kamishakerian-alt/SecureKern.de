@@ -142,7 +142,7 @@ permalink: "/webinars.html"
                 <div class="cta-section__content">
                     <h2 class="cta-section__title">Eigenes Webinar für Ihr Team?</h2>
                     <p class="cta-section__text">Wir bieten auch exklusive In-House-Webinare und Workshops an – maßgeschneidert auf die Bedürfnisse Ihres Unternehmens und Ihrer Branche.</p>
-                    <a href="contact.html" class="btn btn--primary">Anfrage stellen <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="/kontakt.html" class="btn btn--primary">Anfrage stellen <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
         </section>

@@ -2,7 +2,7 @@
 layout: layouts/base.njk
 title: "Resources"
 description: "Resources, downloads and webinars about OT security and regulatory readiness."
-permalink: "/en/ressourcen.html"
+permalink: "/en/resources.html"
 lang: "en"
 ---
 

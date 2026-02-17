@@ -23,10 +23,10 @@ permalink: "/leistungen.html"
                             <li>Aufbau eines ISMS nach ISO 27001 / IEC 62443</li>
                             <li>Meldewesen und Reporting-Prozesse</li>
                         </ul>
-                        <a href="contact.html" class="btn btn--primary">NIS2-Beratung anfragen</a>
+                        <a href="/kontakt.html" class="btn btn--primary">NIS2-Beratung anfragen</a>
                     </div>
                     <div class="service-detail-image">
-                        <img src="assets/images/visual-assets/compliance-check.jpg" alt="Compliance-Check">
+                        <img src="/assets/images/visual-assets/compliance-check.jpg" alt="Compliance-Check">
                     </div>
                 </div>
             </div>
@@ -44,10 +44,10 @@ permalink: "/leistungen.html"
                             <li>Technische und prozessuale Maßnahmen</li>
                             <li>Vorbereitung auf Zertifizierungsaudits</li>
                         </ul>
-                        <a href="contact.html" class="btn btn--primary">IEC 62443-Beratung</a>
+                        <a href="/kontakt.html" class="btn btn--primary">IEC 62443-Beratung</a>
                     </div>
                     <div class="service-detail-image">
-                        <img src="assets/images/visual-assets/industrial-network.jpg" alt="Industrielles Netzwerk">
+                        <img src="/assets/images/visual-assets/industrial-network.jpg" alt="Industrielles Netzwerk">
                     </div>
                 </div>
             </div>
@@ -65,10 +65,10 @@ permalink: "/leistungen.html"
                             <li>Aufdecken von Konfigurationsfehlern und Schwachstellen</li>
                             <li>Konkrete Handlungsempfehlungen zur Behebung</li>
                         </ul>
-                        <a href="contact.html" class="btn btn--primary">OT-Pentest anfragen</a>
+                        <a href="/kontakt.html" class="btn btn--primary">OT-Pentest anfragen</a>
                     </div>
                     <div class="service-detail-image">
-                        <img src="assets/images/visual-assets/hacker-hoodie.jpg" alt="Penetration Tester">
+                        <img src="/assets/images/visual-assets/hacker-hoodie.jpg" alt="Penetration Tester">
                     </div>
                 </div>
             </div>
@@ -86,10 +86,10 @@ permalink: "/leistungen.html"
                             <li>Wiederherstellungsplanung und -unterstützung</li>
                             <li>Entwicklung von OT-spezifischen IR-Playbooks</li>
                         </ul>
-                        <a href="contact.html" class="btn btn--primary">IR-Retainer anfragen</a>
+                        <a href="/kontakt.html" class="btn btn--primary">IR-Retainer anfragen</a>
                     </div>
                     <div class="service-detail-image">
-                        <img src="assets/images/visual-assets/server-room-dark.jpg" alt="Serverraum bei Nacht">
+                        <img src="/assets/images/visual-assets/server-room-dark.jpg" alt="Serverraum bei Nacht">
                     </div>
                 </div>
             </div>
@@ -100,6 +100,6 @@ permalink: "/leistungen.html"
             <div class="container">
                 <h2>Ihre spezifische Herausforderung nicht dabei?</h2>
                 <p>Die OT-Sicherheit ist vielfältig. Kontaktieren Sie uns für ein individuelles Gespräch über Ihre Anforderungen. Wir finden die passende Lösung.</p>
-                <a href="contact.html" class="btn btn--primary">Jetzt Erstgespräch vereinbaren</a>
+                <a href="/kontakt.html" class="btn btn--primary">Jetzt Erstgespräch vereinbaren</a>
             </div>
         </section>

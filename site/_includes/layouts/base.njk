@@ -1,15 +1,18 @@
 <!doctype html>
-{%- set isEn = ( (page.url and ('/en/' in page.url)) or (page.lang == 'en') ) -%}
-<html lang="{{ 'en' if isEn else (page.lang or site.lang) }}">
+{%- set isEn = (page.url and ('/en/' in page.url)) or (page.lang == 'en') -%}
+{% if isEn %}
+  {% set site_local = site['en'] %}
+  {% set nav = navigation['en'] %}
+{% else %}
+  {% set site_local = site['de'] %}
+  {% set nav = navigation['de'] %}
+{% endif %}
+<html lang="{{ site_local.lang or 'de' }}">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    {# choose site data and navigation based on page URL language prefix or page.lang #}
-    {% set site_local = isEn and (site_en or site['en'] or site) or (page.lang == 'en' and (site_en or site['en'] or site) or site) %}
-    {% set nav = isEn and (navigation_en or navigation['en'] or navigation) or (page.lang == 'en' and (navigation_en or navigation['en'] or navigation) or navigation) %}
-
-    <title>{{ title }}</title>
+    <title>{{ title }} | {{ site_local.title }}</title>
     {% if description %}<meta name="description" content="{{ description }}" />{% endif %}
     <link rel="canonical" href="{{ site_local.baseUrl }}{{ page.url }}" />
 
@@ -33,7 +36,7 @@
 
     {% include "partials/footer.njk" %}
 
-    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/main.js" defer></script>
   </body>
 </html>
 

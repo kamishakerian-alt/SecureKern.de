@@ -1,0 +1,6 @@
+# SecureKern.de – https://www.securekern.de
+User-agent: *
+Allow: /
+
+# Sitemap (add when sitemap is generated under site/)
+# Sitemap: https://www.securekern.de/sitemap.xml

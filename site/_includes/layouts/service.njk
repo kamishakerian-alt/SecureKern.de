@@ -39,8 +39,8 @@ layout: layouts/base.njk
       </div>
 
       <div class="service-cta">
-        <a href="/kontakt.html" class="btn btn--primary btn--lg">
-          {{ site.cta.label or "Jetzt Anfragen" }}
+        <a href="{{ site_local.cta.href }}" class="btn btn--primary btn--lg">
+          {{ site_local.cta.label }}
         </a>
       </div>
     </div>

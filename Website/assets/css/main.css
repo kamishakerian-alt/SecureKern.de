@@ -113,6 +113,13 @@ body {
     padding-right: var(--spacing-md);
 }
 
+/* Account for fixed header so content isn't hidden beneath it */
+main#main-content {
+  padding-top: calc(var(--header-height) + var(--spacing-sm));
+}
+@media (max-width: 1024px) {
+  main#main-content { padding-top: var(--spacing-sm); }
+}
 /* === TYPOGRAPHY === */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
@@ -212,6 +219,21 @@ a:hover {
     transform: translateY(-2px);
 }
 
+/* Button size aliases for content consistency */
+.btn--lg,
+.btn--large {
+  padding: 0.95rem 2.25rem;
+  font-size: 1.05rem;
+  border-radius: var(--radius-md);
+}
+
+.btn--full-width {
+  display: inline-block;
+  width: 100%;
+  padding: 0.9rem 1rem;
+  text-align: center;
+  box-sizing: border-box;
+}
 
 /* === HEADER & NAVIGATION === */
 .header {
@@ -330,7 +352,7 @@ a:hover {
   }
 
   .nav__actions .btn--primary {
-    order: 1;
+    order: 2;
     --cta-w: 200px;
     width: var(--cta-w);
     min-width: var(--cta-w);
@@ -340,12 +362,9 @@ a:hover {
   }
 
   .nav__actions .nav__lang-toggle {
-    order: 2;
+    order: 1;
     position: static;
   }
-  top: 50%;
-  transform: translateY(-50%);
-}
 
 /* Disable absolute header positioning on smaller screens */
 @media (max-width: 1024px) {
