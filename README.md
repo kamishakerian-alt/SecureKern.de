@@ -60,9 +60,9 @@ SecureKern.de/
 │   ├── webinars/          # Webinar-Inhalte
 │   ├── _includes/         # Templates & Komponenten
 │   └── _data/             # Globale Daten
-├── Website/
+├── dist/
 │   ├── assets/            # CSS, JS, Images
-│   └── dist/              # Build-Output (generiert)
+│   └── (generated files)  # Build-Output (generiert)
 ├── eleventy.config.cjs    # Eleventy-Konfiguration
 ├── package.json           # Dependencies & Scripts
 └── netlify.toml           # Deployment-Config
@@ -150,7 +150,7 @@ Template-Layouts in `site/_includes/layouts/`:
 
 ## 🎨 Styling
 
-CSS-Dateien in `Website/assets/css/`:
+CSS-Dateien in `dist/assets/css/`:
 
 - `main.css` - Haupt-Stylesheet
 
@@ -178,14 +178,14 @@ Die Website unterstützt Deutsch und Englisch:
 1. Repository mit Netlify verbinden
 2. Build-Einstellungen:
    - Build Command: `npm run build`
-   - Publish Directory: `Website/dist`
+   - Publish Directory: `dist`
 3. Deploy!
 
 ### Manuell
 
 ```bash
 npm run build
-# Website/dist/ Inhalt auf Server hochladen
+# dist/ Inhalt auf Server hochladen
 ```
 
 ## 📊 Collections & Dynamic Data

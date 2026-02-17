@@ -9,7 +9,7 @@ Die SecureKern Website ist nun vollständig in ein **Headless CMS** (Decap CMS) 
 ### Statischer Generator + Headless CMS
 - **Build Tool**: Eleventy (11ty) - Statischer Site Generator
 - **CMS**: Decap CMS (ehemals Netlify CMS)
-- **Deployment**: Statische HTML-Dateien in `Website/dist/`
+- **Deployment**: Statische HTML-Dateien in `dist/`
 - **Backend**: Git-basiert (keine Datenbank erforderlich)
 
 ### Vorteile dieser Architektur
@@ -219,7 +219,7 @@ Folgende Collections werden automatisch generiert und sind überall verfügbar:
 - ✅ Permalinks konsistent benennen (`/service-name.html`)
 
 ### Performance
-- ✅ Bilder in `Website/assets/images/uploads/` speichern
+- ✅ Bilder in `dist/assets/images/uploads/` speichern
 - ✅ Markdown für Inhalte nutzen
 - ✅ HTML nur wenn nötig in Markdown einbetten
 
@@ -234,14 +234,14 @@ Folgende Collections werden automatisch generiert und sind überall verfügbar:
 
 1. Repository pushen
 2. Build-Command: `npm run build`
-3. Publish-Directory: `Website/dist`
+3. Publish-Directory: `dist`
 4. Umgebungsvariablen konfigurieren (falls Git Gateway)
 
 ### Manuelles Deployment
 
 ```bash
 npm run build
-# Inhalt von Website/dist/ auf Server hochladen
+# Inhalt von dist/ auf Server hochladen
 ```
 
 ## 🔄 Updates & Wartung
