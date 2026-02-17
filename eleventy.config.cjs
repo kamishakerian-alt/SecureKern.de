@@ -10,9 +10,12 @@ module.exports = function (eleventyConfig) {
   // CMS Admin (Decap CMS) lives in /admin
   eleventyConfig.addPassthroughCopy({ 'site/admin': 'admin' });
 
-    // Static assets
+  // Static assets (first implementation = Website)
   eleventyConfig.addPassthroughCopy({ "site/assets": "assets" });
-  eleventyConfig.addPassthroughCopy({ "site/robots.txt": "robots.txt" });
+  // Root static files from site/static (single source of truth)
+  eleventyConfig.addPassthroughCopy({ "site/static/robots.txt": "robots.txt" });
+  eleventyConfig.addPassthroughCopy({ "site/static/sitemap.xml": "sitemap.xml" });
+  eleventyConfig.addPassthroughCopy({ "site/static/sw.js": "sw.js" });
 
   // Watch targets
   eleventyConfig.addWatchTarget('site/assets/css');
