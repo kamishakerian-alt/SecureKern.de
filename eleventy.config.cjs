@@ -10,9 +10,14 @@ module.exports = function (eleventyConfig) {
   // CMS Admin (Decap CMS) lives in /admin
   eleventyConfig.addPassthroughCopy({ 'site/admin': 'admin' });
 
-    // Static assets
-  eleventyConfig.addPassthroughCopy({ "site/assets": "assets" });
-  eleventyConfig.addPassthroughCopy({ "site/robots.txt": "robots.txt" });
+  // Static assets
+  eleventyConfig.addPassthroughCopy({ 'site/assets': 'assets' });
+  // Root static files from site/static (single source of truth)
+  eleventyConfig.addPassthroughCopy({ 'site/static/robots.txt': 'robots.txt' });
+  eleventyConfig.addPassthroughCopy({
+    'site/static/sitemap.xml': 'sitemap.xml',
+  });
+  eleventyConfig.addPassthroughCopy({ 'site/static/sw.js': 'sw.js' });
 
   // Watch targets
   eleventyConfig.addWatchTarget('site/assets/css');
@@ -40,14 +45,18 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection('blogPosts', function (collectionApi) {
     return collectionApi
       .getFilteredByGlob('site/pages/resources/*.md')
-      .filter((item) => item.data.layout && item.data.layout.includes('blog-post'))
+      .filter(
+        (item) => item.data.layout && item.data.layout.includes('blog-post')
+      )
       .sort((a, b) => {
         return (b.data.date || new Date()) - (a.data.date || new Date());
       });
   });
 
   eleventyConfig.addCollection('team', function (collectionApi) {
-    return collectionApi.getFilteredByGlob('site/team/*.md').filter((item) => item.inputPath !== './site/team/.gitkeep');
+    return collectionApi
+      .getFilteredByGlob('site/team/*.md')
+      .filter((item) => item.inputPath !== './site/team/.gitkeep');
   });
 
   eleventyConfig.addCollection('webinars', function (collectionApi) {
@@ -66,7 +75,9 @@ module.exports = function (eleventyConfig) {
         if (item.inputPath === './site/webinars/.gitkeep') return false;
         return item.data.status === 'upcoming';
       })
-      .sort((a, b) => (a.data.date || new Date()) - (b.data.date || new Date()));
+      .sort(
+        (a, b) => (a.data.date || new Date()) - (b.data.date || new Date())
+      );
   });
 
   // Filters
@@ -87,12 +98,12 @@ module.exports = function (eleventyConfig) {
 
   return {
     dir: {
-      input: "site",
-      includes: "_includes",
-      data: "_data",
-      output: "dist",
+      input: 'site',
+      includes: '_includes',
+      data: '_data',
+      output: 'Website',
     },
-    htmlTemplateEngine: "njk",
-    markdownTemplateEngine: "njk",
+    htmlTemplateEngine: 'njk',
+    markdownTemplateEngine: 'njk',
   };
 };

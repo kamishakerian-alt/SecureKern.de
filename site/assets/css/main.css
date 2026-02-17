@@ -1874,3 +1874,36 @@ a:hover {
         margin-bottom: var(--space-md);
     }
 }
+
+/* === LAYOUT CONSISTENCY (all page types) === */
+/* Same vertical rhythm and container for service, solution, blog-post and standard sections */
+#main-content > article.service-page,
+#main-content > article.solution-page,
+#main-content > article.blog-post {
+  padding-top: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
+}
+
+.service-page .container,
+.solution-page .container,
+.blog-post .container {
+  max-width: var(--container-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
+}
+
+/* Page hero: same treatment on every inner page */
+.page-hero {
+  padding-top: var(--spacing-xl);
+  padding-bottom: var(--spacing-xl);
+}
+
+.page-hero .container {
+  max-width: var(--container-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
+}

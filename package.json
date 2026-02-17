@@ -3,11 +3,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "eleventy",
+    "build": "node scripts/clean.mjs && eleventy",
+    "clean": "node scripts/clean.mjs",
     "dev": "eleventy --serve --watch",
-    "cms": "decap-server",
-    "fix:encoding": "node scripts/fix-encoding.mjs",
-    "migrate:pages": "node scripts/migrate-pages-to-cms.mjs"
+    "serve": "npx -y serve Website",
+    "preview": "npm run build && npx -y serve Website",
+    "cms": "decap-server"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
