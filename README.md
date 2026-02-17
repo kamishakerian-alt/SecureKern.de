@@ -13,7 +13,7 @@ Die SecureKern Website ist eine moderne, **headless CMS-gesteuerte** statische W
 - **Template Engine**: Nunjucks
 - **Styling**: Custom CSS
 - **JavaScript**: Vanilla JS mit i18n-Unterstützung
-- **Deployment**: Statische HTML-Dateien (build output → `dist/`)
+- **Deployment**: Statische HTML-Dateien (build output → `Website/`)
 
 ## ✨ Features
 
@@ -46,26 +46,27 @@ npm run build
 
 ### Zugriff
 
-- **Website**: http://localhost:8080
-- **CMS**: http://localhost:8080/admin/
+- **Website**: `npm run dev` → http://localhost:8080 oder `npx serve Website` → http://localhost:3000
+- **CMS**: http://localhost:8080/admin/ (bei `npm run dev`)
 
 ## 📁 Projektstruktur
 
 ```
 SecureKern.de/
-├── site/                   # Source-Dateien
+├── site/                   # Quelle (einzige Source of Truth)
 │   ├── admin/             # CMS-Konfiguration
+│   ├── assets/            # CSS, JS, Bilder
 │   ├── pages/             # Content-Seiten
-│   ├── team/              # Team-Mitglieder
-│   ├── webinars/          # Webinar-Inhalte
-│   ├── _includes/         # Templates & Komponenten
-│   └── _data/             # Globale Daten
-├── dist/
-│   ├── assets/            # CSS, JS, Images
-│   └── (generated files)  # Build-Output (generiert)
-├── eleventy.config.cjs    # Eleventy-Konfiguration
-├── package.json           # Dependencies & Scripts
-└── netlify.toml           # Deployment-Config
+│   ├── static/            # robots.txt, sitemap.xml, sw.js
+│   ├── team/               # Team-Mitglieder
+│   ├── webinars/           # Webinar-Inhalte
+│   ├── _includes/          # Templates & Komponenten
+│   └── _data/              # Globale Daten (navigation.cjs, site.cjs, meta.cjs)
+├── Website/                # Build-Output (generiert, nicht committen)
+├── eleventy.config.cjs     # Eleventy-Konfiguration
+├── package.json            # Dependencies & Scripts
+├── scripts/                # clean.mjs etc.
+└── netlify.toml            # Deployment (publish = Website)
 ```
 
 ## 📝 Content Management
@@ -99,24 +100,27 @@ npm run cms            # CMS-Server lokal starten
 ### Neue Seite erstellen
 
 #### Option 1: Via CMS (Empfohlen)
+
 1. Zu `/admin/` navigieren
 2. Content-Typ wählen
 3. "New [Type]" klicken
 4. Felder ausfüllen & speichern
 
 #### Option 2: Manuell
+
 1. Neue `.md`-Datei in entsprechendem Ordner erstellen
 2. Frontmatter hinzufügen
 3. Inhalt schreiben
 4. Build ausführen
 
 Beispiel Frontmatter:
+
 ```markdown
 ---
 layout: layouts/base.njk
-title: "Meine Seite"
-description: "Beschreibung"
-permalink: "/meine-seite.html"
+title: 'Meine Seite'
+description: 'Beschreibung'
+permalink: '/meine-seite.html'
 ---
 
 Inhalt hier...
@@ -135,6 +139,7 @@ Wiederverwendbare Komponenten in `site/_includes/partials/`:
 - `webinars-list.njk` - Webinar-Liste
 
 Verwendung:
+
 ```nunjucks
 {% include "partials/services-grid.njk" %}
 ```
@@ -150,9 +155,7 @@ Template-Layouts in `site/_includes/layouts/`:
 
 ## 🎨 Styling
 
-CSS-Dateien in `dist/assets/css/`:
-
-- `main.css` - Haupt-Stylesheet
+CSS in `site/assets/css/main.css`; wird beim Build nach `Website/assets/css/` kopiert.
 
 ## 🌐 Mehrsprachigkeit
 
@@ -176,16 +179,16 @@ Die Website unterstützt Deutsch und Englisch:
 ### Netlify (Empfohlen)
 
 1. Repository mit Netlify verbinden
-2. Build-Einstellungen:
+2. Build-Einstellungen (siehe `netlify.toml`):
    - Build Command: `npm run build`
-   - Publish Directory: `dist`
+   - Publish Directory: **`Website`**
 3. Deploy!
 
 ### Manuell
 
 ```bash
 npm run build
-# dist/ Inhalt auf Server hochladen
+# Inhalt von Website/ auf Server hochladen
 ```
 
 ## 📊 Collections & Dynamic Data
@@ -218,7 +221,9 @@ Eleventy Collections werden automatisch aus Content generiert:
 
 ## 📚 Dokumentation
 
+- [Single source of truth](./SINGLE_SOURCE_OF_TRUTH.md) - Ein Repo, ein Output (`Website/`)
 - [CMS Integration Guide](./CMS_INTEGRATION_GUIDE.md) - Vollständige CMS-Dokumentation
+- [Leitfaden](./LEITFADEN.md) - Setup, Run, Conventions
 - [Eleventy Docs](https://www.11ty.dev/docs/)
 - [Decap CMS Docs](https://decapcms.org/docs/)
 - [Nunjucks Templating](https://mozilla.github.io/nunjucks/)
@@ -237,6 +242,7 @@ Eleventy Collections werden automatisch aus Content generiert:
 ## 🆘 Support
 
 Bei Fragen oder Problemen:
+
 - Email: kontakt@securekern.de
 - CMS-Probleme: Siehe [CMS_INTEGRATION_GUIDE.md](./CMS_INTEGRATION_GUIDE.md)
 

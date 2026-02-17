@@ -2,20 +2,19 @@
 
 ## Goal
 
-Deliver and maintain a professional, bilingual (DE/EN) static marketing site for SecureKern GmbH (OT/ICS cybersecurity), editable via Decap CMS where possible, with clear structure, correct links, and governance docs in place.
+Professional, bilingual (DE/EN) static marketing site for SecureKern GmbH (OT/ICS cybersecurity), editable via Decap CMS where possible, single source of truth, clean repo.
 
-## Roadmap / Milestones
+## Current State
 
-1. **Stable build & deploy** – Eleventy build and Netlify deploy (dist) working. ✅
-2. **Fix EN navigation** – All EN nav links (especially Services) resolve to correct URLs (/en/services/…).
-3. **Fix CMS integration** – Navigation/Site settings in Decap point to existing or synced data; media path consistent with site.
-4. **SEO baseline** – robots.txt (and optional sitemap) in place.
-5. **Link & doc consistency** – DE contact/leistungen links and README publish path corrected; legacy Website/ clarified or removed.
+- **Source:** `site/` only. **Output:** `Website/` (Eleventy build). **Publish:** Netlify → `Website`.
+- **Data:** `site/_data/*.cjs` (site, navigation, meta). No legacy JSON.
+- **SEO:** robots.txt, sitemap.xml, sw.js in `site/static/` → copied to `Website/` root.
+- **One workspace:** Main repo at `C:\Users\skk2abt\Desktop\WP_Projetcs\SecureKern.de`; no worktrees.
 
-## Decisions Log
+## Decisions
 
-| Date       | Decision                                                                      | Rationale                                                                                           |
-| ---------- | ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| 2026-02-17 | Use `site/` as Eleventy input and `dist/` as output; Netlify publishes `dist` | Matches current eleventy.config.cjs and netlify.toml.                                               |
-| 2026-02-17 | Keep global data in `site/_data` as `.cjs` (site, navigation, meta)           | Allows i18n and dynamic year; Decap must be aligned (e.g. JSON mirrors or separate editable files). |
-| 2026-02-17 | Add STRATEGY.md, LEITFADEN.md, docs/BLOCKERS.md, docs/AUDIT_LOG.md            | Align with workspace baseline governance.                                                           |
+| Decision                       | Rationale                                              |
+| ------------------------------ | ------------------------------------------------------ |
+| Output = `Website`             | Single deploy folder; Netlify publish = Website.       |
+| Data in `site/_data` as `.cjs` | i18n, dynamic year; no duplicate JSON.                 |
+| Build output not committed     | `.gitignore` includes `Website/`; only source tracked. |

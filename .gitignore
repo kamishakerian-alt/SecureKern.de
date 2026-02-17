@@ -4,14 +4,14 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Build outputs
+# Build outputs (single source is site/; output is generated)
 dist/
 build/
+Website/
 Website/dist/
 
-# Screenshots and validation
-Website/_validation/screens/
-*.png
+# Screenshots and validation (do not ignore site/assets images)
+Website/_validation/
 
 # Logs
 logs/
@@ -68,6 +68,7 @@ temp/
 *.tmp
 *.bak
 *.backup
+build-log.txt
 
 # Eleventy
 .eleventy.js

@@ -4,7 +4,7 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "Website/assets/images/uploads"
+media_folder: "site/assets/images/uploads"
 public_folder: "/assets/images/uploads"
 
 # Publish mode
@@ -123,37 +123,8 @@ collections:
       - { label: "Email", name: "email", widget: "string", required: false }
       - { label: "Bio", name: "body", widget: "markdown" }
 
-  # Globale Einstellungen
-  - name: "settings"
-    label: "Einstellungen"
-    files:
-      - label: "Navigation"
-        name: "navigation"
-        file: "site/_data/navigation.json"
-        fields:
-          - label: "Haupt-Navigation"
-            name: "main"
-            widget: "list"
-            fields:
-              - { label: "Titel", name: "title", widget: "string" }
-              - { label: "Link", name: "url", widget: "string" }
-              - label: "Untermenü"
-                name: "submenu"
-                widget: "list"
-                required: false
-                fields:
-                  - { label: "Titel", name: "title", widget: "string" }
-                  - { label: "Link", name: "url", widget: "string" }
-      
-      - label: "Site Informationen"
-        name: "site"
-        file: "site/_data/site.json"
-        fields:
-          - { label: "Site Titel", name: "title", widget: "string" }
-          - { label: "Beschreibung", name: "description", widget: "text" }
-          - { label: "URL", name: "url", widget: "string" }
-          - { label: "Logo", name: "logo", widget: "image" }
-          - { label: "Kontakt Email", name: "email", widget: "string" }
-          - { label: "Telefon", name: "phone", widget: "string" }
-          - { label: "Adresse", name: "address", widget: "text" }
+  # Globale Einstellungen (Navigation & Site Data)
+  # Note: Navigation and Site settings are managed in site/_data/*.cjs files
+  # These are code-based for maximum flexibility (i18n, dynamic values)
+  # Edit site/_data/navigation.cjs and site/_data/site.cjs directly for changes
 

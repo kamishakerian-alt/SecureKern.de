@@ -47,20 +47,21 @@
         <div class="nav__actions">
           <a href="{{ site_local.cta.href }}" class="btn btn--primary">{{ site_local.cta.label }}</a>
 
+          {% set currentUrl = page.url or '/index.html' %}
           {% if isEn %}
-            {% set currentLang = 'en' %}
             {% set targetLang = 'de' %}
-            {% set targetHref = page.url | replace('/en', '') %}
+            {% set targetHref = langSwitch.enToDe[currentUrl] or (currentUrl | replace('/en/', '/')) %}
           {% else %}
-            {% set currentLang = 'de' %}
             {% set targetLang = 'en' %}
-            {% set targetHref = '/en' + (page.url or '/') %}
+            {% set targetHref = langSwitch.deToEn[currentUrl] or ('/en' + currentUrl) %}
           {% endif %}
 
+          {% if currentUrl.indexOf('/admin/') != 0 %}
           <a href="{{ targetHref }}" class="nav__lang-toggle" aria-label="{{ nav.language_toggle.label }}">
             <img src="{{ nav.language_toggle[targetLang].flag }}" alt="{{ nav.language_toggle[targetLang].alt }}" />
             <span class="nav__lang-label">{{ nav.language_toggle[targetLang].label }}</span>
           </a>
+          {% endif %}
         </div>
       </div>
     </nav>
