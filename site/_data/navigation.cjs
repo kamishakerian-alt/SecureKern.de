@@ -2,7 +2,9 @@ module.exports = {
   de: {
     label: 'Hauptnavigation',
     logo: {
-      src: '/assets/images/logo.svg',
+      src: '/assets/images/brand/logo-primary.svg',
+      srcFull: '/assets/images/brand/logo-primary.svg',
+      srcReversed: '/assets/images/brand/logo-reversed.svg',
       alt: 'SecureKern Logo',
       href: '/index.html',
       label: 'SecureKern Startseite',
@@ -105,7 +107,9 @@ module.exports = {
   en: {
     label: 'Main navigation',
     logo: {
-      src: '/assets/images/logo.svg',
+      src: '/assets/images/brand/logo-primary.svg',
+      srcFull: '/assets/images/brand/logo-primary.svg',
+      srcReversed: '/assets/images/brand/logo-reversed.svg',
       alt: 'SecureKern Logo',
       href: '/en/index.html',
       label: 'SecureKern Home',

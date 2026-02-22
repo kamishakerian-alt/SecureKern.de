@@ -6,10 +6,11 @@ permalink: "/index.html"
 ---
 <!-- ===== HERO SECTION ===== -->
     <div class="hero">
-        <img src="/assets/images/visual-assets/hero-industrial.jpg" alt="Moderne Fertigungshalle mit Robotern" class="hero__background">
+        <img src="/assets/images/visual-assets/hero-scada.webp" alt="Industrial SCADA Control Room mit visualisierten OT-Datenströmen" class="hero__background">
         <div class="hero__overlay"></div>
         <div class="container">
             <div class="hero__content">
+                <img src="/assets/images/brand/logo-reversed.svg" alt="SecureKern" class="hero__brand-badge">
                 <h1 data-i18n="hero.headline">Schutz für Deutschlands industrielles Herz.</h1>
                 <p class="hero__subtitle" data-i18n="hero.subheadline">
                     Wir sichern Ihre OT- und Produktionsanlagen gegen Cyberangriffe. <br>
@@ -25,6 +26,7 @@ permalink: "/index.html"
 
     <!-- ===== VALUE PROPOSITION SECTION ===== -->
     <section class="value-props-section section">
+        <img src="/assets/images/visual-assets/pattern-dots.svg" class="section-pattern" alt="" aria-hidden="true">
         <div class="container">
             <div class="section-title">
                 <h2 data-i18n="home.why.title">Warum Unternehmen auf SecureKern setzen</h2>
@@ -33,28 +35,28 @@ permalink: "/index.html"
 
             <div class="value-props-grid">
                 <div class="value-card">
-                    <div class="value-card__icon"><i class="fas fa-industry"></i></div>
+                    <div class="value-card__icon"><img src="/assets/images/icons/shield.svg" alt="Shield Icon"></div>
                     <h3 data-i18n="home.values.ot_title">OT-Spezialisierung</h3>
                     <p data-i18n="home.values.ot_specialization">Wir arbeiten dort, wo klassische IT-Security endet: in Produktionsnetzen, SCADA-Systemen und mit industriellen Protokollen. Unser Fokus liegt auf Hochverfügbarkeit und Safety.</p>
                     <a href="/ueber-uns.html" class="value-card__cta" data-i18n="home.cta.more_expertise">Mehr über unsere Expertise <i class="fas fa-arrow-right"></i></a>
                 </div>
 
                 <div class="value-card">
-                    <div class="value-card__icon"><i class="fas fa-certificate"></i></div>
+                    <div class="value-card__icon"><img src="/assets/images/icons/checklist.svg" alt="Checklist Icon"></div>
                     <h3 data-i18n="home.values.method_title">Regulatorisch &amp; Technisch Fundiert</h3>
                     <p data-i18n="home.values.method_text">Unsere Methodik orientiert sich an IEC 62443, NIS2 und ISO 27001. Das Ergebnis: Audit-sichere Nachweisführung für Behörden, Versicherer und Prüfer.</p>
                     <a href="/leistungen.html" class="value-card__cta" data-i18n="home.values.method_cta">Unsere Methodik <i class="fas fa-arrow-right"></i></a>
                 </div>
 
                 <div class="value-card">
-                    <div class="value-card__icon"><i class="fas fa-bolt"></i></div>
+                    <div class="value-card__icon"><img src="/assets/images/icons/speed.svg" alt="Speed Icon"></div>
                     <h3 data-i18n="home.values.tech_title">KI-unterstützte Analyse</h3>
                     <p data-i18n="home.values.tech_text">Durch KI-gestützte Dokumentenverarbeitung liefern wir Risikoanalysen und Compliance-Checks bis zu 70% schneller als traditionelle Beratungen – bei gleicher fachlicher Tiefe.</p>
                     <a href="/loesungen.html" class="value-card__cta" data-i18n="home.values.tech_cta">Technologie im Einsatz <i class="fas fa-arrow-right"></i></a>
                 </div>
 
                 <div class="value-card">
-                    <div class="value-card__icon"><i class="fas fa-puzzle-piece"></i></div>
+                    <div class="value-card__icon"><img src="/assets/images/icons/expertise.svg" alt="Expertise Icon"></div>
                     <h3>Mittelstand-gerecht &amp; Modular</h3>
                     <p data-i18n="index.no_enterprise_programs">Keine überdimensionierten Konzern-Programme. Wir bieten modulare Pakete und budget-realistische Maßnahmenpläne mit transparenten Preisen, die zu Ihrem Tempo passen.</p>
                     <a href="/kontakt.html" class="value-card__cta">Jetzt beraten lassen <i class="fas fa-arrow-right"></i></a>
@@ -74,7 +76,7 @@ permalink: "/index.html"
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-card__header">
-                        <div class="service-card__icon"><i class="fas fa-shield-halved"></i></div>
+                        <div class="service-card__icon"><img src="/assets/images/icons/shield.svg" alt="NIS2 Shield"></div>
                         <div>
                             <h3 data-i18n="services.service1.title">NIS2-Readiness &amp; Compliance</h3>
                         </div>
@@ -92,7 +94,7 @@ permalink: "/index.html"
 
                 <div class="service-card">
                     <div class="service-card__header">
-                        <div class="service-card__icon"><i class="fas fa-clipboard-check"></i></div>
+                        <div class="service-card__icon"><img src="/assets/images/icons/checklist.svg" alt="IEC Checklist"></div>
                         <div>
                             <h3 data-i18n="services.service2.title">IEC 62443 Gap Assessment</h3>
                         </div>
@@ -110,7 +112,7 @@ permalink: "/index.html"
 
                 <div class="service-card">
                     <div class="service-card__header">
-                        <div class="service-card__icon"><i class="fas fa-project-diagram"></i></div>
+                        <div class="service-card__icon"><img src="/assets/images/icons/germany.svg" alt="Germany OT Networks"></div>
                         <div>
                             <h3>OT-Netzwerksegmentierung</h3>
                         </div>
@@ -128,7 +130,7 @@ permalink: "/index.html"
 
                 <div class="service-card">
                     <div class="service-card__header">
-                        <div class="service-card__icon"><i class="fas fa-eye"></i></div>
+                        <div class="service-card__icon"><img src="/assets/images/icons/expertise.svg" alt="Incident Expertise"></div>
                         <div>
                             <h3>OT-MDR &amp; Incident Response</h3>
                         </div>
@@ -148,6 +150,7 @@ permalink: "/index.html"
     </section>
 
     <!-- ===== TRUST INDICATORS SECTION ===== -->
+    <img src="/assets/images/visual-assets/divider-wave.svg" class="section-divider" alt="" aria-hidden="true">
     <section class="trust-section section">
         <div class="container">
             <div class="section-title">

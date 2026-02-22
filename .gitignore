@@ -13,6 +13,9 @@ Website/dist/
 # Screenshots and validation (do not ignore site/assets images)
 Website/_validation/
 
+# Archived unused assets (see ASSETS_USED.md)
+site/assets/Not Used/
+
 # Logs
 logs/
 *.log

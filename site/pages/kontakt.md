@@ -17,7 +17,9 @@ permalink: "/kontakt.html"
                 <div class="contact-grid">
                     <div class="contact-form-container">
                         <h2>Schreiben Sie uns eine Nachricht</h2>
-                        <form action="#" method="POST" class="contact-form">
+                        <form name="contact" action="/danke.html" method="POST" class="contact-form" data-netlify="true" netlify-honeypot="bot">
+                            <input type="hidden" name="form-name" value="contact" />
+                            <p class="hidden"><label>Don't fill this: <input name="bot" /></label></p>
                             <div class="form-group">
                                 <label for="name" data-i18n="contact.form.name">Ihr Name</label>
                                 <input type="text" id="name" name="name" required>
@@ -43,9 +45,9 @@ permalink: "/kontakt.html"
                             <li>
                                 <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
                                 <div>
-                                    <strong>SecureKern GmbH</strong><br>
-                                    Musterstraße 1<br>
-                                    12345 Berlin
+                                    <strong>{{ site_local.address.company }}</strong><br>
+                                    {{ site_local.address.street }}<br>
+                                    {{ site_local.address.zipCity }}
                                 </div>
                             </li>
                             <li>

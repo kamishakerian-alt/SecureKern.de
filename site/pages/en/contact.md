@@ -17,7 +17,9 @@ lang: "en"
         <div class="contact-grid">
             <div class="contact-form-container">
                 <h2>Write us a message</h2>
-                <form action="#" method="POST" class="contact-form">
+                <form name="contact-en" action="/en/thank-you.html" method="POST" class="contact-form" data-netlify="true" netlify-honeypot="bot">
+                    <input type="hidden" name="form-name" value="contact-en" />
+                    <p class="hidden"><label>Don't fill this: <input name="bot" /></label></p>
                     <div class="form-group">
                         <label for="name">Your Name</label>
                         <input type="text" id="name" name="name" required>
@@ -43,15 +45,15 @@ lang: "en"
                     <li>
                         <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
                         <div>
-                            <strong>SecureKern GmbH</strong><br>
-                            Musterstraße 1<br>
-                            12345 Berlin
+                            <strong>{{ site_local.address.company }}</strong><br>
+                            {{ site_local.address.street }}<br>
+                            {{ site_local.address.zipCity }}<br>
                         </div>
                     </li>
                     <li>
                         <span class="icon"><i class="fas fa-envelope"></i></span>
                         <div>
-                            <a href="mailto:kontakt@securekern.de">kontakt@securekern.de</a>
+                            <a href="mailto:{{ site_local.contact.email }}">{{ site_local.contact.email }}</a>
                         </div>
                     </li>
                     <li>

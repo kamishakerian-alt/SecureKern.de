@@ -24,7 +24,13 @@
     </div>
 
     <div class="footer-bottom">
-      <a href="{{ nav.logo.href }}" class="footer-logo-type">Secure<span>Kern</span></a>
+      <a href="{{ nav.logo.href }}" class="footer-logo-type" aria-label="{{ nav.logo.label }}">
+        {% if nav.logo.srcReversed %}
+        <img src="{{ nav.logo.srcReversed }}" alt="{{ nav.logo.alt }}" class="footer-logo-img" />
+        {% else %}
+        Secure<span>Kern</span>
+        {% endif %}
+      </a>
       <div class="footer-socials">
         {% for social in site_local.socials %}
           <a href="{{ social.href }}" target="_blank" rel="noopener" title="{{ social.title }}" aria-label="{{ social.title }}"><i class="fab fa-{{ social.icon }}"></i></a>
@@ -34,4 +40,3 @@
     </div>
   </div>
 </footer>
-

@@ -15,7 +15,19 @@
     <title>{{ title }} | {{ site_local.title }}</title>
     {% if description %}<meta name="description" content="{{ description }}" />{% endif %}
     <link rel="canonical" href="{{ site_local.baseUrl }}{{ page.url }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="{{ site_local.title }}" />
+    <meta property="og:title" content="{{ title }} | {{ site_local.title }}" />
+    {% if description %}<meta property="og:description" content="{{ description }}" />{% endif %}
+    <meta property="og:url" content="{{ site_local.baseUrl }}{{ page.url }}" />
+    <meta property="og:image" content="{{ site.de.baseUrl }}/assets/images/visual-assets/og-image.jpg" />
 
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{ title }} | {{ site_local.title }}" />
+    {% if description %}<meta name="twitter:description" content="{{ description }}" />{% endif %}
+    <meta name="twitter:image" content="{{ site.de.baseUrl }}/assets/images/visual-assets/og-image.jpg" />
+
+    <link rel="icon" type="image/svg+xml" href="/assets/images/brand/logo-secondary-icon.svg" />
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicons/apple-touch-icon.png" />
@@ -39,4 +51,3 @@
     <script src="/assets/js/main.js" defer></script>
   </body>
 </html>
-

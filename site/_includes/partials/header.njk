@@ -2,7 +2,7 @@
   <div class="container">
     <nav class="nav" aria-label="{{ nav.label or 'Main navigation' }}">
       <a href="{{ nav.logo.href }}" class="nav__logo" aria-label="{{ nav.logo.label }}">
-        <img src="{{ nav.logo.src }}" alt="{{ nav.logo.alt }}" />
+        <img src="{{ nav.logo.srcFull or nav.logo.src }}" alt="{{ nav.logo.alt }}" />
       </a>
 
       <button

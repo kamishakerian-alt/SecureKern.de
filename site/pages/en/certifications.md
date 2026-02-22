@@ -55,17 +55,20 @@ lang: "en"
         <div class="partner-category">
             <h3>OT Visibility & Threat Detection</h3>
             <div class="partner-grid">
+                <div class="partner-logo" title="Bosch">
+                    <img src="/assets/images/partners/bosch-logo.png" alt="Bosch Logo Placeholder">
+                </div>
+                <div class="partner-logo" title="Siemens">
+                    <img src="/assets/images/partners/siemens-logo.png" alt="Siemens Logo Placeholder">
+                </div>
                 <div class="partner-logo" title="Claroty">
-                    <img src="/assets/images/partners/claroty-logo.svg" alt="Claroty Logo">
+                    <img src="/assets/images/partners/claroty-logo.png" alt="Claroty Logo Placeholder">
                 </div>
                 <div class="partner-logo" title="Nozomi Networks">
-                    <img src="/assets/images/partners/nozomi-logo.svg" alt="Nozomi Networks Logo">
+                    <img src="/assets/images/partners/nozomi-logo.png" alt="Nozomi Networks Logo Placeholder">
                 </div>
                 <div class="partner-logo" title="Dragos">
-                    <img src="/assets/images/partners/dragos-logo.svg" alt="Dragos Logo">
-                </div>
-                <div class="partner-logo" title="Microsoft Defender for IoT">
-                    <img src="/assets/images/partners/microsoft-logo.svg" alt="Microsoft Logo">
+                    <img src="/assets/images/partners/dragos-logo.png" alt="Dragos Logo Placeholder">
                 </div>
             </div>
         </div>
@@ -73,17 +76,20 @@ lang: "en"
         <div class="partner-category">
             <h3>Industrial Network Components</h3>
             <div class="partner-grid">
+                <div class="partner-logo" title="Schneider Electric">
+                    <img src="/assets/images/partners/schneider-logo.png" alt="Schneider Electric Logo Placeholder">
+                </div>
                 <div class="partner-logo" title="Fortinet">
-                    <img src="/assets/images/partners/fortinet-logo.svg" alt="Fortinet Logo">
+                    <img src="/assets/images/partners/fortinet-logo.png" alt="Fortinet Logo Placeholder">
                 </div>
                 <div class="partner-logo" title="Palo Alto Networks">
-                    <img src="/assets/images/partners/palo-alto-logo.svg" alt="Palo Alto Networks Logo">
+                    <img src="/assets/images/partners/palo-alto-logo.png" alt="Palo Alto Networks Logo Placeholder">
                 </div>
                 <div class="partner-logo" title="Cisco">
-                    <img src="/assets/images/partners/cisco-logo.svg" alt="Cisco Logo">
+                    <img src="/assets/images/partners/cisco-logo.png" alt="Cisco Logo Placeholder">
                 </div>
                 <div class="partner-logo" title="Hirschmann">
-                    <img src="/assets/images/partners/hirschmann-logo.svg" alt="Hirschmann Logo">
+                    <img src="/assets/images/partners/hirschmann-logo.png" alt="Hirschmann Logo Placeholder">
                 </div>
             </div>
         </div>
