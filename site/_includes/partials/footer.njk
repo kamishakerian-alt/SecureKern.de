@@ -25,11 +25,7 @@
 
     <div class="footer-bottom">
       <a href="{{ nav.logo.href }}" class="footer-logo-type" aria-label="{{ nav.logo.label }}">
-        {% if nav.logo.srcReversed %}
-        <img src="{{ nav.logo.srcReversed }}" alt="{{ nav.logo.alt }}" class="footer-logo-img" />
-        {% else %}
-        Secure<span>Kern</span>
-        {% endif %}
+        <img src="{{ nav.logo.srcReversed }}" alt="SekureKern Logo" class="footer-logo-img nav__logo-img" />
       </a>
       <div class="footer-socials">
         {% for social in site_local.socials %}

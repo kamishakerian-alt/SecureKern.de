@@ -11,7 +11,7 @@ public_folder: "/assets/images/uploads"
 publish_mode: editorial_workflow
 
 # Logo
-logo_url: /assets/images/brand/logo-primary.svg
+logo_url: /assets/images/brand/sekurekern-main.png
 
 collections:
   # Hauptseiten

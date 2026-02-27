@@ -1,0 +1,12 @@
+---
+description: Build wie VS Code – schnell, incremental, ohne Locks
+globs: 
+alwaysApply: true
+---
+
+# Build (dieses Projekt)
+
+Verhalte dich wie Visual Studio Code: schnell, incremental, ohne Dateien zu sperren.
+
+- **Bei jedem Change:** build + serve vorschlagen bzw. ausführen.
+- **Build:** Nur `npm run build` = Eleventy `--incremental`. Kein Clean, kein Retry, kein Kill. Alles zugänglich, nichts löschen, nichts sperren – nur überschreiben, was neu ist. Wie VS Code: einfach bauen, ohne Drama.

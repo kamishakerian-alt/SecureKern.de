@@ -8,7 +8,7 @@ lang: "en"
 
 <section class="section">
   <div class="container">
-    <h1>Retainer Support</h1>
-    <p>Flexible retainer packages for ongoing security support, maintenance and advisory coverage.</p>
+<h1>Retainer Support</h1>
+<p>Flexible retainer packages for ongoing security support, maintenance and advisory coverage.</p>
   </div>
 </section>

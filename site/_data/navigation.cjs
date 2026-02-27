@@ -2,12 +2,14 @@ module.exports = {
   de: {
     label: 'Hauptnavigation',
     logo: {
-      src: '/assets/images/brand/logo-primary.svg',
-      srcFull: '/assets/images/brand/logo-primary.svg',
-      srcReversed: '/assets/images/brand/logo-reversed.svg',
-      alt: 'SecureKern Logo',
+      src: '/assets/images/brand/Main_logo_Transparent_Final1.svg',
+      symbolSrc: null,
+      srcFull: '/assets/images/brand/Main_logo_Transparent_Final1.svg',
+      srcReversed: '/assets/images/brand/Logo_Inverted.svg',
+      alt: 'SekureKern Logo',
+      logoText: 'SecureKern',
       href: '/index.html',
-      label: 'SecureKern Startseite',
+      label: 'SekureKern Startseite',
     },
     mobile_menu_toggle: {
       label: 'Menü öffnen',
@@ -107,12 +109,14 @@ module.exports = {
   en: {
     label: 'Main navigation',
     logo: {
-      src: '/assets/images/brand/logo-primary.svg',
-      srcFull: '/assets/images/brand/logo-primary.svg',
-      srcReversed: '/assets/images/brand/logo-reversed.svg',
-      alt: 'SecureKern Logo',
+      src: '/assets/images/brand/Main_logo_Transparent_Final1.svg',
+      symbolSrc: null,
+      srcFull: '/assets/images/brand/Main_logo_Transparent_Final1.svg',
+      srcReversed: '/assets/images/brand/Logo_Inverted.svg',
+      alt: 'SekureKern Logo',
+      logoText: 'SecureKern',
       href: '/en/index.html',
-      label: 'SecureKern Home',
+      label: 'SekureKern Home',
     },
     mobile_menu_toggle: {
       label: 'Open menu',

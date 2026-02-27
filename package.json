@@ -3,7 +3,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node scripts/clean.mjs && eleventy",
+    "build": "npx @11ty/eleventy --incremental",
+    "build:ci": "node scripts/clean.mjs && npx @11ty/eleventy",
+    "build:no-clean": "npx @11ty/eleventy",
+    "build:preview": "node scripts/build-preview.mjs",
+    "build:retry": "node scripts/clean-retry.mjs && npx @11ty/eleventy --incremental && node scripts/verify-assets.mjs",
+    "test:assets": "node scripts/verify-assets.mjs",
     "clean": "node scripts/clean.mjs",
     "dev": "eleventy --serve --watch",
     "serve": "npx -y serve Website",

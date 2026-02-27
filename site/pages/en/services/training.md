@@ -8,7 +8,7 @@ lang: "en"
 
 <section class="section">
   <div class="container">
-    <h1>Training & Workshops</h1>
-    <p>Hands-on, practical OT security training designed for operations and engineering teams.</p>
+<h1>Training & Workshops</h1>
+<p>Hands-on, practical OT security training designed for operations and engineering teams.</p>
   </div>
 </section>

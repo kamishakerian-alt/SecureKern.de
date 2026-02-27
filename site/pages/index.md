@@ -6,11 +6,11 @@ permalink: "/index.html"
 ---
 <!-- ===== HERO SECTION ===== -->
     <div class="hero">
-        <img src="/assets/images/visual-assets/hero-scada.webp" alt="Industrial SCADA Control Room mit visualisierten OT-Datenströmen" class="hero__background">
+        <img src="/assets/images/visual-assets/hero-scada.webp" alt="Industrial SCADA Control Room" class="hero__background">
         <div class="hero__overlay"></div>
         <div class="container">
             <div class="hero__content">
-                <img src="/assets/images/brand/logo-reversed.svg" alt="SecureKern" class="hero__brand-badge">
+                <img src="/assets/images/brand/Symbol-primary.svg" alt="SekureKern" class="hero__brand-badge hero__symbol">
                 <h1 data-i18n="hero.headline">Schutz für Deutschlands industrielles Herz.</h1>
                 <p class="hero__subtitle" data-i18n="hero.subheadline">
                     Wir sichern Ihre OT- und Produktionsanlagen gegen Cyberangriffe. <br>

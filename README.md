@@ -44,6 +44,24 @@ npm run dev
 npm run build
 ```
 
+### How to build on Windows
+
+Unter Windows (PowerShell/CMD) die gleichen Befehle verwenden. Empfohlen: **Command Prompt (cmd)** oder WSL, falls `&&` in Scripts Probleme macht.
+
+```bash
+# 1. Abhängigkeiten installieren
+npm install
+
+# 2. Website bauen (clean + Eleventy)
+npm run build
+
+# 3. Lokal ausliefern (z. B. http://localhost:3000)
+npm run serve
+```
+
+- Build-Ausgabe: Ordner **`Website/`**
+- Dev mit Live-Reload: `npm run dev` → http://localhost:8080
+
 ### Zugriff
 
 - **Website**: `npm run dev` → http://localhost:8080 oder `npx serve Website` → http://localhost:3000

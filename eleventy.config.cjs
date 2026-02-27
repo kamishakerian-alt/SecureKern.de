@@ -101,7 +101,7 @@ module.exports = function (eleventyConfig) {
       input: 'site',
       includes: '_includes',
       data: '_data',
-      output: 'Website',
+      output: process.env.ELEVENTY_OUTPUT || 'Website',
     },
     htmlTemplateEngine: 'njk',
     markdownTemplateEngine: 'njk',

@@ -6,8 +6,8 @@ permalink: "/danke.html"
 ---
 <section class="page-hero">
   <div class="container">
-    <h1>Danke für Ihre Nachricht</h1>
-    <p>Ihre Anfrage ist bei uns eingegangen. Unser Team meldet sich zeitnah zurück.</p>
-    <a href="/index.html" class="btn btn--primary">Zur Startseite</a>
+<h1>Danke für Ihre Nachricht</h1>
+<p>Ihre Anfrage ist bei uns eingegangen. Unser Team meldet sich zeitnah zurück.</p>
+<a href="/index.html" class="btn btn--primary">Zur Startseite</a>
   </div>
 </section>

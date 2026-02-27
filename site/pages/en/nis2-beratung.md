@@ -8,7 +8,7 @@ lang: "en"
 
 <section class="section">
   <div class="container">
-    <h1>NIS2 Advisory</h1>
-    <p>Assessments, roadmaps and hands-on support to help organizations meet NIS2 requirements and enhance operational resilience.</p>
+<h1>NIS2 Advisory</h1>
+<p>Assessments, roadmaps and hands-on support to help organizations meet NIS2 requirements and enhance operational resilience.</p>
   </div>
 </section>

@@ -8,7 +8,7 @@ lang: "en"
 
 <section class="section">
   <div class="container">
-    <h1>Privacy Policy</h1>
-    <p>Information about the processing of personal data and the use of cookies on this website.</p>
+<h1>Privacy Policy</h1>
+<p>Information about the processing of personal data and the use of cookies on this website.</p>
   </div>
 </section>

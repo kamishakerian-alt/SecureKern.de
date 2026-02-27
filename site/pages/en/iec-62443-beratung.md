@@ -8,7 +8,7 @@ lang: "en"
 
 <section class="section">
   <div class="container">
-    <h1>IEC 62443 Consulting</h1>
-    <p>We provide advisory services to help you interpret, apply and document IEC 62443 requirements across your control networks.</p>
+<h1>IEC 62443 Consulting</h1>
+<p>We provide advisory services to help you interpret, apply and document IEC 62443 requirements across your control networks.</p>
   </div>
 </section>

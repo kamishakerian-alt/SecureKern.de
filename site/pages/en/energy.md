@@ -8,7 +8,7 @@ lang: "en"
 
 <section class="section">
   <div class="container">
-    <h1>Energy & Utilities</h1>
-    <p>Protecting energy networks and utilities against outages and cyber incidents. We focus on resilience and regulatory compliance.</p>
+<h1>Energy & Utilities</h1>
+<p>Protecting energy networks and utilities against outages and cyber incidents. We focus on resilience and regulatory compliance.</p>
   </div>
 </section>

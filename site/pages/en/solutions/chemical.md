@@ -8,7 +8,7 @@ lang: "en"
 
 <section class="section">
   <div class="container">
-    <h1>Chemicals & Pharma</h1>
-    <p>Expertise in securing chemical and pharma production environments with safety considerations in mind.</p>
+<h1>Chemicals & Pharma</h1>
+<p>Expertise in securing chemical and pharma production environments with safety considerations in mind.</p>
   </div>
 </section>

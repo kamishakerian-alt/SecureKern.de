@@ -4,14 +4,19 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Build outputs (single source is site/; output is generated)
+# Build outputs (single source is site/; output is generated, do not commit)
 dist/
 build/
+buildlean/
+_build/
+_build_lean/
 Website/
+Website_preview/
 Website/dist/
 
 # Screenshots and validation (do not ignore site/assets images)
 Website/_validation/
+_build/_validation/
 
 # Archived unused assets (see ASSETS_USED.md)
 site/assets/Not Used/

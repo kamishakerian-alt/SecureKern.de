@@ -117,6 +117,28 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* === MARKDOWN ARTIFACT FIX ===
+   Markdown-it inserts empty <p> tags between HTML blocks.
+   Hide them inside grid containers so they don't break layouts. */
+.value-props-grid > p,
+.services-grid > p,
+.case-studies-grid > p,
+.trust-grid > p,
+.team-grid > p,
+.footer-grid > p,
+.solutions-grid > p,
+.blog-grid > p,
+.webinar-grid > p,
+.icon-grid > p,
+.partner-logos > p,
+.contact-grid > p,
+.certifications-grid > p,
+section > .container > p:empty {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
 /* === LAYOUT CONTAINER === */
 .container {
     width: 100%;
@@ -300,9 +322,60 @@ a:hover {
     width: 100%;
 }
 
-.nav__logo img {
-    height: 40px;
+.nav__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    max-width: 250px;
+}
+.nav__logo-symbol {
     display: block;
+    height: 44px;
+    width: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+.nav__logo-text {
+    font-family: var(--font-heading);
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    white-space: nowrap;
+}
+.nav__logo-img {
+    display: block;
+    width: 250px;
+    height: auto;
+    max-width: 250px;
+    object-fit: contain;
+    vertical-align: middle;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.08)) drop-shadow(0 2px 6px rgba(0, 0, 0, 0.06));
+    transition: filter 0.2s ease;
+}
+.nav__logo:hover .nav__logo-img {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.12)) drop-shadow(0 4px 12px rgba(0, 0, 0, 0.08));
+}
+
+@media (max-width: 768px) {
+    .nav__logo { max-width: 200px; }
+    .nav__logo-symbol { height: 36px; }
+    .nav__logo-text { font-size: 1.1rem; }
+    .nav__logo-img {
+        max-width: 180px;
+        width: auto;
+    }
+    .hero__brand-badge {
+        width: min(560px, 85vw);
+        max-width: 560px;
+    }
+    .hero__brand-badge.hero__symbol {
+        height: 280px;
+        max-height: 50vw;
+    }
+    .footer-logo-type .footer-logo-img,
+    .footer-logo-type .nav__logo-img {
+        max-width: 440px;
+    }
 }
 
 .nav__hamburger {
@@ -327,15 +400,18 @@ a:hover {
     display: flex;
     align-items: center;
     gap: var(--spacing-sm);
+    flex-wrap: nowrap;
+    min-width: 0;
 }
 
 .nav__menu {
     display: flex;
     align-items: center;
     list-style: none;
-    gap: var(--spacing-sm);
+    gap: 0.25rem;
     margin: 0;
     padding: 0;
+    flex-wrap: nowrap;
 }
 
 .nav__item {
@@ -346,13 +422,15 @@ a:hover {
     color: var(--text-primary);
     text-decoration: none;
     font-weight: 500;
-    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+    padding: 0.4rem 0.5rem;
     border-radius: var(--radius-sm);
     transition: var(--transition-base);
     position: relative;
     display: flex;
     align-items: center;
     gap: 0.25rem;
+    white-space: nowrap;
 }
 
 .nav__link:hover,
@@ -549,8 +627,21 @@ a:hover {
 
 .hero__brand-badge {
     display: block;
-    width: min(300px, 65vw);
-    margin: 0 auto 1.25rem;
+    margin: 0 auto 1.5rem;
+    object-fit: contain;
+    position: relative;
+    z-index: 1;
+}
+.hero__brand-badge:not(.hero__symbol) {
+    width: 400px;
+    max-width: 400px;
+    height: auto;
+}
+.hero__brand-badge.hero__symbol {
+    width: auto;
+    height: 320px;
+    max-height: 56vw;
+    opacity: 0.95;
 }
 
 .hero__content h1 {
@@ -609,8 +700,8 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--accent-glow);
-    color: var(--accent-cyan);
+    background-color: rgba(0, 136, 107, 0.12);
+    color: var(--brand-teal);
     font-size: 1.75rem;
     margin-bottom: var(--spacing-md);
     flex-shrink: 0;
@@ -620,6 +711,7 @@ a:hover {
     width: 36px;
     height: 36px;
     object-fit: contain;
+    display: block;
 }
 
 .value-card h3 {
@@ -689,13 +781,15 @@ a:hover {
 }
 
 .service-card__icon {
-    width: 50px;
-    height: 50px;
+    width: 56px;
+    height: 56px;
     flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--accent-cyan);
+    background-color: rgba(0, 136, 107, 0.1);
+    border-radius: var(--radius-md);
+    color: var(--brand-teal);
     font-size: 2rem;
 }
 
@@ -703,6 +797,7 @@ a:hover {
     width: 40px;
     height: 40px;
     object-fit: contain;
+    display: block;
 }
 
 .section-pattern {
@@ -752,10 +847,10 @@ a:hover {
 }
 
 .service-card__details li::before {
-    content: '?';
+    content: '\2713';
     position: absolute;
     left: 0;
-    color: var(--accent-cyan);
+    color: var(--brand-teal);
     font-weight: bold;
 }
 
@@ -826,10 +921,14 @@ a:hover {
     border-top: 1px solid var(--primary-blue);
     padding-top: var(--spacing-md);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: var(--spacing-md);
+}
+.footer-bottom .footer-logo-type {
+    flex: 1 1 100%;
+    max-width: 100%;
 }
 
 .footer-logo-type {
@@ -856,7 +955,7 @@ a:hover {
 }
 
 /* === RESPONSIVE DESIGN === */
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
     .nav__hamburger {
         display: flex;
     }
@@ -1608,8 +1707,9 @@ a:hover {
 }
 
 .footer-logo-type {
-    display: inline-flex;
-    align-items: center;
+    display: block;
+    text-align: center;
+    margin-bottom: var(--spacing-sm);
     color: var(--text-light);
     text-decoration: none;
     font-family: var(--font-heading);
@@ -1621,12 +1721,16 @@ a:hover {
     color: var(--accent-cyan);
 }
 
-.footer-logo-type .footer-logo-img {
-    height: 32px;
-    width: auto;
+.footer-logo-type .footer-logo-img,
+.footer-logo-type .nav__logo-img {
     display: block;
-    filter: brightness(0) invert(1);
+    width: 760px;
+    height: auto;
+    max-width: 90vw;
+    margin: 0 auto;
+    object-fit: contain;
 }
+/* Footer: Logo_Inverted.svg – big and visible */
 
 .footer .hidden {
     position: absolute;

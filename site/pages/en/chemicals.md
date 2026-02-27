@@ -8,7 +8,7 @@ lang: "en"
 
 <section class="section">
   <div class="container">
-    <h1>Chemicals & Pharma</h1>
-    <p>We help chemical and pharmaceutical companies secure process control systems, maintain safety and comply with regulatory requirements.</p>
+<h1>Chemicals & Pharma</h1>
+<p>We help chemical and pharmaceutical companies secure process control systems, maintain safety and comply with regulatory requirements.</p>
   </div>
 </section>

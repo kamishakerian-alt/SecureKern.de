@@ -6,15 +6,47 @@ All paths relative to `site/assets/`. These files are referenced in layouts, pag
 - `css/main.css`
 - `js/main.js`
 
-## Brand & logo
-- `images/brand/logo-primary.svg` (header)
-- `images/brand/logo-reversed.svg` (footer, hero badge)
-- `images/brand/logo-secondary-icon.svg` (favicon SVG in base.njk)
+## Brand & logo (SVG aus `images/brand/`)
 
-## Favicons
-- `images/favicons/apple-touch-icon.png`
-- `images/favicons/favicon-16x16.png`
-- `images/favicons/favicon-32x32.png`
+**Aktuell verwendete Assets** (hochgeladen in `site/assets/images/brand/`):
+
+| Datei | Verwendung |
+|-------|------------|
+| `logo-primary.svg` | Nav (Voll-Logo), Favicon |
+| `Symbol-primary.svg` | Nav als Symbol + Text „SecureKern“ |
+| `logo-primary-inverted.svg` | Hero (auf dunklem BG), Footer |
+| `Symbol-Inverted.svg` | Optional (z. B. für dunkle Bereiche nur Symbol) |
+
+**Im Layout genutzt:**  
+- Nav: `Symbol-primary.svg` + Text **oder** `logo-primary.svg` (Voll-Logo).  
+- Hero: `logo-primary-inverted.svg` (400px, zentral).  
+- Footer: `logo-primary-inverted.svg` (300px, mittig).  
+- Favicon: `logo-primary.svg` (SVG, type="image/svg+xml").
+
+**Hinweis:** Das Skript `scripts/logo-white-to-transparent.mjs` und der Ordner `processed/` werden für Brand nicht mehr benötigt, sofern nur diese SVGs genutzt werden.
+
+### SVG (bereits umgesetzt)
+
+**Warum SVG:** Skalierbar (scharf auf Retina/4K), kleine Dateigröße, Transparenz, SEO-freundlich. Kein automatisches Tracing durch den Agent – das Ergebnis wäre oft unsauber.
+
+**Manuell so vorgehen:**
+
+1. **Vektor-Quelle nutzen:** Wenn du ein Logo in Illustrator/Figma/Sketch hast, exportiere direkt als SVG („Export as SVG“ / „Save as SVG“). Das ist die beste Qualität.
+2. **PNG → SVG nur mit echtem Vektor-Tool:**  
+   - **Adobe Illustrator:** Bild einfügen → Objekt → Bildnachzeichnung → Erweitern, dann manuell Pfade nachziehen/vereinfachen.  
+   - **Inkscape (kostenlos):** Bild einfügen → Pfad → Bitmap nachzeichnen (Schwellenwert anpassen), dann Pfade bereinigen („Vereinfachen“).  
+   - **Figma:** PNG als Referenz einlegen, mit Vektor-Werkzeugen (Pen/Shapes) neu zeichnen – sauberer als Auto-Trace.
+3. **SVG einbinden:**  
+   - Datei z. B. `site/assets/images/brand/logo.svg` (und ggf. `logo-symbol.svg`, `logo-inverted.svg`) ablegen.  
+   - In `_data/navigation.cjs`: `logo.src`, `logo.symbolSrc`, `srcReversed` auf `.svg` zeigen lassen.  
+   - In `site/pages/index.md`: Hero-Logo auf SVG umstellen.  
+   - CSS bleibt gültig (`width`/`max-width`, `height: auto`, `object-fit: contain` funktionieren mit SVG).
+4. **Dark Mode / Invert:** Für Footer/Hero auf dunklem Grund eine invertierte SVG-Variante oder CSS `filter: invert(1)` auf der hellen SVG-Variante nutzen (wie bereits bei Footer-PNG).
+
+Wenn du die SVG-Dateien hast, können die Referenzen in Navigation, Hero und Footer einmalig auf die neuen Pfade umgestellt werden.
+
+## Favicon
+- `images/brand/sekurekern-main.png` (180×180, einziger Favicon)
 
 ## Flags
 - `images/flags/de.svg`

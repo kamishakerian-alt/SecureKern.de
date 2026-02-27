@@ -2,7 +2,12 @@
   <div class="container">
     <nav class="nav" aria-label="{{ nav.label or 'Main navigation' }}">
       <a href="{{ nav.logo.href }}" class="nav__logo" aria-label="{{ nav.logo.label }}">
-        <img src="{{ nav.logo.srcFull or nav.logo.src }}" alt="{{ nav.logo.alt }}" />
+        {% if nav.logo.symbolSrc %}
+        <img src="{{ nav.logo.symbolSrc }}" alt="" class="nav__logo-symbol" />
+        <span class="nav__logo-text">{{ nav.logo.logoText or 'SecureKern' }}</span>
+        {% else %}
+        <img src="{{ nav.logo.src }}" alt="SekureKern Logo" class="nav__logo-img" />
+        {% endif %}
       </a>
 
       <button
